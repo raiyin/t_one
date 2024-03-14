@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+.price {
+    height: 33px;
+    font-family: Manrope;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0.3;
+    text-align: right;
+    color: #1A202C;
+}

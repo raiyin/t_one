@@ -1,20 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Tag from './Tag';
+import Money from './Money';
 
 const meta = {
-  title: 't-one/Tag',
-  component: Tag,
+  title: 't-one/Money',
+  component: Money,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof Tag>;
+} satisfies Meta<typeof Money>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Header: Story = {
   args: {
-    text:'Pizza'
+    price:'$409.00'
   },
 };
