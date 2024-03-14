@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 import NavLink from './NavLink';
-import { LinkLocation } from '../../../types/NavLinkProps';
+import LinkLocation from '@types/LinkLocation';
 
 const meta = {
   title: 't-one/NavLink',
@@ -21,13 +21,16 @@ type Story = StoryObj<typeof meta>;
 
 export const Header: Story = {
   args: {
-    location: LinkLocation.Header
+    location: LinkLocation.Header,
+    link: "mail.ru",
+    content: "MAIL.RU"
   },
 };
 
 export const Footer: Story = {
   args: {
     location: LinkLocation.Footer,
-    link: "ya.ru"
+    link: "ya.ru",
+    content: "YANDEX.RU"
   },
 };

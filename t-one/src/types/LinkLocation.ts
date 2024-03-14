@@ -1,1 +1,3 @@
-export enum LinkLocation { Header, Footer }
+enum LinkLocation { Header, Footer }
+
+export default LinkLocation;
