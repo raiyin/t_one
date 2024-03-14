@@ -3,7 +3,7 @@ import Button from './Button';
 import ButtonType from '../../../types/ButtonProps';
 
 const meta = {
-    title: 't-one/Button',
+    title: 't-one/atoms/Button',
     component: Button,
     parameters: {
         layout: 'centered',

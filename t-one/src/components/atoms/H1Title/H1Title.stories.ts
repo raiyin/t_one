@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import H1Title from './H1Title';
 
 const meta = {
-    title: 't-one/H1Title',
+    title: 't-one/atoms/H1Title',
     component: H1Title,
     parameters: {
         layout: 'centered',

@@ -1,9 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
 import Header from './Header';
 
 const meta = {
-    title: 't-one/Header',
+    title: 't-one/oraganisms/Header',
     component: Header,
     parameters: {
         layout: 'centered',

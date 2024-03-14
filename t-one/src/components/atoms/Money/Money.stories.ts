@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Money from './Money';
 
 const meta = {
-  title: 't-one/Money',
+  title: 't-one/atoms/Money',
   component: Money,
   parameters: {
     layout: 'centered',
@@ -13,7 +13,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Header: Story = {
+export const Main: Story = {
   args: {
     price:'$409.00'
   },

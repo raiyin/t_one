@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import List from './List';
 
 const meta = {
-    title: 't-one/List',
+    title: 't-one/atoms/List',
     component: List,
     parameters: {
         layout: 'centered',

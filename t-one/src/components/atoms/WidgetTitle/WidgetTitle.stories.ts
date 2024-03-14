@@ -1,10 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
 import WidgetTitle from './WidgetTitle';
 import LinkLocation from '@types/LinkLocation';
 
 const meta = {
-    title: 't-one/WidgetTitle',
+    title: 't-one/atoms/WidgetTitle',
     component: WidgetTitle,
     parameters: {
         layout: 'centered',

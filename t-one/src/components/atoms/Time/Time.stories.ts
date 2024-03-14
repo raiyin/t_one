@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Time from './Time';
 
 const meta = {
-    title: 't-one/Time',
+    title: 't-one/atoms/Time',
     component: Time,
     parameters: {
         layout: 'centered',

@@ -1,20 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Tag from './Tag';
+import Interest from './Interest';
 
 const meta = {
-  title: 't-one/atoms/Tag',
-  component: Tag,
+  title: 't-one/atoms/Interest',
+  component: Interest,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof Tag>;
+} satisfies Meta<typeof Interest>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Main: Story = {
   args: {
-    text:'Pizza'
+    text:'Increased By 10%'
   },
 };
