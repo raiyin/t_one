@@ -23,13 +23,13 @@ const HeroImage = () => {
                     src={HeroFood_Image}
                     alt="Grapefruit slice atop a pile of other slices"
                 />
+                <div className={styles["arrow_wrapper"]}>
+                    <img
+                        src={Arrow_Image}
+                        alt="Grapefruit slice atop a pile of other slices"
+                    />
+                </div>
                 <div className={styles["hero_image__mask"]}></div>
-            </div>
-            <div className={styles["arrow_wrapper"]}>
-                <img
-                    src={Arrow_Image}
-                    alt="Grapefruit slice atop a pile of other slices"
-                />
             </div>
             <div className={styles["graph_wrapper"]}>
                 <img
@@ -37,7 +37,7 @@ const HeroImage = () => {
                     alt="Grapefruit slice atop a pile of other slices"
                 />
             </div>
-            <div className={styles["rays wrapper"]}>
+            <div className={styles["rays_wrapper"]}>
                 <img
                     src={Rays_Image}
                     alt="Grapefruit slice atop a pile of other slices"

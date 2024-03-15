@@ -22,17 +22,39 @@
     top: -20px;
     left: 120px;
     z-index: 0;
-    width: 423px;
-    height: 423px;
+    width: 448px;
+    height: 455px;
 }
-
 
 .hero_image__mask {
     min-width: 380px;
     min-height: 380px;
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
     border: 20px solid #6C5FBC;
     position: relative;
-    top: -456px;
+    top: -556px;
     left: 24px;
+}
+
+.arrow_wrapper{
+    position: relative;
+    top: -402px;
+    left: 405px;
+    z-index: 0;
+}
+
+.graph_wrapper{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    top: -253px;
+    left: 20px;
+}
+
+.rays_wrapper{
+    position: relative;
+    top: -303px;
+    left: 6px;
 }
