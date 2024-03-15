@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 568px;
+    height: 430px;
+}
+
+.herotext-container {
+    margin-top: 14px;
+    width: 499px;
+    height: 84px;
+}
+
+.cta_buttons {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 54px;
+}
