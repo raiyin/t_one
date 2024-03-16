@@ -15,5 +15,10 @@ type Story = StoryObj<typeof meta>;
 
 export const Main: Story = {
     args: {
+        title:'Chicken Hell',
+        status: 'On The Way',
+        img_alt: 'img alt text',
+        img_url: '../../../src/assets/images/pngs/food_image_1.png',
+        time: '3:09 PM'
     },
 };

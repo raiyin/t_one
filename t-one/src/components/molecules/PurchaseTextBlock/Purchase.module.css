@@ -1,0 +1,13 @@
+.purchase_text-block {
+    width: 571px;
+    height: 460px;
+}
+
+.purchase_text-items {
+    padding: 0;
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+    list-style: none;
+}
