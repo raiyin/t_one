@@ -1,5 +1,7 @@
 import AppBlock from "../../organisms/AppBlock/AppBlock";
+import FaqBlock from "../../organisms/FaqBlock/FaqBlock";
 import FeatureBlock from "../../organisms/FeaturesBlock/FeatureBlock";
+import Footer from "../../organisms/Footer/Footer";
 import Header from "../../organisms/Header/Header";
 import HeroBlock from "../../organisms/HeroBlock/HeroBlock";
 import LunchBlock from "../../organisms/LunchBlock/LunchBlock";
@@ -17,6 +19,8 @@ const Main = () => {
             <LunchBlock />
             <PurchasesBlock />
             <ReviewBlock />
+            <FaqBlock />
+            <Footer />
         </div>
     );
 };

@@ -16,7 +16,13 @@ const HeroImage = () => {
                 />
             </div>
             <div className={styles["widget_wrapper"]}>
-                <FoodWidget />
+                <FoodWidget
+                    title={'Chicken Hell'}
+                    status={'On The Way'}
+                    time={'3:09 PM'}
+                    img_url={'../../../src/assets/images/pngs/food_image_1.png'}
+                    img_alt={'Chicken hell'}
+                    selected />
             </div>
             <div className={styles["hero_image_wrapper"]}>
                 <img
