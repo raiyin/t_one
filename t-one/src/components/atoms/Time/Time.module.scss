@@ -17,3 +17,23 @@
     height: 18px;
     color: #ACADB9;
 }
+
+@for $i from 14 through 72 {
+    .lh_#{$i}{
+        line-height: #{$i}px;
+    }
+}
+
+@for $i from 10 through 72 {
+    .fs_#{$i}{
+        font-size: #{$i}px;
+    }
+}
+
+$weights: 100,200,300,400,500,600;
+
+@each $size in $weights {
+  .fw_#{$size} {
+    font-weight: $size;
+  }
+}

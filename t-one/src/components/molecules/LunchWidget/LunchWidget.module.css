@@ -23,3 +23,23 @@
     position: relative;
     object-position: 0px -155px;
 }
+
+.tag_wrapper {
+    margin-top: 10px;
+    margin-left: 34px;
+}
+
+.text_wrapper {
+    display: flex;
+    align-items: center;
+    height: 43px;
+    margin-left: 34px;
+}
+
+.info_wrapper {
+    display: flex;
+    height: 27px;
+    display: flex;
+    margin-left: 34px;
+    column-gap: 3px;
+}
