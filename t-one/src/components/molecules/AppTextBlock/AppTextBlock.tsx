@@ -1,0 +1,29 @@
+import ButtonType from '../../../types/ButtonProps'
+import Button from '../../atoms/Button/Button'
+import H1Title from '../../atoms/H1Title/H1Title'
+import List from '../../atoms/List/List'
+import styles from './AppTextBlock.module.css'
+import Arrow_Image from "../../../assets/images/svgs/app_arrow.svg";
+
+const AppTextBlock = () => {
+    return (
+        <div className={styles.container}>
+            <H1Title text={'Premium\u00A0Quality For\u00A0Your\u00A0Health'} selectStart={8} selectEnd={14} />
+            <div className={styles['list_wrapper']}>
+                <List texts={[
+                    'Premium quality food is made with ingredients that are packed with essential vitamins, minerals.',
+                    'These foods promote overall wellness by support healthy digestion and boosting immunity'
+                ]} />
+            </div>
+            <div className={styles['button_wrapper']}>
+                <Button text={'Download'} type={ButtonType.Primary} />
+                <img
+                    src={Arrow_Image}
+                    alt="Grapefruit slice atop a pile of other slices"
+                />
+            </div>
+        </div>
+    )
+}
+
+export default AppTextBlock
