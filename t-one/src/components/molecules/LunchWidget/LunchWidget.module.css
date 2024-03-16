@@ -3,7 +3,8 @@
     height: 300px;
     border: 1.25px solid #F4F4F6;
     border-radius: 30px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 6px 71px 36px 0px #E5E5E5B2;
+    border: 1.25px solid #F4F4F6;
     overflow: hidden;
     display: flex;
     flex-direction: column;

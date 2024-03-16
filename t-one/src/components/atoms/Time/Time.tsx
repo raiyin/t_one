@@ -7,7 +7,6 @@ const Time = (props: TimeProps) => {
 
     const timeClass = {
         time: true,
-        inProgress: true,
     }
     timeClass[('lh_' + props.lineHeight) as keyof typeof timeClass] = true
     timeClass[('fs_' + props.fontSize) as keyof typeof timeClass] = true

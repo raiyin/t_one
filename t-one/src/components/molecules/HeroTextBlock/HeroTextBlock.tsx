@@ -1,13 +1,13 @@
 import ButtonType from "../../../types/ButtonProps";
 import Button from "../../atoms/Button/Button";
-import H1Title from "../../atoms/H1Title/H1Title";
+import Title from "../../atoms/Title/Title";
 import HeroText from "../../atoms/HeroText/HeroText";
 import styles from "./HeroTextBlock.module.css";
 
 const HeroTextBlock = () => {
     return (
         <div className={styles.container}>
-            <H1Title
+            <Title
                 text={"Enjoy\u00A0Foods\u00A0All Over\u00A0The\u00A0World"}
                 selectStart={24}
                 selectEnd={30}

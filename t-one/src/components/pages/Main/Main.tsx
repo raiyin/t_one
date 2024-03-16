@@ -3,6 +3,7 @@ import FeatureBlock from "../../organisms/FeaturesBlock/FeatureBlock";
 import Header from "../../organisms/Header/Header";
 import HeroBlock from "../../organisms/HeroBlock/HeroBlock";
 import LunchBlock from "../../organisms/LunchBlock/LunchBlock";
+import PurchasesBlock from "../../organisms/PurchaseBlock/PurchasesBlock";
 import styles from "./Main.module.css";
 
 const Main = () => {
@@ -13,6 +14,7 @@ const Main = () => {
             <FeatureBlock />
             <AppBlock />
             <LunchBlock />
+            <PurchasesBlock />
         </div>
     );
 };

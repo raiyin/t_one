@@ -4,7 +4,7 @@ import { FoodWidgetProps } from "../../../types/FoodWidgetProps";
 
 const FoodWidget = (props: FoodWidgetProps) => {
     return (
-        <div className={`${styles.container} ${styles.selected}`}>
+        <div className={`${styles.container} ${props.selected && styles.selected}`}>
             <div className={styles.image}>
                 <img
                     src={props.img_url}

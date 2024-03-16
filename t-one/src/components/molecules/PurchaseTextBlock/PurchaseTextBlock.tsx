@@ -1,11 +1,18 @@
-import H1Title from '../../atoms/H1Title/H1Title'
+import Title from '../../atoms/Title/Title'
 import FoodWidget from '../FoodWidget/FoodWidget'
 import styles from './Purchase.module.css'
 
 const PurchaseTextBlock = () => {
     return (
         <div className={styles['purchase_text-block']}>
-            <H1Title text={'Control\u00A0Purchases Via\u00A0Dashboard'} selectStart={8} selectEnd={17} />
+            <Title
+                text={'Control\u00A0Purchases Via\u00A0Dashboard'}
+                selectStart={8}
+                selectEnd={17}
+                lineHeight={61}
+                fontSize={50}
+                fontWeight={700}
+            />
             <ul className={styles['purchase_text-items']}>
                 <li>
                     <FoodWidget
@@ -14,6 +21,7 @@ const PurchaseTextBlock = () => {
                         time={'3:09 PM'}
                         img_url={'../../../src/assets/images/pngs/food_image_1.png'}
                         img_alt={'Chicken hell'}
+                        selected
                     />
                 </li>
                 <li>
@@ -23,6 +31,7 @@ const PurchaseTextBlock = () => {
                         time={'Yesterday'}
                         img_url={'../../../src/assets/images/pngs/food_image_2.png'}
                         img_alt={'Swe Dish'}
+                        selected={false}
                     />
                 </li>
                 <li>
@@ -32,6 +41,7 @@ const PurchaseTextBlock = () => {
                         time={'Yesterday'}
                         img_url={'../../../src/assets/images/pngs/food_image_3.png'}
                         img_alt={'Swe Dish'}
+                        selected={false}
                     />
                 </li>
             </ul>

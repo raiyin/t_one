@@ -4,4 +4,5 @@ export type FoodWidgetProps = {
     img_url: string;
     img_alt: string|'';
     time: string;
+    selected: boolean;
 };

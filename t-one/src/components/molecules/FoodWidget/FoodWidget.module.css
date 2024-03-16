@@ -19,6 +19,10 @@
     box-sizing: border-box;
 }
 
+.selected {
+    box-shadow: -10px 12.3px 20.5px 0px #00000026;
+}
+
 .image {
     display: flex;
     align-items: center;
@@ -57,8 +61,4 @@
 .time {
     align-self: flex-end;
     margin-left: auto;
-}
-
-.selected {
-    box-shadow: 0px 16.4px 24.6px 0px #4646460D;
 }
