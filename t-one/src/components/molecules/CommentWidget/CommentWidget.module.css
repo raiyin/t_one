@@ -1,0 +1,58 @@
+.widget_container {
+    width: 583px;
+    height: 201px;
+}
+
+.widget_bg {
+    width: 583px;
+    height: 201px;
+    filter: blur(184px);
+    background: #323142;
+    opacity: 0.2;
+}
+
+.widget_body {
+    width: 528px;
+    height: 170px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 42px;
+    padding-right: 42px;
+    background-color: #fff;
+    position: relative;
+    top: -200px;
+    left: 26px;
+    box-sizing: border-box;
+    text-justify: auto;
+}
+
+.widget_body_unselected {
+    height: 114px;
+}
+
+.widget_user {
+    width: 444px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.widget_quote {
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: justified;
+    color: #636363;
+    margin-top: 8px;
+    white-space: nowrap;
+}
+
+.widget_quote_unselected {
+    margin-top: 0px;
+}

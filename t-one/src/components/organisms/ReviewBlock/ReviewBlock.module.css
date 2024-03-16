@@ -1,0 +1,21 @@
+.review_container {
+    width: 1732px;
+    height: 307px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 116px;
+}
+
+.reviews {
+    margin-top: 80px;
+    display: flex;
+    margin-left: 89px;
+}
+
+/* 19 8 */
+.divider_wrapper {
+    position: relative;
+    top: -67px;
+    left: 135px;
+}

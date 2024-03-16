@@ -4,6 +4,7 @@ import Header from "../../organisms/Header/Header";
 import HeroBlock from "../../organisms/HeroBlock/HeroBlock";
 import LunchBlock from "../../organisms/LunchBlock/LunchBlock";
 import PurchasesBlock from "../../organisms/PurchaseBlock/PurchasesBlock";
+import ReviewBlock from "../../organisms/ReviewBlock/ReviewBlock";
 import styles from "./Main.module.css";
 
 const Main = () => {
@@ -15,6 +16,7 @@ const Main = () => {
             <AppBlock />
             <LunchBlock />
             <PurchasesBlock />
+            <ReviewBlock />
         </div>
     );
 };
