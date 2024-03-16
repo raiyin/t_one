@@ -1,0 +1,25 @@
+.container {
+    width: 400px;
+    height: 300px;
+    border: 1.25px solid #F4F4F6;
+    border-radius: 30px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.image_wrapper {
+    width: 423px;
+    height: 176px;
+}
+
+.image_wrapper img {
+    max-width: inherit;
+    max-height: inherit;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    position: relative;
+    object-position: 0px -155px;
+}

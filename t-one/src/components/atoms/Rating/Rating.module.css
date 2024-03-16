@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+.rating_container {
+    display: flex;
+    height: 27px;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #8E97A6;
+    column-gap: 4px;
+}
