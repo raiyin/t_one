@@ -1,0 +1,29 @@
+{
+    "faqs": [
+        {
+            "quest": "How long does delivery take?",
+            "answer": "You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?",
+            "expanded": true
+        },
+        {
+            "quest": "How Does It Work ?",
+            "answer": "You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?",
+            "expanded": false
+        },
+        {
+            "quest": "How does your food delivery service work?",
+            "answer": "You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?",
+            "expanded": false
+        },
+        {
+            "quest": "What payment options do you accept?",
+            "answer": "You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?",
+            "expanded": false
+        },
+        {
+            "quest": "Do you offer discounts or promotions?",
+            "answer": "You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?",
+            "expanded": false
+        }
+    ]
+}

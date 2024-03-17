@@ -5,7 +5,9 @@ const List = (props: { texts: string[] }) => {
         <div>
             <ul className={styles.list}>
                 {props.texts.map(text =>
-                    <li className={styles['list-item']}>{text}</li>
+                    <li className={styles['list-item']} key={text}>
+                        {text}
+                    </li>
                 )}
             </ul>
         </div>

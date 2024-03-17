@@ -1,8 +1,14 @@
 import Title from '../../atoms/Title/Title'
 import FaqItem from '../../molecules/FaqItem/FaqItem'
 import styles from './FaqBlock.module.css'
+import faqJsonData from '../../../data/faq_data.json';
+import { useState } from 'react';
+import { FaqItemProps } from '../../../types/FaqItemProps';
 
 const FaqBlock = () => {
+
+    const [faqData] = useState<FaqItemProps[]>(faqJsonData['faqs']);
+
     return (
         <div className={styles['faqBlock']}>
 
@@ -18,31 +24,15 @@ const FaqBlock = () => {
             </div>
 
             <ul className={styles['faqBlock_items']}>
-                <FaqItem
-                    quest={'How long does delivery take?'}
-                    answer={'You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?'}
-                    expanded
-                />
-                <FaqItem
-                    quest={'How Does It Work ?'}
-                    answer={'You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?'}
-                    expanded={false}
-                />
-                <FaqItem
-                    quest={'How does your food delivery service work?'}
-                    answer={'You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?'}
-                    expanded={false}
-                />
-                <FaqItem
-                    quest={'What payment options do you accept?'}
-                    answer={'You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?'}
-                    expanded={false}
-                />
-                <FaqItem
-                    quest={'Do you offer discounts or promotions?'}
-                    answer={'You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?'}
-                    expanded={false}
-                />
+                {faqData.map(faqItem =>
+                    <li key={faqItem.quest}>
+                        <FaqItem
+                            quest={faqItem.quest}
+                            answer={faqItem.quest}
+                            expanded={faqItem.expanded}
+                        />
+                    </li>
+                )}
             </ul>
         </div>
     )
