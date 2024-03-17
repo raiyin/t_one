@@ -1,5 +1,5 @@
 .review_container {
-    width: 1732px;
+    width: 1440px;
     height: 307px;
     display: flex;
     flex-direction: column;
@@ -9,12 +9,13 @@
 
 .reviews {
     margin-top: 80px;
+    width: 1440px;
     display: flex;
-    margin-left: 89px;
+    margin-left: 148px;
 }
 
 .divider_wrapper {
     position: relative;
-    top: -67px;
-    left: 135px;
+    top: -50px;
+    left: 300px;
 }

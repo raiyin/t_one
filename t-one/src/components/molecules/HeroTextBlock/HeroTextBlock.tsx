@@ -11,6 +11,9 @@ const HeroTextBlock = () => {
                 text={"Enjoy\u00A0Foods\u00A0All Over\u00A0The\u00A0World"}
                 selectStart={24}
                 selectEnd={30}
+                fontSize={76}
+                fontWeight={600}
+                lineHeight={91}
             />
 
             <div className={styles["herotext-container"]}>

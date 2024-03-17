@@ -4,6 +4,7 @@ import styles from './FaqBlock.module.css'
 import faqJsonData from '../../../data/faq_data.json';
 import { useState } from 'react';
 import { FaqItemProps } from '../../../types/FaqItemProps';
+import FaqRaysImage from '../../../assets/images/svgs/faq_rays.svg'
 
 const FaqBlock = () => {
 
@@ -21,6 +22,10 @@ const FaqBlock = () => {
                     fontSize={45}
                     lineHeight={54}
                 />
+
+                <div className={styles['icon_wrapper']}>
+                    <img src={FaqRaysImage} alt="" />
+                </div>
             </div>
 
             <ul className={styles['faqBlock_items']}>
