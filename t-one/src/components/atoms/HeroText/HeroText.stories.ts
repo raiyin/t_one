@@ -15,6 +15,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Main: Story = {
     args: {
-        text: "EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early. Get a $20 bonus."
+        text_main: "EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early.",
+        text_bonus:'Get a $20 bonus.'
     },
 };

@@ -1,3 +1,4 @@
 export type HeroTextProps = {
-    text: string;
+    text_main: string;
+    text_bonus: string;
 };

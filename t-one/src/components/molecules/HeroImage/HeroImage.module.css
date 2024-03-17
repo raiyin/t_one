@@ -2,17 +2,19 @@
     width: 680px;
     height: 607px;
     background: #fff;
+    padding-left: 50px;
 }
 
 .waves_wrapper {
     position: relative;
     margin-left: auto;
     width: fit-content;
+    left: 35px;
 }
 
 .widget_wrapper {
     position: relative;
-    left: 311px;
+    left: 320px;
     z-index: 1;
 }
 
@@ -38,14 +40,14 @@
     left: 24px;
 }
 
-.arrow_wrapper{
+.arrow_wrapper {
     position: relative;
     top: -402px;
     left: 405px;
     z-index: 0;
 }
 
-.graph_wrapper{
+.graph_wrapper {
     position: relative;
     width: fit-content;
     height: fit-content;
@@ -53,8 +55,8 @@
     left: 20px;
 }
 
-.rays_wrapper{
+.rays_wrapper {
     position: relative;
-    top: -303px;
+    top: -315px;
     left: 6px;
 }
