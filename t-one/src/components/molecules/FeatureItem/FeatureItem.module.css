@@ -1,15 +1,14 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding-top: 8px;
-    row-gap: 18px;
+    row-gap: 10px;
 }
 
 .title {
     font-family: "Public Sans", sans-serif;
     font-weight: 700;
-    font-size: 43px;
-    line-height: 125%;
+    font-size: 42px;
+    line-height: 129%;
     text-align: center;
     color: #fff;
 }
@@ -18,10 +17,10 @@
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 14px;
-    line-height: 150%;
+    line-height: 154%;
     text-align: center;
     color: #c5bfed;
-    width: 191px;
+    width: 210px;
     height: 44px;
-
+    white-space: pre-wrap;
 }

@@ -16,5 +16,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Main: Story = {
     args: {
+        title:'10K+',
+        text:'Satisfied Costumers All Great Over The World'
     },
 };
