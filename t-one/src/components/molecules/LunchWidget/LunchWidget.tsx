@@ -4,6 +4,7 @@ import Tag from '../../atoms/Tag/Tag';
 import Text from '../../atoms/Text/Text';
 import Time from '../../atoms/Time/Time';
 import Rating from '../../atoms/Rating/Rating';
+import Title from '../../atoms/Title/Title';
 
 const LunchWidget = () => {
     return (
@@ -21,7 +22,14 @@ const LunchWidget = () => {
             </div>
 
             <div className={styles['text_wrapper']}>
-                <Text content={'The Chiclen King'} color={'#323142'} fontSize={26} fontWeight={600} font={'Poppins'} />
+                <Title
+                    text={'The Chiclen King'}
+                    selectStart={0}
+                    selectEnd={0}
+                    fontSize={26}
+                    fontWeight={600}
+                    lineHeight={42}
+                />
             </div>
 
             <div className={styles['info_wrapper']}>

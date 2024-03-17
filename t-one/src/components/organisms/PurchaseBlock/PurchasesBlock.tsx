@@ -6,8 +6,8 @@ const PurchasesBlock = () => {
     return (
         <div className={styles['purchases_container']}>
             <PurchaseTextBlock />
-            <div className={styles['purchases_image']}>
-                <img src={PurchasesImage} alt="purchases dashboard" />
+            <div className={styles['purchases_image_wrapper']}>
+                <img src={PurchasesImage} alt="purchases dashboard" className={styles['purchases_image']} />
             </div>
         </div>
     )

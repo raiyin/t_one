@@ -8,8 +8,13 @@
     align-self: center;
 }
 
-.purchases_image {
+.purchases_image_wrapper {
     display: flex;
     width: 534px;
     height: 458px;
+    padding-left: 10px;
+}
+
+.purchases_image {
+    margin-left: 10px;
 }

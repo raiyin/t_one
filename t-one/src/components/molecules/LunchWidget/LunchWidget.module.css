@@ -25,15 +25,16 @@
 }
 
 .tag_wrapper {
-    margin-top: 10px;
-    margin-left: 34px;
+    margin-top: 7px;
+    margin-left: 33px;
 }
 
 .text_wrapper {
     display: flex;
     align-items: center;
     height: 43px;
-    margin-left: 34px;
+    margin-left: 33px;
+    letter-spacing: 0.03em;
 }
 
 .info_wrapper {
@@ -41,5 +42,5 @@
     height: 27px;
     display: flex;
     margin-left: 34px;
-    column-gap: 3px;
+    column-gap: 24px;
 }
