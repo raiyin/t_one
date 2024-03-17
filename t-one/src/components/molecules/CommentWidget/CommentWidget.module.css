@@ -4,8 +4,8 @@
 }
 
 .widget_bg {
-    width: 583px;
-    height: 201px;
+    width: 575px;
+    height: 200px;
     filter: blur(184px);
     background: #323142;
     opacity: 0.2;
@@ -54,5 +54,5 @@
 }
 
 .widget_quote_unselected {
-    margin-top: 0px;
+    margin-top: -5px;
 }
