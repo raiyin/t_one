@@ -17,13 +17,15 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
     args: {
         text: "Get started",
-        type: ButtonType.Primary
+        type: ButtonType.Primary,
+        needArrow:true
     },
 };
 
 export const Ghost: Story = {
     args: {
         text: "Go Pro",
-        type: ButtonType.Ghost
+        type: ButtonType.Ghost,
+        needArrow: false
     },
 };

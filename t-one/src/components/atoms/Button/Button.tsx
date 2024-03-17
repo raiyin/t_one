@@ -1,5 +1,6 @@
 import ButtonType, { ButtonProps } from "../../../types/ButtonProps";
 import styles from "./Button.module.css";
+import ButtonImage from '../../../assets/images/pngs/btn_arrow.png'
 
 const Button = (props: ButtonProps) => {
     const typeMap = (type: ButtonType): string => {
@@ -11,8 +12,9 @@ const Button = (props: ButtonProps) => {
     };
 
     return (
-        <button className={`${styles.button} ${typeMap(props.type)}`}>
+        <button className={`${styles['button']} ${typeMap(props.type)}`}>
             {props.text}
+            {props.needArrow && <img className={styles['btn_icon']} src={ButtonImage} alt="" />}
         </button>
     );
 };

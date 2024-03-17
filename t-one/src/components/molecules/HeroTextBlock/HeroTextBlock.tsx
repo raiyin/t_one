@@ -27,8 +27,8 @@ const HeroTextBlock = () => {
             </div>
 
             <div className={styles["cta_buttons"]}>
-                <Button text={"Get Started"} type={ButtonType.Primary} />
-                <Button text={"Go Pro"} type={ButtonType.Ghost} />
+                <Button text={"Get Started"} type={ButtonType.Primary} needArrow={false} />
+                <Button text={"Go Pro"} type={ButtonType.Ghost} needArrow={false} />
             </div>
 
             <div className={styles['before_wrapper']}>

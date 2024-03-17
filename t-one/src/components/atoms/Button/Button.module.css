@@ -8,6 +8,8 @@
 }
 
 .button {
+    display: flex;
+    column-gap: 13px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -27,4 +29,9 @@
     color: #6C5FBC;
     border-width: 1.5px;
     background-color: #fff;
+}
+
+.btn_icon {
+    width: 26px;
+    height: 26px;
 }

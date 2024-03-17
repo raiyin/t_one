@@ -1,24 +1,17 @@
-.container {
+.app_block {
     display: flex;
     width: 1260px;
     height: 740px;
     align-self: center;
     margin-top: 106px;
     border-bottom: 1px solid #CBCBCB;
+    column-gap: 219px;
 }
 
 .images {
     padding-left: 112px;
-    width: 50%;
 }
 
 .images_phone {
-    padding-top: 10px;
-}
-
-.images_rays {
-    position: relative;
-    width: fit-content;
-    top: -630px;
-    left: 315px;
+    padding-left: 5px;
 }
