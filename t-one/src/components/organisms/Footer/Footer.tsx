@@ -31,7 +31,7 @@ const Footer = () => {
         <footer>
 
             <div className={styles['footer_menu']}>
-                <Logo />
+                <Logo image_size={60} font_size={29} />
                 <NavBar {...navBarProps} />
             </div>
             <hr />

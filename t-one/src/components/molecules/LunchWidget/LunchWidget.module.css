@@ -41,6 +41,7 @@
     display: flex;
     height: 27px;
     display: flex;
-    margin-left: 34px;
-    column-gap: 24px;
+    margin-left: 32px;
+    margin-top: 2px;
+    column-gap: 16px;
 }

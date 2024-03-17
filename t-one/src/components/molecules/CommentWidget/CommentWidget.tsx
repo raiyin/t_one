@@ -22,7 +22,7 @@ const CommentWidget = (props: CommentWidgetProps) => {
                         lineHeight={31}
                     />
 
-                    <img src={QuoteImage} alt="" />
+                    <img src={QuoteImage} alt="Quote image" />
 
                 </div>}
 

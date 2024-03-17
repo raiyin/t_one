@@ -28,7 +28,7 @@ const Header = () => {
 
     return (
         <div className={styles.header}>
-            <Logo />
+            <Logo image_size={46} font_size={22} />
             <NavBar {...navBarProps} />
         </div>
     );

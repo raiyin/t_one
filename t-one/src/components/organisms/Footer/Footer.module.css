@@ -24,6 +24,7 @@ footer {
 .footer_menu {
     width: 1248px;
     height: 57px;
+    min-height: 57px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +39,7 @@ hr {
 .lower {
     width: 1248px;
     height: 25px;
-    margin-top: 56px;
+    margin-top: 48px;
     display: flex;
     justify-content: space-between;
 }

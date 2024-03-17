@@ -18,7 +18,6 @@ const FeatureBlock = () => {
             />
             <img
                 src={Line_Image}
-                alt="Grapefruit slice atop a pile of other slices"
             />
             <FeatureItem
                 title={featureData[1].title}
@@ -26,7 +25,6 @@ const FeatureBlock = () => {
             />
             <img
                 src={Line_Image}
-                alt="Grapefruit slice atop a pile of other slices"
             />
             <FeatureItem
                 title={featureData[2].title}

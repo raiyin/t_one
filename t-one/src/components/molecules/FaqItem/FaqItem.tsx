@@ -17,7 +17,7 @@ const FaqItem = (props: FaqItemProps) => {
                     lineHeight={60}
                 />
                 <div className={styles['faqItem_image']}>
-                    <img src={props.expanded ? MinusImage : PlusImage} alt="" />
+                    <img src={props.expanded ? MinusImage : PlusImage} alt="Collapse/expand button" />
                 </div>
             </div>
             {props.expanded && <div className={styles['faqItem-answer']}>

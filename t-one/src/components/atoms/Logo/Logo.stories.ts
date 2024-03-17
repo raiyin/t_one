@@ -13,7 +13,16 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Main: Story = {
+export const Main_30: Story = {
     args: {
+        image_size:30,
+        font_size:30
+    },
+};
+
+export const Main_50: Story = {
+    args: {
+        image_size:50,
+        font_size:50
     },
 };

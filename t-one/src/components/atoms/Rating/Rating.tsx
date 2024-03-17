@@ -6,7 +6,7 @@ const Rating = (props: { rating: string }) => {
         <div className={styles['rating_container']}>
             <img
                 src={Rating_Star}
-                alt="Grapefruit slice atop a pile of other slices"
+                alt="Raiting mark"
             />
             {props.rating}
         </div>

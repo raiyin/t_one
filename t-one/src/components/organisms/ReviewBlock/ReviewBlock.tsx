@@ -23,7 +23,7 @@ const ReviewBlock = () => {
                 <CommentWidget user_handle={'@omottley'} comment={'I cannot believe how I found you, this is so pretty.'} selected={false} />
             </ul>
             <div className={styles['divider_wrapper']}>
-                <img src={DividerImage} alt="" />
+                <img src={DividerImage} />
             </div>
         </div>
     )
