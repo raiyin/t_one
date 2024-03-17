@@ -33,7 +33,7 @@ const FaqBlock = () => {
                     <li key={faqItem.quest}>
                         <FaqItem
                             quest={faqItem.quest}
-                            answer={faqItem.quest}
+                            answer={faqItem.answer}
                             expanded={faqItem.expanded}
                         />
                     </li>
