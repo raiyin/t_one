@@ -8,7 +8,7 @@ const LunchBlock = () => {
             <Title
                 text={'Our Top Lunch'}
                 selectStart={8}
-                selectEnd={12}
+                selectEnd={13}
                 fontWeight={600}
                 fontSize={45}
                 lineHeight={26}

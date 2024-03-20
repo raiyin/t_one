@@ -11,7 +11,7 @@ const AppTextBlock = () => {
             <Title
                 text={'Premium\u00A0Quality For\u00A0Your\u00A0Health'}
                 selectStart={8}
-                selectEnd={14}
+                selectEnd={15}
                 fontWeight={700}
                 fontSize={50}
                 lineHeight={58}

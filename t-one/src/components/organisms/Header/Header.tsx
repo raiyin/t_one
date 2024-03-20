@@ -10,7 +10,7 @@ const Header = () => {
         links: [
             {
                 location: LinkLocation.Header,
-                link: "https://site.ru/recipes",
+                link: "./article",
                 content: "Recipes",
             },
             {
@@ -20,7 +20,7 @@ const Header = () => {
             },
             {
                 location: LinkLocation.Header,
-                link: "https://site.ru/blog",
+                link: "./blog",
                 content: "Blog",
             },
         ],
