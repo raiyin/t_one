@@ -1,9 +1,10 @@
+import ArticlesPreview from '../../organisms/ArticlesPreview/ArticlesPreview'
 import styles from './Blog.module.css'
 
 const Blog = () => {
     return (
         <div>
-            Blog
+            <ArticlesPreview />
         </div>
     )
 }

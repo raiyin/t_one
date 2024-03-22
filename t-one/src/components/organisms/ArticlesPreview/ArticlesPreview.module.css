@@ -1,0 +1,18 @@
+.article-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 94px;
+}
+
+.articles-preview_previews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 1205px;
+    margin-top: 75px;
+}
+
+.articles-preview_arrows {
+    margin-top: 60px;
+}
