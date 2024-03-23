@@ -7,10 +7,13 @@ import HeroBlock from "../../organisms/HeroBlock/HeroBlock";
 import LunchBlock from "../../organisms/LunchBlock/LunchBlock";
 import PurchasesBlock from "../../organisms/PurchaseBlock/PurchasesBlock";
 import ReviewBlock from "../../organisms/ReviewBlock/ReviewBlock";
+import Header from '../../organisms/Header/Header';
+import Footer from '../../organisms/Footer/Footer';
 
 const Main = () => {
     return (
         <>
+            <Header />
             <HeroBlock />
             <FeatureBlock />
             <AppBlock />
@@ -28,6 +31,7 @@ const Main = () => {
             </div>
             <ReviewBlock direction={'row'} comments={[]} />
             <FaqBlock />
+            <Footer />
         </>
     );
 };

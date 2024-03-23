@@ -1,10 +1,13 @@
+import ScrollToHashElement from '../../../routes/ScrollToHashElement'
 import Title from '../../atoms/Title/Title'
 import LunchWidget from '../../molecules/LunchWidget/LunchWidget'
 import styles from './LunchBlock.module.css'
 
 const LunchBlock = () => {
     return (
-        <div className={styles['lunch_container']}>
+        <div className={styles['lunch_container']} id="recipes">
+
+            <ScrollToHashElement />
             <Title
                 text={'Our Top Lunch'}
                 selectStart={8}

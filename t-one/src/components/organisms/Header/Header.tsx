@@ -10,12 +10,12 @@ const Header = () => {
         links: [
             {
                 location: LinkLocation.Header,
-                link: "./article",
+                link: "/#recipes",
                 content: "Recipes",
             },
             {
                 location: LinkLocation.Header,
-                link: "https://site.ru/faq",
+                link: "/#faq",
                 content: "FAQ",
             },
             {

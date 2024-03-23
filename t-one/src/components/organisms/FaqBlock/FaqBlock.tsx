@@ -11,7 +11,7 @@ const FaqBlock = () => {
     const [faqData] = useState<FaqItemProps[]>(faqJsonData['faqs']);
 
     return (
-        <div className={styles['faqBlock']}>
+        <div className={styles['faqBlock']} id="faq">
 
             <div className={styles['faqBlock_title']}>
                 <Title
