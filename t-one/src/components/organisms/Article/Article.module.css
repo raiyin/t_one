@@ -1,0 +1,19 @@
+.article {}
+
+.article-title {
+    color: #252525;
+}
+
+.article-head {
+    margin-top: 32px;
+}
+
+.article-text {
+    margin-top: 60px;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 44.55px;
+    text-align: justified;
+    color: #252525;
+}
