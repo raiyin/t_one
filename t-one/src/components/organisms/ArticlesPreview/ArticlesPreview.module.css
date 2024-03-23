@@ -9,10 +9,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    width: 1205px;
+    width: 1236px;
     margin-top: 75px;
-}
-
-.articles-preview_arrows {
-    margin-top: 60px;
+    column-gap: 65px;
+    row-gap: 42px;
 }

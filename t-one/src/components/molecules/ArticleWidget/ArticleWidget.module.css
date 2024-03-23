@@ -1,6 +1,7 @@
 .post-card {
     width: 349px;
     height: 236px;
+    box-sizing: border-box;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -11,6 +12,13 @@
 
 .post-card__title {
     color: #252525;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .post-card__hash-mark {
@@ -26,4 +34,9 @@
     line-height: 26px;
     text-align: justified;
     margin-top: 19px;
+    color: #081420;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }

@@ -1,4 +1,6 @@
 export type PaginaitonArrowsProps = {
-    leftIsActive: boolean;
-    rightIsActive: boolean;
+    leftArrowIsEnable: boolean;
+    rightArrowIsEnable: boolean;
+    leftArrowOnClick: () => void;
+    rightArrowOnClick: () => void;
 };

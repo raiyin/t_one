@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import PostCard from './PostCard';
+import ArticleWidget from './ArticleWidget';
 
 const meta = {
-    title: 't-one/molecules/PostCard',
-    component: PostCard,
+    title: 't-one/molecules/ArticleWidget',
+    component: ArticleWidget,
     parameters: {
         layout: 'centered',
     },
     tags: ['autodocs'],
-} satisfies Meta<typeof PostCard>;
+} satisfies Meta<typeof ArticleWidget>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

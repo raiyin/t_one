@@ -1,6 +1,7 @@
 export enum ArrowDirection { Back, Forth }
 
 export type ArrowProps = {
-    isActive: boolean;
+    isEnable: boolean;
     direction: ArrowDirection;
+    onClick: () => void;
 };
