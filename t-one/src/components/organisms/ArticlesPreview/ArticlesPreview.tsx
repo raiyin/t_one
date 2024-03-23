@@ -1,5 +1,3 @@
-import { ArrowDirection } from '../../../types/ArrowProps'
-import ArrowIcon from '../../atoms/ArrowIcon/ArrowIcon'
 import Title from '../../atoms/Title/Title'
 import PaginationArrows from '../../molecules/PaginationArrows/PaginationArrows'
 import PostCard from '../../molecules/PostCard/PostCard'

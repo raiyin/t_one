@@ -13,6 +13,7 @@ const config: StorybookConfig = {
     name: "@storybook/react-vite",
     options: {},
   },
+  staticDirs: ['../public', '../src/assets'],
   docs: {
     autodocs: "tag",
   },
