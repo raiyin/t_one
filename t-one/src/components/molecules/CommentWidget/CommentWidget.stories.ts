@@ -18,7 +18,6 @@ export const MainSelected: Story = {
     args: {
         user_handle:'@omottley2h',
         comment: 'I cannot believe how I found you, this is so pretty.',
-        selected: true
     },
 };
 
@@ -26,6 +25,5 @@ export const MainUnselected: Story = {
     args: {
         user_handle:'@omottley2h',
         comment: 'I cannot believe how I found you, this is so pretty.',
-        selected: false
     },
 };

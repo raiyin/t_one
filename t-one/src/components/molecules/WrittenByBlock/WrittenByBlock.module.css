@@ -4,6 +4,16 @@
     display: flex;
 }
 
+.written-by_ava {
+    width: 56px;
+    height: 56px;
+}
+
+.written-by_ava>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .written-by_author {
     margin-left: 16px;
     display: flex;

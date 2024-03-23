@@ -38,10 +38,6 @@
     text-justify: auto;
 }
 
-.widget_body_unselected {
-    height: 114px;
-}
-
 .widget_user {
     width: 444px;
     height: 48px;
@@ -61,8 +57,4 @@
     margin-top: 8px;
     margin-left: -5px;
     white-space: nowrap;
-}
-
-.widget_quote_unselected {
-    margin-top: -5px;
 }

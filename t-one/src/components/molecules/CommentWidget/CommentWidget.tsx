@@ -10,9 +10,9 @@ const CommentWidget = (props: CommentWidgetProps) => {
             <div className={styles['widget_bg']}>
             </div>
 
-            <div className={`${styles['widget_body']} ${!props.selected && styles['widget_body_unselected']}`}>
+            <div className={`${styles['widget_body']}`}>
 
-                {props.selected && <div className={`${styles['widget_user']}`}>
+                <div className={`${styles['widget_user']}`}>
                     <Title
                         text={props.user_handle}
                         selectEnd={0}
@@ -24,10 +24,9 @@ const CommentWidget = (props: CommentWidgetProps) => {
 
                     <img src={QuoteImage} alt="Quote image" />
 
-                </div>}
+                </div>
 
-
-                <div className={`${styles['widget_quote']}  ${!props.selected && styles['widget_quote_unselected']}`}>
+                <div className={`${styles['widget_quote']}`}>
                     {props.comment}
                 </div>
             </div>

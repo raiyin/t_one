@@ -14,10 +14,10 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const MainSelected: Story = {
+export const Main: Story = {
     args: {
         author:'Terry Medhurst',
-        ava_url:'/images/pngs/ava.png',
+        ava_url:'https://robohash.org/Terry.png?set=set4',
         rating:'7',
         hashtag:'#history, #food'
     },

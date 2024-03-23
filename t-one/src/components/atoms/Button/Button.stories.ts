@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Button from './Button';
 import ButtonType from '../../../types/ButtonProps';
+import { ArrowDirection } from '../../../types/ArrowProps';
 
 const meta = {
     title: 't-one/atoms/Button',
@@ -14,18 +15,20 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const PrimaryForth: Story = {
     args: {
         text: "Get started",
         type: ButtonType.Primary,
-        needArrow:true
+        needArrow:true,
+        direction: ArrowDirection.Forth
     },
 };
 
-export const Ghost: Story = {
+export const GhostBack: Story = {
     args: {
         text: "Go Pro",
         type: ButtonType.Ghost,
-        needArrow: false
+        needArrow: true,
+        direction: ArrowDirection.Back
     },
 };

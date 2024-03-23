@@ -3,21 +3,28 @@ import Main from "../components/pages/Main/Main";
 import Blog from "../components/pages/Blog/Blog";
 import Artlicle from "../components/pages/Article/Artlicle";
 import NotFound from "../components/pages/NotFound/NotFound";
+import Error from "../components/pages/Error/Error";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Main />,
-        errorElement: <NotFound />,
+        errorElement: <Error />,
     },
     {
         path: "/blog",
         element: <Blog />,
+        errorElement: <Error />,
     },
     {
         path: "/article",
         element: <Artlicle />,
-        errorElement: <NotFound />,
+        errorElement: <Error />,
+    },
+    {
+        path: "*",
+        element: <NotFound />,
+        errorElement: <Error />,
     },
 ]);
 

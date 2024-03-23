@@ -1,4 +1,9 @@
-.article {}
+.article {
+    margin-top: 125px;
+    max-width: 1248px;
+    margin-left: 96px;
+    margin-right: 96px;
+}
 
 .article-title {
     color: #252525;
