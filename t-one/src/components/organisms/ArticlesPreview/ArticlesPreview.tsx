@@ -15,6 +15,7 @@ const ArticlesPreview = (props: { articles: ArticleWidgetProps[], leftArrowIsEna
 
                 {props.articles.map(article =>
                     <ArticleWidget
+                        id={article.id}
                         body={article.body}
                         title={article.title}
                         reactions={article.reactions}

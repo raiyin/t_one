@@ -1,18 +1,24 @@
 import { ArticleHeadProps } from '../../../types/ArticleProps'
+import { tagsToHashTagString } from '../../../utils/mappers'
 import HashTag from '../../atoms/HashTag/HashTag'
 import Rating from '../../atoms/Rating/Rating'
 import WrittenByBlock from '../WrittenByBlock/WrittenByBlock'
 import styles from './ArticleHead.module.css'
 
 const ArticleHead = (props: ArticleHeadProps) => {
+
     return (
         <div className={styles['article-head']}>
+
             <div className={styles['article-head_info']}>
-                <WrittenByBlock author={props.author} ava_url={props.ava_url} />
+
+                <WrittenByBlock userId={props.userId} />
+
                 <div className={styles['article-head_subinfo']}>
-                    <Rating rating={props.rating} />
-                    <HashTag text={props.hashtag} />
+                    <Rating rating={props.reactions} />
+                    <HashTag text={tagsToHashTagString(props.tags)} />
                 </div>
+
             </div>
         </div>
     )

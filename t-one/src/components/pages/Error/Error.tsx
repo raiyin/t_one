@@ -5,17 +5,13 @@ import styles from './Error.module.css'
 
 const NotFound = () => {
     return (
-        <div className={styles['not_found']}>
+        <>
             <Header />
-            <Title
-                text='Oooops!!! Something wrong happened...'
-                selectStart={0}
-                selectEnd={9}
-                lineHeight={40}
-                fontSize={35}
-                fontWeight={35} />
+            <div className={styles['error']}>
+                <Title text='Oooops!!! Something wrong happened...' selectStart={0} selectEnd={9} lineHeight={40} fontSize={35} fontWeight={35} />
+            </div>
             <Footer />
-        </div>
+        </>
     )
 }
 

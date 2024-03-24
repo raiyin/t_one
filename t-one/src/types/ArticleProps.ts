@@ -1,11 +1,11 @@
 export type ArticleProps = {
+    id: number;
     body: string;
     title: string;
-    author: string;
-    ava_url: string;
+    userId: number;
     reactions: string;
     tags: string[];
 };
 
-export type ArticleHeadProps = Omit<ArticleProps, "body" | "title">
-export type ArticleWidgetProps = Omit<ArticleProps, "ava_url" | "author">
+export type ArticleHeadProps = Omit<ArticleProps, "body" | "title" | "id">
+export type ArticleWidgetProps = Omit<ArticleProps, "userId">

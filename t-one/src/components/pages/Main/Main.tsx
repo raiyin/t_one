@@ -9,8 +9,22 @@ import PurchasesBlock from "../../organisms/PurchaseBlock/PurchasesBlock";
 import ReviewBlock from "../../organisms/ReviewBlock/ReviewBlock";
 import Header from '../../organisms/Header/Header';
 import Footer from '../../organisms/Footer/Footer';
+import { useEffect, useState } from 'react';
 
 const Main = () => {
+
+
+    const [comments, setComments] = useState([])
+
+    useEffect(() => {
+        const fetchData = async () => {
+            await fetch(`https://dummyjson.com/comments?limit=3`)
+                .then(response => response.json())
+                .then(data => setComments(data.comments))
+        }
+        fetchData().catch(console.error);
+    }, []);
+
     return (
         <>
             <Header />
@@ -29,7 +43,7 @@ const Main = () => {
                     lineHeight={26}
                 />
             </div>
-            <ReviewBlock direction={'row'} comments={[]} />
+            <ReviewBlock direction={'row'} comments={comments} />
             <FaqBlock />
             <Footer />
         </>

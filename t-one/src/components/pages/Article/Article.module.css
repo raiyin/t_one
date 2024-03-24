@@ -1,6 +1,13 @@
 .back-button {
-    width: 186px;
+    width: 1248px;
     height: 60px;
     margin-top: 90px;
-    margin-left: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.comments-title {
+    margin-top: 98px;
+    width: 1133px;
 }

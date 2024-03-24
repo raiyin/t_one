@@ -20,7 +20,7 @@ const Header = () => {
             },
             {
                 location: LinkLocation.Header,
-                link: "./blog",
+                link: "/blog",
                 content: "Blog",
             },
         ],

@@ -16,9 +16,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Main: Story = {
     args: {
-        author:'Terry Medhurst',
-        ava_url:'https://robohash.org/Terry.png?set=set4',
-        rating:'7',
-        hashtag:'#history, #food'
+        userId: 'Terry Medhurst',
+        ava_url: 'https://robohash.org/Terry.png?set=set4',
+        rating: '7',
+        hashtag: '#history, #food'
     },
 };

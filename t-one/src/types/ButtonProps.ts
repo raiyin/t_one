@@ -8,4 +8,5 @@ export type ButtonProps = {
     text: string;
     needArrow: boolean;
     direction: ArrowDirection;
+    onClick: () => void;
 };

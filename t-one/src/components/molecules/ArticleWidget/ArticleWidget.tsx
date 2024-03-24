@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { ArticleWidgetProps } from '../../../types/ArticleProps'
 import { tagsToHashTagString } from '../../../utils/mappers'
 import HashTag from '../../atoms/HashTag/HashTag'
@@ -8,9 +9,9 @@ const ArticleWidget = (props: ArticleWidgetProps) => {
     return (
         <div className={styles['post-card']}>
 
-            <div className={styles['post-card__title']}>
+            <Link to={`/articles/${props.id}`} className={styles['post-card__title']}>
                 {props.title}
-            </div>
+            </Link>
 
             <div className={styles['post-card__hash-mark']}>
                 <HashTag text={tagsToHashTagString(props.tags)} />

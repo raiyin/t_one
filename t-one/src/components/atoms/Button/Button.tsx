@@ -15,7 +15,7 @@ const Button = (props: ButtonProps) => {
     };
 
     return (
-        <button className={`${styles['button']} ${typeMap(props.type)}`}>
+        <button className={`${styles['button']} ${typeMap(props.type)}`} onClick={props.onClick}>
 
             {props.needArrow && props.direction === ArrowDirection.Back && <img className={styles['btn_icon']} src={ButtonImage_Back} alt="" />}
             {props.text}

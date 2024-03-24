@@ -5,10 +5,19 @@ import { ReviewProps } from '../../../types/ReviewProps'
 const ReviewBlock = (props: ReviewProps) => {
     return (
         <div className={styles['review_container']}>
+
             <ul className={props.direction === 'row' ? styles['reviews_row'] : styles['reviews_column']}>
-                <CommentWidget user_handle={'@omottley'} comment={'I cannot believe how I found you, this is so pretty.'} selected />
-                <CommentWidget user_handle={'@omottley'} comment={'I cannot believe how I found you, this is so pretty.'} selected={false} />
-                <CommentWidget user_handle={'@omottley'} comment={'I cannot believe how I found you, this is so pretty.'} selected={false} />
+
+                {props.comments.map(comment =>
+                    <div
+                        className={
+                            props.direction === 'row'
+                                ? styles['comment-widget__wrapper_row']
+                                : styles['comment-widget__wrapper_column']}>
+                        <CommentWidget user_handle={comment.user.username} comment={comment.body} key={comment.id} />
+                    </div>
+                )}
+
             </ul>
         </div>
     )
