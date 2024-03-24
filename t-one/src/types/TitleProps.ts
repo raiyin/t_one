@@ -5,4 +5,5 @@ export type TitleProps = {
     lineHeight: number;
     fontSize: number;
     fontWeight: number;
+    hideOverflow: boolean;
 };

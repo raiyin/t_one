@@ -11,9 +11,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
+    width: fit-content;
     height: 26px;
+    box-sizing: border-box;
+    text-wrap: nowrap;
     border-radius: 5.4px;
+    padding: 3px 7px;
     background-color: #F7EDD0;
     color: #DAA31A;
     font-family: Poppins;

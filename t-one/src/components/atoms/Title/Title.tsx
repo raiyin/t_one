@@ -11,6 +11,7 @@ const Title = (props: TitleProps) => {
     titleClass[('lh_' + props.lineHeight) as keyof typeof titleClass] = true
     titleClass[('fs_' + props.fontSize) as keyof typeof titleClass] = true
     titleClass[('fw_' + props.fontWeight) as keyof typeof titleClass] = true
+    titleClass[('title-overflow_hidden') as keyof typeof titleClass] = props.hideOverflow
 
     const className = cx(titleClass);
 

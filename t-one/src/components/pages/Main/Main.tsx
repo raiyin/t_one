@@ -13,7 +13,6 @@ import { useEffect, useState } from 'react';
 
 const Main = () => {
 
-
     const [comments, setComments] = useState([])
 
     useEffect(() => {

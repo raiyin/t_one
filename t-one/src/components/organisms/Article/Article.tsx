@@ -5,7 +5,6 @@ import styles from './Article.module.css'
 
 const Article = (props: ArticleProps) => {
 
-
     return (
         <div className={styles['article']}>
             <div className={styles['article-title']}>

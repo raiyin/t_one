@@ -1,9 +1,25 @@
+import { useEffect, useState } from 'react'
 import ScrollToHashElement from '../../../routes/ScrollToHashElement'
 import Title from '../../atoms/Title/Title'
 import LunchWidget from '../../molecules/LunchWidget/LunchWidget'
 import styles from './LunchBlock.module.css'
+import { LunchWidgetProps } from '../../../types/LunchWidgetProps'
 
 const LunchBlock = () => {
+
+    const [lunchWidgetProps, setLunchWidgetProps] = useState<LunchWidgetProps[]>([])
+
+    useEffect(() => {
+        const fetchData = async () => {
+            await fetch(`https://dummyjson.com/recipes?select=name,rating,tags,prepTimeMinutes,cookTimeMinutes,image`)
+                .then(response => response.json())
+                .then(data => data.recipes as LunchWidgetProps[])
+                .then(data => data.sort((x, y) => y.rating - x.rating).splice(0, 3))
+                .then(data => setLunchWidgetProps(data))
+        }
+        fetchData().catch(console.error);
+    }, []);
+
     return (
         <div className={styles['lunch_container']} id="recipes">
 
@@ -17,9 +33,11 @@ const LunchBlock = () => {
                 lineHeight={26}
             />
             <ul className={styles['lunches_list']}>
-                <LunchWidget />
-                <LunchWidget />
-                <LunchWidget />
+                {
+                    lunchWidgetProps.map(recipe =>
+                        <LunchWidget {...recipe} key={recipe.id} />
+                    )
+                }
             </ul>
         </div>
     )

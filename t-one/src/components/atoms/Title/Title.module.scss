@@ -73,6 +73,12 @@
     padding: 0;
 }
 
+.title-overflow_hidden{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 span {
     color: #6C5FBC;
 }
