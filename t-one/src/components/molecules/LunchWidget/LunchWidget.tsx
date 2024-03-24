@@ -43,7 +43,9 @@ const LunchWidget = (props: LunchWidgetProps) => {
                     time={`${props.cookTimeMinutes + props.prepTimeMinutes}min`}
                     fontWeight={400}
                     lineHeight={26}
-                    fontSize={20} />
+                    fontSize={20}
+                    font={'manrope'}
+                />
                 <Rating rating={props.rating.toString()} startFirst={true} />
             </div>
 

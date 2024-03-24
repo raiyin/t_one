@@ -11,6 +11,7 @@ const Time = (props: TimeProps) => {
     timeClass[('lh_' + props.lineHeight) as keyof typeof timeClass] = true
     timeClass[('fs_' + props.fontSize) as keyof typeof timeClass] = true
     timeClass[('fw_' + props.fontWeight) as keyof typeof timeClass] = true
+    timeClass[('font_' + props.font) as keyof typeof timeClass] = true
 
     const className = cx(timeClass);
 
