@@ -17,13 +17,15 @@ type Story = StoryObj<typeof meta>;
 export const SelectedBack: Story = {
     args: {
         isEnable: true,
-        direction: ArrowDirection.Back
+        direction: ArrowDirection.Back,
+        onClick: () => { }
     },
 };
 
 export const UnselectedForth: Story = {
     args: {
         isEnable: false,
-        direction: ArrowDirection.Forth
+        direction: ArrowDirection.Forth,
+        onClick: () => { }
     },
 };

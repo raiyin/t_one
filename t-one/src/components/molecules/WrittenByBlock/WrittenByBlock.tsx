@@ -9,7 +9,6 @@ const WrittenByBlock = (props: WrittenByProps) => {
 
     useEffect(() => {
         const fetchData = async () => {
-            console.log(JSON.stringify(props))
             await fetch(`https://dummyjson.com/users/${props.userId}?select=id,lastName,firstName,image`)
                 .then(response => response.json())
                 .then(data => setUser(data))

@@ -15,6 +15,7 @@ type Story = StoryObj<typeof meta>;
 
 export const MainSelected: Story = {
     args: {
-        text:'#history, #food',
+        text: '#history, #food',
+        fontSize: 16
     },
 };

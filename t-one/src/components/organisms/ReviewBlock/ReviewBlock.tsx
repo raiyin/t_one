@@ -9,13 +9,11 @@ const ReviewBlock = (props: ReviewProps) => {
             <ul className={props.direction === 'row' ? styles['reviews_row'] : styles['reviews_column']}>
 
                 {props.comments.map(comment =>
-                    <div
-                        className={
-                            props.direction === 'row'
-                                ? styles['comment-widget__wrapper_row']
-                                : styles['comment-widget__wrapper_column']}>
+                    <li className={props.direction === 'row'
+                        ? styles['comment-widget__wrapper_row']
+                        : styles['comment-widget__wrapper_column']}>
                         <CommentWidget user_handle={comment.user.username} comment={comment.body} key={comment.id} />
-                    </div>
+                    </li>
                 )}
 
             </ul>

@@ -16,15 +16,9 @@ const FeatureBlock = () => {
                 title={featureData[0].title}
                 text={featureData[0].text}
             />
-            <img
-                src={Line_Image}
-            />
             <FeatureItem
                 title={featureData[1].title}
                 text={featureData[1].text}
-            />
-            <img
-                src={Line_Image}
             />
             <FeatureItem
                 title={featureData[2].title}

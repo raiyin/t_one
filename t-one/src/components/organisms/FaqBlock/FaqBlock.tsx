@@ -35,7 +35,6 @@ const FaqBlock = () => {
                         <FaqItem
                             quest={faqItem.quest}
                             answer={faqItem.answer}
-                            expanded={faqItem.expanded}
                         />
                     </li>
                 )}

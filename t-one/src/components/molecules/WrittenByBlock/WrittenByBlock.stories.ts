@@ -15,7 +15,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Main: Story = {
     args: {
-        author:'Terry Medhurst',
-        ava_url:'/images/pngs/ava.png'
+        userId: 1
     },
 };

@@ -3,9 +3,11 @@ import styles from './FeatureItem.module.css'
 
 const FeatureItem = (props: FeatureProps) => {
     return (
-        <div className={styles.container}>
-            <div className={styles.title}>{props.title}</div>
-            <div className={styles.desc}>{props.text}</div>
+        <div className={styles['feature-item__wrapper']}>
+            <div className={styles['feature-item']}>
+                <div className={styles['feature-item__title']}>{props.title}</div>
+                <div className={styles['feature-item__desc']}>{props.text}</div>
+            </div>
         </div>
     )
 }

@@ -13,7 +13,12 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Main: Story = {
+export const Article: Story = {
     args: {
+        id: 1,
+        body: 'delicious paltty',
+        tags: ['#sdfsdf', '#lkjsdf'],
+        reactions: '6',
+        title: 'The truth title of the story'
     },
 };

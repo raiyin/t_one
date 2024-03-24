@@ -19,8 +19,9 @@ export const PrimaryForth: Story = {
     args: {
         text: "Get started",
         type: ButtonType.Primary,
-        needArrow:true,
-        direction: ArrowDirection.Forth
+        needArrow: true,
+        direction: ArrowDirection.Forth,
+        onClick: () => { }
     },
 };
 
@@ -29,6 +30,7 @@ export const GhostBack: Story = {
         text: "Go Pro",
         type: ButtonType.Ghost,
         needArrow: true,
-        direction: ArrowDirection.Back
+        direction: ArrowDirection.Back,
+        onClick: () => { }
     },
 };

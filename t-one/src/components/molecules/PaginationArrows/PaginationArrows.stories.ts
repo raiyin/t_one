@@ -16,6 +16,8 @@ type Story = StoryObj<typeof meta>;
 export const Main: Story = {
     args: {
         leftArrowIsEnable: false,
-        rightArrowIsEnable: true
+        rightArrowIsEnable: true,
+        leftArrowOnClick: () => { },
+        rightArrowOnClick: () => { }
     },
 };

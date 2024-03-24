@@ -16,5 +16,12 @@ type Story = StoryObj<typeof meta>;
 
 export const Main: Story = {
     args: {
+        id: 1,
+        name: 'pizza',
+        tags: ['#sdfsd', '#sdfg'],
+        rating: 5,
+        prepTimeMinutes: 34,
+        cookTimeMinutes: 23,
+        image: 'https://cdn.dummyjson.com/recipe-images/11.webp'
     },
 };
