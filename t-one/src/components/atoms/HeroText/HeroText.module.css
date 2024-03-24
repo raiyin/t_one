@@ -1,4 +1,4 @@
-.main_text {
+.main-text {
     opacity: 70%;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -9,7 +9,7 @@
     letter-spacing: 0;
 }
 
-.bonus_text {
+.main-text_bonus {
     display: inline-block;
     font-weight: 500;
     color: #6155ae;

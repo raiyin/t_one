@@ -9,7 +9,7 @@ const NavLink = (props: NavLinkProps) => {
     return (
         <div>
             <Link
-                className={`${styles.navlink} ${isHeaderLink ? styles.navlink_header : styles.navlink_footer}`}
+                className={`${styles['navlink']} ${isHeaderLink ? styles['navlink_header'] : styles['navlink_footer']}`}
                 to={props.link}>
                 {props.content}
             </Link>

@@ -2,9 +2,9 @@ import styles from './List.module.css'
 
 const List = (props: { texts: string[] }) => {
     return (
-        <ul className={styles.list}>
+        <ul className={styles['list']}>
             {props.texts.map(text =>
-                <li className={styles['list-item']} key={text}>
+                <li className={styles['list_item']} key={text}>
                     {text}
                 </li>
             )}

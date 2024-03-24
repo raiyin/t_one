@@ -1,4 +1,4 @@
-import LogoSvg from "@assets/images/svgs/logo.svg";
+import LogoSvg from "../../../assets/images/svgs/logo.svg";
 import styles from "./Logo.module.scss";
 import classNames from 'classnames/bind';
 import { Link } from "react-router-dom";
@@ -16,18 +16,10 @@ const Logo = (props: { image_size: number, font_size: number }) => {
     const fontClassName = cx(fontClass)
 
     return (
-        // <div className={styles.logo}>
-
-
         <Link to={`/`} className={styles.logo}>
             <img src={LogoSvg} alt="Logo" className={imageClassName} />
-            <div className={`${styles["logo-text"]} ${fontClassName}`}>eatly</div>
+            <div className={`${styles["logo_text"]} ${fontClassName}`}>eatly</div>
         </Link>
-
-
-        //     <img src={LogoSvg} alt="Logo" className={imageClassName} />
-        //     <div className={`${styles["logo-text"]} ${fontClassName}`}>eatly</div>
-        // </div>
     );
 };
 

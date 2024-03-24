@@ -1,6 +1,5 @@
 import FeatureItem from '../../molecules/FeatureItem/FeatureItem'
 import styles from './FeatureBlock.module.css'
-import Line_Image from "../../../assets/images/pngs/feature_line.png";
 import featureJsonData from '../../../data/feature_data.json';
 import { useState } from 'react';
 import { FeatureProps } from '../../../types/FeatureProps';

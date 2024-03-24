@@ -4,6 +4,7 @@ import Title from "../../atoms/Title/Title";
 import HeroText from "../../atoms/HeroText/HeroText";
 import styles from "./HeroTextBlock.module.css";
 import OverImage from '../../../assets/images/pngs/over_1000.png'
+import { ArrowDirection } from "../../../types/ArrowProps";
 
 const HeroTextBlock = () => {
     return (
@@ -28,8 +29,20 @@ const HeroTextBlock = () => {
             </div>
 
             <div className={styles["cta_buttons"]}>
-                <Button text={"Get Started"} type={ButtonType.Primary} needArrow={false} />
-                <Button text={"Go Pro"} type={ButtonType.Ghost} needArrow={false} />
+                <Button
+                    text={"Get Started"}
+                    type={ButtonType.Primary}
+                    needArrow={false}
+                    onClick={() => { }}
+                    direction={ArrowDirection.Back}
+                />
+                <Button
+                    text={"Go Pro"}
+                    type={ButtonType.Ghost}
+                    needArrow={false}
+                    onClick={() => { }}
+                    direction={ArrowDirection.Back}
+                />
             </div>
 
             <div className={styles['before_wrapper']}>

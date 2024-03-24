@@ -4,7 +4,7 @@ import { RatingProps } from '../../../types/RatingProps';
 
 const Rating = (props: RatingProps) => {
     return (
-        <div className={styles['rating_container']}>
+        <div className={styles['rating']}>
 
             {
                 props.startFirst

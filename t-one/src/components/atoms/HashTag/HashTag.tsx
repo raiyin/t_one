@@ -8,7 +8,7 @@ const HashTag = (props: { text: string; fontSize: number; }) => {
         title_font: true,
     }
     titleClass[('fs_' + props.fontSize) as keyof typeof titleClass] = true
-    titleClass[('hash_tags') as keyof typeof titleClass] = true
+    titleClass[('hashtag') as keyof typeof titleClass] = true
 
     const className = cx(titleClass);
 

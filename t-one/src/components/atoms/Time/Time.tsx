@@ -15,7 +15,10 @@ const Time = (props: TimeProps) => {
 
     const className = cx(timeClass);
 
-    return <div className={className}>{props.time}</div>;
+    return (
+        <div className={className}>
+            {props.time}
+        </div>)
 };
 
 export default Time;
