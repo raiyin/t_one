@@ -44,7 +44,7 @@ const LunchWidget = (props: LunchWidgetProps) => {
                     fontWeight={400}
                     lineHeight={26}
                     fontSize={20} />
-                <Rating rating={props.rating.toString()} />
+                <Rating rating={props.rating.toString()} startFirst={true} />
             </div>
 
         </div>

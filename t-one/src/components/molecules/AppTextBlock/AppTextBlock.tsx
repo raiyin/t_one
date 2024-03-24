@@ -15,6 +15,7 @@ const AppTextBlock = () => {
                 fontWeight={700}
                 fontSize={50}
                 lineHeight={58}
+                hideOverflow={false}
             />
             <div className={styles['list_wrapper']}>
                 <List texts={[

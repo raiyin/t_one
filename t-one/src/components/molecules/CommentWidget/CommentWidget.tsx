@@ -17,6 +17,7 @@ const CommentWidget = (props: CommentWidgetProps) => {
                         fontSize={21}
                         fontWeight={500}
                         lineHeight={31}
+                        hideOverflow={false}
                     />
 
                     <img src={QuoteImage} alt="Quote image" />

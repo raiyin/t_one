@@ -14,6 +14,7 @@ const Article = (props: ArticleProps) => {
                     selectEnd={0}
                     fontSize={40}
                     fontWeight={600}
+                    hideOverflow={false}
                     lineHeight={45} />
             </div>
 

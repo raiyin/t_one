@@ -15,6 +15,7 @@ const HeroTextBlock = () => {
                 fontSize={76}
                 fontWeight={600}
                 lineHeight={91}
+                hideOverflow={false}
             />
 
             <div className={styles["herotext-container"]}>

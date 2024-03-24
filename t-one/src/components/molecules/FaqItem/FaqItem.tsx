@@ -19,6 +19,7 @@ const FaqItem = (props: FaqItemProps) => {
                     fontSize={22}
                     fontWeight={600}
                     lineHeight={60}
+                    hideOverflow={false}
                 />
                 <div className={styles['faqItem_image']}>
                     <img src={expanded ? MinusImage : PlusImage} alt="Collapse/expand button" onClick={() => setExpanded(!expanded)} />

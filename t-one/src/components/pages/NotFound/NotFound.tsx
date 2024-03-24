@@ -8,7 +8,15 @@ const NotFound = () => {
         <>
             <Header />
             <div className={styles['not_found']}>
-                <Title text='Oooops!!! Not Found...' selectStart={0} selectEnd={9} lineHeight={40} fontSize={35} fontWeight={35} />
+                <Title
+                    text='Oooops!!! Not Found...'
+                    selectStart={0}
+                    selectEnd={9}
+                    lineHeight={40}
+                    fontSize={35}
+                    fontWeight={35}
+                    hideOverflow={false}
+                />
             </div>
             <Footer />
         </>

@@ -15,8 +15,8 @@ const ArticleHead = (props: ArticleHeadProps) => {
                 <WrittenByBlock userId={props.userId} />
 
                 <div className={styles['article-head_subinfo']}>
-                    <Rating rating={props.reactions} />
-                    <HashTag text={tagsToHashTagString(props.tags)} />
+                    <Rating rating={props.reactions} startFirst={false} />
+                    <HashTag text={tagsToHashTagString(props.tags)} fontSize={16} />
                 </div>
 
             </div>

@@ -9,7 +9,15 @@ const ArticlesPreview = (props: { articles: ArticleWidgetProps[], leftArrowIsEna
 
     return (
         <div className={styles['article-preview']}>
-            <Title text={'Latest Articles'} selectStart={7} selectEnd={15} fontSize={45} fontWeight={600} lineHeight={54} />
+            <Title
+                text={'Latest Articles'}
+                selectStart={7}
+                selectEnd={15}
+                fontSize={45}
+                fontWeight={600}
+                lineHeight={54}
+                hideOverflow={false}
+            />
 
             <div className={styles['articles-preview_previews']}>
 

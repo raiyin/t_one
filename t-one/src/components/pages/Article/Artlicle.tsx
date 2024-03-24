@@ -76,6 +76,7 @@ const Artlicle = () => {
                             fontSize={30}
                             fontWeight={600}
                             lineHeight={45}
+                            hideOverflow={false}
                         />
                     </div>
 

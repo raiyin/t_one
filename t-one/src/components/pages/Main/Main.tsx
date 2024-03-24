@@ -40,6 +40,7 @@ const Main = () => {
                     fontSize={45}
                     fontWeight={600}
                     lineHeight={26}
+                    hideOverflow={false}
                 />
             </div>
             <ReviewBlock direction={'row'} comments={comments} />

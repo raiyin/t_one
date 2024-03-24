@@ -14,8 +14,8 @@ const ArticleWidget = (props: ArticleWidgetProps) => {
             </Link>
 
             <div className={styles['post-card__hash-mark']}>
-                <HashTag text={tagsToHashTagString(props.tags)} />
-                <Rating rating={props.reactions} />
+                <HashTag text={tagsToHashTagString(props.tags)} fontSize={12} />
+                <Rating rating={props.reactions} startFirst={false} />
             </div>
 
             <div className={styles['post-card__text']}>

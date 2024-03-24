@@ -21,6 +21,7 @@ const FaqBlock = () => {
                     fontWeight={600}
                     fontSize={45}
                     lineHeight={54}
+                    hideOverflow={false}
                 />
 
                 <div className={styles['icon_wrapper']}>

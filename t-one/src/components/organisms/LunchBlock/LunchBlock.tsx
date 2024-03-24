@@ -31,6 +31,7 @@ const LunchBlock = () => {
                 fontWeight={600}
                 fontSize={45}
                 lineHeight={26}
+                hideOverflow={false}
             />
             <ul className={styles['lunches_list']}>
                 {
