@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import FeatureBlock from './FeatureBlock';
+import featureJsonData from '../../../data/feature_data.json';
 
 const meta = {
     title: 't-one/organisms/FeatureBlock',
@@ -13,7 +14,9 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Main: Story = {
+const featureData = featureJsonData;
+export const Normal: Story = {
     args: {
+        features: featureData.features
     },
 };

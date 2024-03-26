@@ -13,7 +13,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const MainSelected: Story = {
+export const Noral: Story = {
     args: {
         text: '#history, #food',
         fontSize: 16

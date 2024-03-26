@@ -13,12 +13,12 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Main: Story = {
+export const Normal_600: Story = {
     args: {
         text: "Some Header Text",
         selectStart: 5,
         selectEnd: 11,
-        fontWeight: 500,
+        fontWeight: 600,
         fontSize: 45,
         lineHeight: 50,
         hideOverflow: false

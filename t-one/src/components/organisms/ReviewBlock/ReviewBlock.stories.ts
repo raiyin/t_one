@@ -13,16 +13,16 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Main: Story = {
+export const Normal: Story = {
     args: {
         direction: 'row',
-        comments:[
+        comments: [
             {
-                id:1,
-                body:'I cannot believe how I found you, this is so pretty.',
-                postId:1,
-                user:{
-                    id:1,
+                id: 1,
+                body: 'I cannot believe how I found you, this is so pretty.',
+                postId: 1,
+                user: {
+                    id: 1,
                     username: '@omottley'
                 }
             }

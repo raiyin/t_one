@@ -14,10 +14,10 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Main: Story = {
+export const Normal: Story = {
     args: {
         userId: 1,
         reactions: '5',
-        tags: ['#story', '#more']
+        tags: ['story', 'more']
     },
 };

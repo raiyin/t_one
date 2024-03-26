@@ -4,7 +4,7 @@ import styles from './HeroBlock.module.css'
 
 const HeroBlock = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles['hero']}>
             <HeroTextBlock />
             <HeroImage />
         </div>

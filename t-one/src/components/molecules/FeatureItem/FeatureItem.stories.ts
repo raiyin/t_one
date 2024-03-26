@@ -14,9 +14,9 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Main: Story = {
+export const Normal: Story = {
     args: {
-        title:'10K+',
-        text:'Satisfied Costumers All Great Over The World'
+        title: '10K+',
+        text: 'Satisfied Costumers All Great Over The World'
     },
 };

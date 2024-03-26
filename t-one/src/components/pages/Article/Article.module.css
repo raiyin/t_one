@@ -1,13 +1,26 @@
 .back-button {
-    width: 1248px;
-    height: 60px;
+    max-width: 1250px;
     margin-top: 90px;
+    margin-left: 96px;
     display: flex;
-    flex-wrap: wrap;
-    align-self: center;
+    align-self: self-start;
+}
+
+.comments {
+    margin-top: 100px;
+    max-width: 1250px;
+    width: 100%;
+    padding-left: 116px;
+    padding-right: 116px;
+    box-sizing: border-box;
 }
 
 .comments-title {
-    margin-top: 98px;
-    width: 1133px;
+    padding-left: 96px;
+    padding-right: 96px;
 }
+
+/*
+@media screen and (max-width: 1440px) {
+    .comments {}
+} */

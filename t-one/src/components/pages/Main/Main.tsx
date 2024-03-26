@@ -10,10 +10,13 @@ import ReviewBlock from "../../organisms/ReviewBlock/ReviewBlock";
 import Header from '../../organisms/Header/Header';
 import Footer from '../../organisms/Footer/Footer';
 import { useEffect, useState } from 'react';
+import { FeatureProps } from '../../../types/FeatureProps';
+import featureJsonData from '../../../data/feature_data.json';
 
 const Main = () => {
 
     const [comments, setComments] = useState([])
+    const [featureData] = useState<FeatureProps[]>(featureJsonData['features']);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -28,7 +31,7 @@ const Main = () => {
         <>
             <Header />
             <HeroBlock />
-            <FeatureBlock />
+            <FeatureBlock features={featureData} />
             <AppBlock />
             <LunchBlock />
             <PurchasesBlock />

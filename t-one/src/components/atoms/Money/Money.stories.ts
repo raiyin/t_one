@@ -13,8 +13,8 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Main: Story = {
+export const Normal: Story = {
   args: {
-    price:'$409.00'
+    price: '$409.00'
   },
 };

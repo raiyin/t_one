@@ -68,7 +68,10 @@ const Artlicle = () => {
                         />
                     </div>
 
-                    <div className={styles['comments-title']}>
+                    <div className={styles['comments']}>
+
+                        <div className={styles['comments-title']}>
+                        </div>
                         <Title
                             text={'Comments'}
                             selectStart={0}
@@ -78,10 +81,9 @@ const Artlicle = () => {
                             lineHeight={45}
                             hideOverflow={false}
                         />
+
+                        <ReviewBlock direction={'column'} comments={comments} />
                     </div>
-
-                    <ReviewBlock direction={'column'} comments={comments} />
-
                 </>
             }
             <Footer />

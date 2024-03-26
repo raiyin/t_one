@@ -118,8 +118,15 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
-    width: 1440px;
-    overflow: hidden;
     align-items: center;
+    max-width: 1440px;
+    /* width: 1440px; */
+    overflow: hidden;
+    padding: 0px 40px;
 }
+
+/* @media screen and (max-width: 1440px) {
+    .main-container {
+        flex-direction: column;
+    }
+} */
