@@ -8,4 +8,4 @@ export type ArticleProps = {
 };
 
 export type ArticleHeadProps = Omit<ArticleProps, "body" | "title" | "id">
-export type ArticleWidgetProps = Omit<ArticleProps, "userId">
+//export type ArticleWidgetProps = Omit<ArticleProps, "userId">

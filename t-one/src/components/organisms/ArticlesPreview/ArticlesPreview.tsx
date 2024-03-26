@@ -1,9 +1,9 @@
 import Title from '../../atoms/Title/Title'
 import ArticleWidget from '../../molecules/ArticleWidget/ArticleWidget'
 import styles from './ArticlesPreview.module.css'
-import { ArticleWidgetProps } from '../../../types/ArticleProps'
+import { ArticleProps } from '../../../types/ArticleProps'
 
-const ArticlesPreview = (props: { articles: ArticleWidgetProps[], leftArrowIsEnable: boolean, rightArrowIsEnable: boolean }) => {
+const ArticlesPreview = (props: { articles: ArticleProps[], leftArrowIsEnable: boolean, rightArrowIsEnable: boolean }) => {
 
     console.log(JSON.stringify(props.articles))
 
@@ -28,6 +28,7 @@ const ArticlesPreview = (props: { articles: ArticleWidgetProps[], leftArrowIsEna
                         title={article.title}
                         reactions={article.reactions}
                         tags={article.tags}
+                        userId={article.userId}
                     />)}
 
             </div>

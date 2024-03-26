@@ -13,8 +13,16 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Normal: Story = {
+export const Small: Story = {
     args: {
-        userId: 1
+        userId: 1,
+        type: "small"
+    },
+};
+
+export const Medium: Story = {
+    args: {
+        userId: 1,
+        type: "medium"
     },
 };
