@@ -11,7 +11,8 @@ const ReviewBlock = (props: ReviewProps) => {
                 {props.comments.map(comment =>
                     <li className={props.direction === 'row'
                         ? styles['comment-widget__wrapper_row']
-                        : styles['comment-widget__wrapper_column']}>
+                        : styles['comment-widget__wrapper_column']}
+                        key={comment.id}>
                         <CommentWidget user_handle={comment.user.username} comment={comment.body} key={comment.id} />
                     </li>
                 )}

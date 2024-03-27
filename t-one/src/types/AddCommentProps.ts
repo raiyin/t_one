@@ -1,5 +1,4 @@
 export type AddCommentProps = {
-    author: string;
-    postId: number;
-    buttonAction: () => void;
+    placeholder: string;
+    buttonAction: (comment: string) => Promise<boolean>;
 };

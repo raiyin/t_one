@@ -1,5 +1,5 @@
 import { ArrowDirection } from "./ArrowProps";
-enum ButtonType { Primary, Secondary, Ghost }
+enum ButtonType { Primary, Ghost }
 
 export default ButtonType;
 

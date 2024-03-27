@@ -11,6 +11,17 @@ const AddComment = (props: AddCommentProps) => {
 
     const [comment, setComment] = useState('')
 
+    const onSendButtonClick = async () => {
+        const success = await props.buttonAction(comment);
+        if (success) {
+            setComment('')
+        }
+    }
+
+    const onTextChangeHandler = (text: string) => {
+        setComment(text)
+    }
+
     return (
         <div className={styles['comment-block']}>
 
@@ -30,8 +41,9 @@ const AddComment = (props: AddCommentProps) => {
             <div className={styles['comment-block_body']}>
 
                 <TextInput
-                    placeholder={'Enter your comment'}
-                    content={''}
+                    placeholder={props.placeholder}
+                    content={comment}
+                    onChange={onTextChangeHandler}
                 />
             </div>
 
@@ -42,7 +54,7 @@ const AddComment = (props: AddCommentProps) => {
                     type={ButtonType.Primary}
                     needArrow={false}
                     direction={ArrowDirection.Back}
-                    onClick={props.buttonAction}
+                    onClick={onSendButtonClick}
                 />
             </div>
         </div>
