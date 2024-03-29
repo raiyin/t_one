@@ -5,7 +5,6 @@ import InfoIcon from '../../../assets/images/svgs/information.svg'
 import WarningIcon from '../../../assets/images/svgs/warning.svg'
 import CloseIcon from '../../../assets/images/svgs/close.svg'
 import ErrorIcon from '../../../assets/images/svgs/error.svg'
-import { useEffect, useState } from 'react'
 
 function ChooseIcon(type: AlertType) {
     if (type === AlertType.success) {
@@ -24,30 +23,22 @@ function ChooseIcon(type: AlertType) {
 
 const Alert = (props: AlertProps) => {
 
-    const [show, setShow] = useState(false)
-
-    useEffect(() => {
-        setShow(props.show)
-    }, [props.show]);
-
-    if (show)
+    if (props.show)
         return (
-            <>
-                <div className={`${styles['alert']} ${styles['alert__' + props.type]} ${!props.show && styles['alert__invisible']} `}>
-                    <div className={styles['card']}>
-                        <div className={styles['icon']}>
-                            <img src={ChooseIcon(props.type)} />
-                        </div>
-                        <div className={styles['subject']}>
-                            <h3>{AlertType[props.type]}</h3>
-                            <p>{props.text}</p>
-                        </div>
-                        <div className={styles['icon-times']} onClick={_ => setShow(false)}>
-                            <img src={CloseIcon} />
-                        </div>
+            <div className={`${styles['alert']} ${styles['alert__' + AlertType[props.type]]} ${props.show && styles['alert__visible']} `}>
+                <div className={styles['card']}>
+                    <div className={styles['icon']}>
+                        <img src={ChooseIcon(props.type)} />
+                    </div>
+                    <div className={styles['subject']}>
+                        <h3>{AlertType[props.type]}</h3>
+                        <p>{props.text}</p>
+                    </div>
+                    <div className={styles['icon-times']} onClick={_ => props.setShow(false)}>
+                        <img src={CloseIcon} />
                     </div>
                 </div>
-            </>
+            </div>
         )
 }
 

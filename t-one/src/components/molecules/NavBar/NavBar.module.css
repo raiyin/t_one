@@ -4,10 +4,10 @@
     align-items: center;
 }
 
-.navbar_header{
+.navbar_header {
     column-gap: 52px;
 }
 
-.navbar_footer{
+.navbar_footer {
     column-gap: 72px;
 }

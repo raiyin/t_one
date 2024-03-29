@@ -15,8 +15,10 @@
 
 .icon_wrapper {
     position: relative;
-    left: 244px;
+    left: 430px;
     top: -128px;
+    width: 41px;
+    height: 37px;
 }
 
 .faqBlock_items {

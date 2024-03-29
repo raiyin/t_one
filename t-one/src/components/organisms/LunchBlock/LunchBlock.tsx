@@ -36,8 +36,8 @@ const LunchBlock = () => {
             <ul className={styles['lunches_list']}>
                 {
                     lunchWidgetProps.map(recipe =>
-                        <li>
-                            <LunchWidget {...recipe} key={recipe.id} />
+                        <li key={recipe.id}>
+                            <LunchWidget {...recipe} />
                         </li>
                     )
                 }

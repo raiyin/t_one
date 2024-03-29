@@ -45,6 +45,8 @@
     top: -402px;
     left: 405px;
     z-index: 0;
+    width: 101px;
+    height: 97px;
 }
 
 .graph_wrapper {
@@ -59,4 +61,6 @@
     position: relative;
     top: -315px;
     left: 6px;
+    width: 38px;
+    height: 33px;
 }

@@ -19,8 +19,10 @@ h3 {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.alert__invisible {
-    visibility: collapse;
+.alert__visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0ms, opacity 500ms;
 }
 
 .subject {
@@ -40,19 +42,19 @@ p {
     cursor: pointer;
 }
 
-.alert__success .card {
-    border-left: 5px solid #49d761;
+.alert__success {
+    border-left: 5px solid #059e6f;
 }
 
-.alert__info .card {
+.alert__info {
     border-left: 5px solid #3286e9;
 }
 
-.alert__warning .card {
+.alert__warning {
     border-left: 5px solid #fdc220;
 }
 
-.alert__error .card {
+.alert__error {
     border-left: 5px solid #d72828;
 }
 

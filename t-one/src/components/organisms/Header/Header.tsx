@@ -3,6 +3,7 @@ import Logo from "../../atoms/Logo/Logo";
 import NavBar from "../../molecules/NavBar/NavBar";
 import LinkLocation from "../../../types/LinkLocation";
 import { NavBarProps } from "../../../types/NavBarProps";
+import BasrIcon from '../../../assets/images/svgs/bars.svg'
 
 const Header = () => {
     const navBarProps: NavBarProps = {
@@ -29,7 +30,12 @@ const Header = () => {
     return (
         <div className={styles.header}>
             <Logo image_size={46} font_size={22} />
-            <NavBar {...navBarProps} />
+            <div className={styles['header_navbar']}>
+                <NavBar {...navBarProps} />
+            </div>
+            <div className={styles['header_bars']}>
+                <img src={BasrIcon} alt="" />
+            </div>
         </div>
     );
 };

@@ -7,4 +7,42 @@
     border-bottom: 1px solid #CBCBCB;
     padding-top: 25px;
     box-sizing: border-box;
+    align-items: center;
+}
+
+.header_navbar {
+    height: fit-content;
+}
+
+.header_bars {
+    width: 46px;
+    height: 46px;
+    justify-self: end;
+    display: none;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .header {
+        padding-left: calc(15px - 1vw);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding-left: calc(15px - 1vw);
+        padding-right: calc(15px - 1vw);
+        justify-content: space-between;
+        position: sticky;
+    }
+
+    .header_navbar {
+        display: none;
+    }
+
+    .header_bars {
+        width: 46px;
+        height: 46px;
+        display: block;
+    }
 }

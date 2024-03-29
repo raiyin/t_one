@@ -11,6 +11,7 @@ const FeatureBlock = (props: { features: FeatureProps[] }) => {
                     <FeatureItem
                         title={item.title}
                         text={item.text}
+                        key={item.title}
                     />
                 ))
             }

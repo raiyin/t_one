@@ -125,7 +125,12 @@ const Article = () => {
             }
             <Footer />
             <div className={styles['alert']}>
-                <Alert type={AlertType.error} text={"Couldn't add a comment. Try again later."} show={alertShow} />
+                <Alert
+                    type={AlertType.error}
+                    text={"Couldn't add a comment. Try again later."}
+                    show={alertShow}
+                    setShow={setAlertShow}
+                />
             </div>
         </>
     )

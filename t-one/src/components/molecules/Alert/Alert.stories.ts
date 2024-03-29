@@ -19,6 +19,8 @@ export const Success: Story = {
     args: {
         type: AlertType.success,
         text: 'Comment was added successfully',
+        show: true,
+        setShow: () => { }
     },
 };
 
@@ -26,6 +28,8 @@ export const Info: Story = {
     args: {
         type: AlertType.info,
         text: 'Comment was added successfully',
+        show: true,
+        setShow: () => { }
     },
 };
 
@@ -33,5 +37,16 @@ export const Warning: Story = {
     args: {
         type: AlertType.warning,
         text: 'Comment was added successfully',
+        show: true,
+        setShow: () => { }
+    },
+};
+
+export const Error: Story = {
+    args: {
+        type: AlertType.error,
+        text: 'Comment was added successfully',
+        show: true,
+        setShow: () => { }
     },
 };

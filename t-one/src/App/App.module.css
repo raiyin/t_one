@@ -120,9 +120,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 1440px;
-    /* width: 1440px; */
     overflow: hidden;
-    padding: 0px 40px;
 }
 
 /* @media screen and (max-width: 1440px) {

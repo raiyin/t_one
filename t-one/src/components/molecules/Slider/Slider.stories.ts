@@ -1,22 +1,21 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import ReviewBlock from './ReviewBlock';
+import Slider from './Slider';
 
 const meta = {
-    title: 't-one/organisms/ReviewBlock',
-    component: ReviewBlock,
+    title: 't-one/molecules/Slider',
+    component: Slider,
     parameters: {
         layout: 'centered',
     },
     tags: ['autodocs'],
-} satisfies Meta<typeof ReviewBlock>;
+} satisfies Meta<typeof Slider>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Normal: Story = {
+export const Main: Story = {
     args: {
-        direction: 'row',
-        comments: [
+        items: [
             {
                 "id": 1,
                 "body": "This is some awesome thinking!",
@@ -72,5 +71,5 @@ export const Normal: Story = {
                 }
             }
         ]
-    }
+    },
 };

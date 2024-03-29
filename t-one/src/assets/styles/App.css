@@ -1,4 +1,11 @@
 #root {
     display: flex;
     justify-content: center;
+    min-height: 100%;
+}
+
+html,
+body {
+    min-height: 100dvh;
+    height: 100%;
 }

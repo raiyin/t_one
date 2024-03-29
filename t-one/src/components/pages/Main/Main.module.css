@@ -1,8 +1,8 @@
 .review_title_wrapper {
-    width: 1440px;
+    width: 100%;
+    height: fit-content;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     margin-top: 116px;
     margin-left: 24px;
 }

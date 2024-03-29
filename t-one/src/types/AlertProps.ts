@@ -4,4 +4,5 @@ export type AlertProps = {
     type: AlertType;
     text: string;
     show: boolean;
+    setShow: (needShow: boolean) => void
 };

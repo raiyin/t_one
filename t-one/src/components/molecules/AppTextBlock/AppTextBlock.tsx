@@ -24,18 +24,22 @@ const AppTextBlock = () => {
                     'These foods promote overall wellness by support healthy digestion and boosting immunity'
                 ]} />
             </div>
-            <div className={styles['button_wrapper']}>
-                <Button
-                    text={'Download'}
-                    type={ButtonType.Primary}
-                    needArrow={true}
-                    direction={ArrowDirection.Forth}
-                    onClick={() => { }}
-                />
-                <img
-                    src={Arrow_Image}
-                    alt=""
-                />
+            <div className={styles['button-arrow_wrapper']}>
+                <div className={styles['button-wrapper']}>
+                    <Button
+                        text={'Download'}
+                        type={ButtonType.Primary}
+                        needArrow={true}
+                        direction={ArrowDirection.Forth}
+                        onClick={() => { }}
+                    />
+                </div>
+                <div className={styles['arrow-wrapper']}>
+                    <img
+                        src={Arrow_Image}
+                        alt=""
+                    />
+                </div>
             </div>
         </div>
     )

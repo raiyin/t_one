@@ -34,7 +34,9 @@ const Footer = () => {
                 <Logo image_size={60} font_size={29} />
                 <NavBar {...navBarProps} />
             </div>
-            <hr />
+            <div className={styles['fotter_line']}>
+                <hr />
+            </div>
             <div className={styles['lower']}>
                 <div className={styles['copy']}>
                     © 2023 EATLY All Rights Reserved.
