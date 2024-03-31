@@ -1,24 +1,17 @@
 import LogoSvg from "../../../assets/images/svgs/logo.svg";
-import styles from "./Logo.module.scss";
-import classNames from 'classnames/bind';
+import { LogoProps } from "../../../types/LogoProps";
+import styles from "./Logo.module.css";
 import { Link } from "react-router-dom";
-const cx = classNames.bind(styles);
+import Location from "../../../types/Location";
 
-const Logo = (props: { image_size: number, font_size: number }) => {
+const Logo = (props: LogoProps) => {
 
-    const imageClass = {}
-    const fontClass = {}
-
-    imageClass[('logo_size_' + props.image_size) as keyof typeof imageClass] = true
-    fontClass[('font_size_' + props.font_size) as keyof typeof fontClass] = true
-
-    const imageClassName = cx(imageClass);
-    const fontClassName = cx(fontClass)
+    const isOnHeader = props.location === Location.Header;
 
     return (
-        <Link to={`/`} className={styles.logo}>
-            <img src={LogoSvg} alt="Logo" className={imageClassName} />
-            <div className={`${styles["logo_text"]} ${fontClassName}`}>eatly</div>
+        <Link to={`/`} className={styles['logo']}>
+            <img src={LogoSvg} alt="Logo" className={isOnHeader ? styles['logo-img__header'] : styles['logo-img__footer']} />
+            <div className={isOnHeader ? styles['logo-text__header'] : styles['logo-text__footer']}>eatly</div>
         </Link>
     );
 };

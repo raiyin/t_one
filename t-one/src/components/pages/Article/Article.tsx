@@ -76,7 +76,7 @@ const Article = () => {
                 ?
                 <LoadingBlock />
                 :
-                <>
+                <main>
 
                     <ArticleBlock
                         id={article.id}
@@ -121,7 +121,7 @@ const Article = () => {
                         />
                     </div>
 
-                </>
+                </main>
             }
             <Footer />
             <div className={styles['alert']}>

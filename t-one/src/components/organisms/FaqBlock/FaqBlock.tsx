@@ -5,14 +5,20 @@ import faqJsonData from '../../../data/faq_data.json';
 import { useState } from 'react';
 import { FaqItemProps } from '../../../types/FaqItemProps';
 import FaqRaysImage from '../../../assets/images/svgs/faq_rays.svg'
+import {
+    AnchorContext,
+    AnchorLink,
+    AnchorProvider,
+    AnchorSection,
+} from "react-anchor-navigation";
 
 const FaqBlock = () => {
 
     const [faqData] = useState<FaqItemProps[]>(faqJsonData['faqs']);
 
     return (
-        <div className={styles['faqBlock']} id="faq">
-
+        <section className={styles['faqBlock']} id="faq">
+            <AnchorSection className="dBlock anchor" id="definitions" />
             <div className={styles['faqBlock_title']}>
                 <Title
                     text={`Frequently Asked Questions`}
@@ -39,7 +45,7 @@ const FaqBlock = () => {
                     </li>
                 )}
             </ul>
-        </div>
+        </section>
     )
 }
 

@@ -1,21 +1,22 @@
 import AppTextBlock from '../../molecules/AppTextBlock/AppTextBlock'
 import styles from './AppBlock.module.css'
-import Phone_Image from "../../../assets/images/pngs/mobile_phone.png";
 
 const AppBlock = () => {
     return (
-        <div className={styles['app_block']}>
+        <section className={styles['app_block']}>
             <div className={styles['images']}>
 
                 <div className={styles['images_phone']}>
                     <img
-                        src={Phone_Image}
-                        alt="Grapefruit slice atop a pile of other slices"
+                        src="../../../src/assets/images/webps/mobile_phone.webp"
+                        alt="Image of the our app on iPhone"
+                        loading='lazy'
+                        decoding='async'
                     />
                 </div>
             </div>
             <AppTextBlock />
-        </div>
+        </section>
     )
 }
 

@@ -13,6 +13,8 @@ const LunchWidget = (props: LunchWidgetProps) => {
                 <img
                     src={props.image}
                     alt={`${props.name} image`}
+                    loading='lazy'
+                    decoding='async'
                 />
             </div>
 

@@ -7,7 +7,7 @@ const NotFound = () => {
     return (
         <>
             <Header />
-            <div className={styles['not_found']}>
+            <main className={styles['not_found']}>
                 <Title
                     text='Oooops!!! Not Found...'
                     selectStart={0}
@@ -17,7 +17,7 @@ const NotFound = () => {
                     fontWeight={35}
                     hideOverflow={false}
                 />
-            </div>
+            </main>
             <Footer />
         </>
     )

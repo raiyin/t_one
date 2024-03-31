@@ -5,8 +5,6 @@ import { ArticleProps } from '../../../types/ArticleProps'
 
 const ArticlesPreview = (props: { articles: ArticleProps[], leftArrowIsEnable: boolean, rightArrowIsEnable: boolean }) => {
 
-    console.log(JSON.stringify(props.articles))
-
     return (
         <div className={styles['article-preview']}>
             <Title

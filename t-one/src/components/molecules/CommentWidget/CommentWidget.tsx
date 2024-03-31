@@ -20,9 +20,9 @@ const CommentWidget = (props: CommentWidgetProps) => {
                         hideOverflow={false}
                     />
 
-                    <div>
+                    <figure>
                         <img src={QuoteImage} alt="" />
-                    </div>
+                    </figure>
 
                 </div>
 

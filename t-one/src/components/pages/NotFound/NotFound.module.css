@@ -1,6 +1,6 @@
 .not_found {
+    flex: 1 0 auto;
     width: 50dvw;
-    height: 50dvh;
     display: flex;
     align-items: center;
     justify-content: center;

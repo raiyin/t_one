@@ -19,9 +19,9 @@ const WrittenByBlock = (props: WrittenByProps) => {
     return (
         <div className={styles['written-by']}>
 
-            <div className={styles['written-by_ava__' + props.type]}>
+            <figure className={styles['written-by_ava__' + props.type]}>
                 <img src={user.image} alt="author avatar" />
-            </div>
+            </figure>
 
             <div className={styles['written-by_author']}>
                 <div className={`${styles['written-by_label']} ${styles['written-by_label__' + props.type]}`}>

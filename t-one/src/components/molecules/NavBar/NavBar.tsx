@@ -2,11 +2,17 @@ import { NavBarProps } from "../../../types/NavBarProps";
 import NavLink from "../../atoms/NavLink/NavLink";
 import styles from "./NavBar.module.css";
 import { NavLinkProps } from "../../../types/NavLinkProps";
-import LinkLocation from "../../../types/LinkLocation";
+import Location from "../../../types/Location";
+import {
+    AnchorContext,
+    AnchorLink,
+    AnchorProvider,
+    AnchorSection,
+} from "react-anchor-navigation";
 
 const NavBar = (props: NavBarProps) => {
     return (
-        <div className={`${styles['navbar']} ${props.location === LinkLocation.Header ? styles['navbar_header'] : styles['navbar_footer']}`}>
+        <nav className={`${styles['navbar']} ${props.location === Location.Header ? styles['navbar_header'] : styles['navbar_footer']}`}>
             {props.links.map((item: NavLinkProps) => {
                 return (
                     <NavLink
@@ -17,7 +23,7 @@ const NavBar = (props: NavBarProps) => {
                     />
                 );
             })}
-        </div>
+        </nav>
     );
 };
 

@@ -6,17 +6,17 @@ import { useAppSelector, useAppDispatch } from '../../../store/hooks'
 import { decrementPageNumber, incrementPageNumber } from '../../../store/slices/articlesSlice'
 import { RootState } from '../../../store/store'
 import { useEffect, useState } from 'react'
-import { ArticleWidgetProps } from '../../../types/ArticleProps'
+import { ArticleProps } from '../../../types/ArticleProps'
 import PaginationArrows from '../../molecules/PaginationArrows/PaginationArrows'
 import LoadingBlock from '../../organisms/LoadingBlock/LoadingBlock'
 
 const Blog = () => {
 
     const postPerPage = 12;
-    let articlesPageNumber = useAppSelector((state: RootState) => state.articles.pageNumber)
-    let isBackPageExist = useAppSelector((state: RootState) => state.articles.isBackPageExist)
-    let isForthPageExist = useAppSelector((state: RootState) => state.articles.isForthPageExist)
-    const [articles, setArticles] = useState<ArticleWidgetProps[]>([])
+    const articlesPageNumber = useAppSelector((state: RootState) => state.articles.pageNumber)
+    const isBackPageExist = useAppSelector((state: RootState) => state.articles.isBackPageExist)
+    const isForthPageExist = useAppSelector((state: RootState) => state.articles.isForthPageExist)
+    const [articles, setArticles] = useState<ArticleProps[]>([])
     const [isLoading, setIsLoading] = useState(false)
     const dispatch = useAppDispatch()
 
@@ -39,7 +39,7 @@ const Blog = () => {
                 ?
                 <LoadingBlock />
                 :
-                <>
+                <main>
                     <ArticlesPreview
                         articles={articles}
                         leftArrowIsEnable={isBackPageExist}
@@ -54,7 +54,7 @@ const Blog = () => {
                             rightArrowOnClick={() => dispatch(incrementPageNumber())}
                         />
                     </div>
-                </>
+                </main>
             }
 
             <Footer />

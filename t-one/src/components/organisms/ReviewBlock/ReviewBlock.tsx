@@ -5,7 +5,7 @@ import Slider from "../../molecules/Slider/Slider";
 
 const ReviewBlock = (props: ReviewProps) => {
     return (
-        <>
+        <section>
             {
                 props.direction === "column"
                     ? (
@@ -33,7 +33,7 @@ const ReviewBlock = (props: ReviewProps) => {
                         </div>
                     )
             }
-        </>
+        </section>
 
     );
 };

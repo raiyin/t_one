@@ -2,13 +2,26 @@
       font-family: "Inter", sans-serif;
       font-size: 18px;
       font-weight: 500;
-      text-decoration: none;
+
+      display: inline-block;
 }
 
 .navlink_header {
       color: #606060;
+      text-decoration: none;
 }
 
 .navlink_footer {
       color: #999;
+      text-decoration: none;
+}
+
+.navlink:hover {
+      transform: translateY(-5px);
+      text-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.navlink:active {
+      transform: translateY(-5px);
+      text-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }

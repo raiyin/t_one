@@ -1,5 +1,3 @@
-import "../assets/styles/reset.css"
-import "../assets/styles/App.css";
 import styles from './App.module.css'
 import { RouterProvider } from "react-router-dom";
 import router from "../routes/routes";
