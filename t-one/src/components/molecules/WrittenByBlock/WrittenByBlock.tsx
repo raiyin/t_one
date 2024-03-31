@@ -9,9 +9,14 @@ const WrittenByBlock = (props: WrittenByProps) => {
 
     useEffect(() => {
         const fetchData = async () => {
+
+            if (props.userId === 0) {
+                return;
+            }
+
             await fetch(`https://dummyjson.com/users/${props.userId}?select=id,lastName,firstName,image`)
                 .then(response => response.json())
-                .then(data => setUser(data))
+                .then(data => setUser({ ...data, image: data.image + '&size=100x100' }))
         }
         fetchData().catch(console.error);
     }, []);

@@ -27,6 +27,7 @@ const ArticlesPreview = (props: { articles: ArticleProps[], leftArrowIsEnable: b
                         reactions={article.reactions}
                         tags={article.tags}
                         userId={article.userId}
+                        key={article.id}
                     />)}
 
             </div>
