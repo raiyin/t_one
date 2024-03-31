@@ -2,13 +2,32 @@ import CommentWidget from "../../molecules/CommentWidget/CommentWidget";
 import styles from "./ReviewBlock.module.css";
 import { ReviewProps } from "../../../types/ReviewProps";
 import Slider from "../../molecules/Slider/Slider";
+import { useEffect, useState } from "react";
 
 const ReviewBlock = (props: ReviewProps) => {
+
+    const [isWide, setIsWide] = useState(true);
+
+    useEffect(() => {
+        const mql = window.matchMedia("(min-width: 1300px)");
+        const onChange = () => setIsWide(!!mql.matches);
+
+        mql.addListener(onChange);
+        setIsWide(mql.matches);
+
+        return () => mql.removeListener(onChange);
+    }, []);
+
     return (
         <section>
             {
-                props.direction === "column"
+                props.direction === "row" && isWide
                     ? (
+                        <div className={styles["review-container__row"]}>
+                            <Slider items={props.comments} />
+                        </div>
+                    )
+                    : (
                         <div className={styles["review-container__column"]}>
                             <ul className={styles["reviews_column"]}>
                                 {props.comments.map((comment) => (
@@ -24,12 +43,6 @@ const ReviewBlock = (props: ReviewProps) => {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
-                    )
-                    : (
-
-                        <div className={styles["review-container__row"]}>
-                            <Slider items={props.comments} />
                         </div>
                     )
             }

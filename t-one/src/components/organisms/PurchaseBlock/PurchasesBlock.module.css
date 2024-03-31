@@ -1,6 +1,6 @@
 .purchases_container {
-    width: 1250px;
-    height: 600px;
+    max-width: 1250px;
+    padding-bottom: 136px;
     display: flex;
     margin-top: 131px;
     justify-content: space-between;
@@ -17,4 +17,16 @@
 
 .purchases_image {
     margin-left: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+    .purchases_container {
+        flex-direction: column;
+        height: fit-content;
+        row-gap: 35px;
+        border-bottom: none;
+        margin-top: 0px;
+        text-align: center;
+        padding-bottom: 0;
+    }
 }

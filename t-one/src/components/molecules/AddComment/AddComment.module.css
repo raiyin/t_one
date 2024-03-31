@@ -4,10 +4,12 @@
 
 .comment-block_body {
     margin-top: 51px;
+    height: 35dvh;
 }
 
 .comment-block_button {
     margin-top: 51px;
-    width: 367px;
+    width: 19dvh;
+    min-width: none;
     height: 60px;
 }

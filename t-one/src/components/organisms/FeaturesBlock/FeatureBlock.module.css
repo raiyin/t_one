@@ -9,7 +9,7 @@
     margin-top: 83px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .features {
         flex-direction: column;
         row-gap: 40px;

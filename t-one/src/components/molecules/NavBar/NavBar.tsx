@@ -3,12 +3,6 @@ import NavLink from "../../atoms/NavLink/NavLink";
 import styles from "./NavBar.module.css";
 import { NavLinkProps } from "../../../types/NavLinkProps";
 import Location from "../../../types/Location";
-import {
-    AnchorContext,
-    AnchorLink,
-    AnchorProvider,
-    AnchorSection,
-} from "react-anchor-navigation";
 
 const NavBar = (props: NavBarProps) => {
     return (

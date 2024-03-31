@@ -1,31 +1,34 @@
-.back-button {
-    max-width: 1250px;
-    margin-top: 90px;
-    margin-left: 96px;
+main {
     display: flex;
-    align-self: self-start;
+    flex-direction: column;
+    padding-left: 96px;
+    padding-right: 96px;
 }
 
-.comments {
+.back-button {
+    margin-top: 90px;
+    display: flex;
+    align-self: self-start;
+    width: 190px;
+}
+
+.comments-block {
     margin-top: 100px;
     max-width: 1250px;
     width: 100%;
-    padding-left: 116px;
-    padding-right: 116px;
+    padding-left: 28px;
+    padding-right: 28px;
     box-sizing: border-box;
 }
 
-.comments-title {
-    padding-left: 96px;
-    padding-right: 96px;
+.commets {
+    margin-top: 100px;
 }
 
 .commets-add {
     width: 100%;
     margin-top: 100px;
     max-width: 1250px;
-    margin-left: 96px;
-    margin-right: 96px;
 }
 
 .alert {

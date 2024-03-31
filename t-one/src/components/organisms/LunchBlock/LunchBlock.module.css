@@ -1,6 +1,7 @@
 .lunch_container {
-    width: 1250px;
-    height: 640px;
+    max-width: 1250px;
+    padding-bottom: 228px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,9 +12,21 @@
 
 .lunches_list {
     display: flex;
-    width: 1250px;
+    max-width: 1250px;
     height: 300px;
     column-gap: 25px;
     margin-top: 87px;
-    padding-inline-start:0px;
+    padding-inline-start: 0px;
+}
+
+@media screen and (max-width: 1300px) {
+    .lunches_list {
+        flex-direction: column;
+        height: fit-content;
+        row-gap: 25px;
+    }
+
+    .lunch_container {
+        border-bottom: none;
+    }
 }

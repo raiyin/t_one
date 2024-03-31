@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 1310px) {
+@media screen and (max-width: 1300px) {
     .hero {
         flex-direction: column;
         align-items: center;

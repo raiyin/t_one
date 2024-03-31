@@ -21,17 +21,17 @@
     display: none;
 }
 
-
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1300px) {
     .header {
-        padding-left: calc(15px - 1vw);
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .header {
-        padding-left: calc(15px - 1vw);
-        padding-right: calc(15px - 1vw);
+        padding-left: 15px;
+        padding-right: 15px;
         justify-content: space-between;
         position: sticky;
     }

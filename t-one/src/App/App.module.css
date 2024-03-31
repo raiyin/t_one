@@ -5,28 +5,3 @@
     overflow: hidden;
     overflow: visible;
 }
-
-@media screen and (min-width: 320px) {
-    .main-container {
-        width: 320px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .main-container {
-        width: 768px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .main-container {
-        width: 1024px;
-    }
-}
-
-
-@media screen and (min-width: 1440px) {
-    .main-container {
-        width: 1440px;
-    }
-}

@@ -6,9 +6,6 @@ import { useState } from 'react';
 import { FaqItemProps } from '../../../types/FaqItemProps';
 import FaqRaysImage from '../../../assets/images/svgs/faq_rays.svg'
 import {
-    AnchorContext,
-    AnchorLink,
-    AnchorProvider,
     AnchorSection,
 } from "react-anchor-navigation";
 
@@ -18,7 +15,7 @@ const FaqBlock = () => {
 
     return (
         <section className={styles['faqBlock']} id="faq">
-            <AnchorSection className="dBlock anchor" id="definitions" />
+            <AnchorSection className="dBlock anchor" id="faq" />
             <div className={styles['faqBlock_title']}>
                 <Title
                     text={`Frequently Asked Questions`}

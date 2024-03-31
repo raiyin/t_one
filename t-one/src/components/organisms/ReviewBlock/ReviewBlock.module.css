@@ -8,10 +8,17 @@
 }
 
 .reviews_row {
-    width: 1440px;
     display: flex;
     margin-left: 180px;
     column-gap: 46px;
+}
+
+.comment-widget__wrapper_row {
+    width: 100%;
+}
+
+.review-container__column {
+    margin-top: 80px;
 }
 
 .reviews_column {
@@ -24,16 +31,7 @@
     row-gap: 118px;
 }
 
-.comment-widget__wrapper_row {
-    width: 100%;
-}
 
 .comment-widget__wrapper_column {
     width: 100%;
-}
-
-@media screen and (max-width: 1440px) {
-    .reviews_column {
-        flex-direction: column;
-    }
 }

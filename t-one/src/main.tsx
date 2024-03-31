@@ -4,10 +4,7 @@ import App from "./App/App.tsx";
 import { store } from './store/store.ts'
 import { Provider } from 'react-redux'
 import {
-    AnchorContext,
-    AnchorLink,
     AnchorProvider,
-    AnchorSection,
 } from "react-anchor-navigation";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

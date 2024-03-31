@@ -1,5 +1,6 @@
 .faqBlock {
-    width: 1152px;
+    max-width: 1152px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +23,6 @@
 }
 
 .faqBlock_items {
-    width: 1152px;
+    width: 100%;
     margin-top: 67px;
 }

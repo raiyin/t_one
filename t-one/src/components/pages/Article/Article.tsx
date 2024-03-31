@@ -15,6 +15,7 @@ import ReviewBlock from '../../organisms/ReviewBlock/ReviewBlock'
 import styles from './Article.module.css'
 import Alert from '../../molecules/Alert/Alert'
 import { AlertType } from '../../../types/AlertProps'
+import ErrorBlock from '../../organisms/ErrorBlock/ErrorBlock'
 
 const Article = () => {
 
@@ -24,22 +25,48 @@ const Article = () => {
     const [article, setArticle] = useState<ArticleProps>({ id: 0, userId: 0, body: '', title: '', tags: [], reactions: '0' })
     const [comments, setComments] = useState<Comment[]>([])
     const [isLoading, setIsLoading] = useState(false)
+    const [postError, setPostError] = useState(false)
+    const [commentsError, setCommentsError] = useState(false)
+
+    // Test user to load article. As was said on the lection.
     const USER_ID = 5;
 
     useEffect(() => {
         const fetchData = async () => {
             setIsLoading(_ => true)
             await fetch(`https://dummyjson.com/posts/${post_id}`)
-                .then(response => response.json())
-                .then(data => setArticle(data))
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    }
+                    throw new Error('Error requesting post')
+                })
+                .then(data => {
+                    setArticle(data);
+                    setPostError(false)
+                }).catch((e) => {
+                    console.error(e)
+                    setPostError(true)
+                })
 
             await fetch(`https://dummyjson.com/comments/post/${post_id}`)
-                .then(response => response.json())
-                .then(data => setComments(data.comments))
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    }
+                    throw new Error('Error requesting comments')
+                })
+                .then(data => {
+                    setComments(data.comments);
+                    setCommentsError(false)
+                }).catch((e) => {
+                    console.error(e)
+                    setCommentsError(true)
+                })
 
             setIsLoading(_ => false)
         }
-        fetchData().catch(console.error);
+        fetchData();
     }, []);
 
     const onAllArticlesButtonClick = () => {
@@ -76,52 +103,72 @@ const Article = () => {
                 ?
                 <LoadingBlock />
                 :
-                <main>
-
-                    <ArticleBlock
-                        id={article.id}
-                        userId={article.userId}
-                        body={article.body}
-                        title={article.title}
-                        reactions={article.reactions}
-                        tags={article.tags}
+                postError
+                    ?
+                    <ErrorBlock
+                        errorText='Oooops!!! Error fetching post information...'
                     />
+                    :
+                    <main>
 
-                    <div className={styles['back-button']}>
-                        <Button
-                            type={ButtonType.Ghost}
-                            text={'All Articles'}
-                            needArrow={true}
-                            direction={ArrowDirection.Back}
-                            onClick={onAllArticlesButtonClick}
+                        <ArticleBlock
+                            id={article.id}
+                            userId={article.userId}
+                            body={article.body}
+                            title={article.title}
+                            reactions={article.reactions}
+                            tags={article.tags}
                         />
-                    </div>
 
-                    <div className={styles['comments']}>
 
-                        <div className={styles['comments-title']}>
+                        <div className={styles['back-button']}>
+                            <Button
+                                type={ButtonType.Ghost}
+                                text={'All Articles'}
+                                needArrow={true}
+                                direction={ArrowDirection.Back}
+                                onClick={onAllArticlesButtonClick}
+                            />
                         </div>
-                        <Title
-                            text={'Comments'}
-                            selectStart={0}
-                            selectEnd={0}
-                            fontSize={30}
-                            fontWeight={600}
-                            lineHeight={45}
-                            hideOverflow={false}
-                        />
 
-                        <ReviewBlock direction={'column'} comments={comments} />
-                    </div>
+                        {
+                            (!commentsError && !postError)
+                                ?
+                                <>
+                                    <div className={styles['comments-block']}>
 
-                    <div className={styles['commets-add']}>
-                        <AddComment
-                            placeholder={'Enter your comment'}
-                            buttonAction={addComment}
-                        />
-                    </div>
+                                        <Title
+                                            text={'Comments'}
+                                            selectStart={0}
+                                            selectEnd={0}
+                                            fontSize={30}
+                                            fontWeight={600}
+                                            lineHeight={45}
+                                            hideOverflow={false}
+                                        />
 
-                </main>
+                                        <div className={styles['commets']}>
+                                            <ReviewBlock direction={'column'} comments={comments} />
+
+                                        </div>
+                                    </div>
+
+                                    <div className={styles['commets-add']}>
+                                        <AddComment
+                                            placeholder={'Enter your comment'}
+                                            buttonAction={addComment}
+                                        />
+                                    </div>
+                                </>
+                                :
+
+                                <ErrorBlock
+                                    errorText='Oooops!!! Error fetching comments...'
+                                />
+                        }
+
+
+                    </main>
             }
             <Footer />
             <div className={styles['alert']}>

@@ -26,7 +26,6 @@ const AddComment = (props: AddCommentProps) => {
         <div className={styles['comment-block']}>
 
             <div className={styles['comment-block_title']}>
-
                 <Title
                     text={'Add comment'}
                     fontSize={40}
@@ -39,7 +38,6 @@ const AddComment = (props: AddCommentProps) => {
             </div>
 
             <div className={styles['comment-block_body']}>
-
                 <TextInput
                     placeholder={props.placeholder}
                     content={comment}

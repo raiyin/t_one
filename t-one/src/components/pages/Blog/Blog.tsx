@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react'
 import { ArticleProps } from '../../../types/ArticleProps'
 import PaginationArrows from '../../molecules/PaginationArrows/PaginationArrows'
 import LoadingBlock from '../../organisms/LoadingBlock/LoadingBlock'
+import ErrorBlock from '../../organisms/ErrorBlock/ErrorBlock'
 
 const Blog = () => {
 
@@ -19,17 +20,32 @@ const Blog = () => {
     const [articles, setArticles] = useState<ArticleProps[]>([])
     const [isLoading, setIsLoading] = useState(false)
     const dispatch = useAppDispatch()
+    const [error, setError] = useState(false)
 
 
     useEffect(() => {
         const fetchData = async (limit: number, skip: number) => {
             setIsLoading(_ => true)
+
             await fetch(`https://dummyjson.com/posts?limit=${limit}&skip=${skip}`)
-                .then(response => response.json())
-                .then(data => setArticles(data.posts))
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    }
+                    throw new Error('Error requesting posts')
+                })
+                .then(data => {
+                    setArticles(data.posts)
+                    setError(false);
+                })
+                .catch((e) => {
+                    console.error(e);
+                    setError(true);
+                })
+
             setIsLoading(_ => false)
         }
-        fetchData(postPerPage, postPerPage * (articlesPageNumber - 1)).catch(console.error);
+        fetchData(postPerPage, postPerPage * (articlesPageNumber - 1));
     }, [articlesPageNumber]);
 
     return (
@@ -39,22 +55,26 @@ const Blog = () => {
                 ?
                 <LoadingBlock />
                 :
-                <main>
-                    <ArticlesPreview
-                        articles={articles}
-                        leftArrowIsEnable={isBackPageExist}
-                        rightArrowIsEnable={isForthPageExist}
-                    />
-
-                    <div className={styles['arrows']}>
-                        <PaginationArrows
+                error
+                    ?
+                    <ErrorBlock errorText={'Oooops!!! Error fetching posts...'} />
+                    :
+                    <main>
+                        <ArticlesPreview
+                            articles={articles}
                             leftArrowIsEnable={isBackPageExist}
                             rightArrowIsEnable={isForthPageExist}
-                            leftArrowOnClick={() => dispatch(decrementPageNumber())}
-                            rightArrowOnClick={() => dispatch(incrementPageNumber())}
                         />
-                    </div>
-                </main>
+
+                        <div className={styles['arrows']}>
+                            <PaginationArrows
+                                leftArrowIsEnable={isBackPageExist}
+                                rightArrowIsEnable={isForthPageExist}
+                                leftArrowOnClick={() => dispatch(decrementPageNumber())}
+                                rightArrowOnClick={() => dispatch(incrementPageNumber())}
+                            />
+                        </div>
+                    </main>
             }
 
             <Footer />
