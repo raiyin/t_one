@@ -1,0 +1,62 @@
+.container {
+    width: 680px;
+    height: 607px;
+    background: #fff;
+    padding-left: 50px;
+}
+
+.waves_wrapper {
+    position: relative;
+    margin-left: auto;
+    width: fit-content;
+    left: 35px;
+}
+
+.widget_wrapper {
+    position: relative;
+    left: 320px;
+    z-index: 1;
+}
+
+.hero_image_wrapper {
+    box-sizing: border-box;
+    position: relative;
+    top: -20px;
+    left: 120px;
+    z-index: 0;
+    width: 448px;
+    height: 455px;
+}
+
+.hero_image__mask {
+    min-width: 380px;
+    min-height: 380px;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    border: 20px solid #6C5FBC;
+    position: relative;
+    top: -556px;
+    left: 24px;
+}
+
+.arrow_wrapper {
+    position: relative;
+    top: -402px;
+    left: 405px;
+    z-index: 0;
+}
+
+.graph_wrapper {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    top: -253px;
+    left: 20px;
+}
+
+.rays_wrapper {
+    position: relative;
+    top: -315px;
+    left: 6px;
+}

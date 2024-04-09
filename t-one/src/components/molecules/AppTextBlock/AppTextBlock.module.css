@@ -1,0 +1,22 @@
+.app_text_block {
+    width: 560px;
+    height: 555px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+}
+
+.list_wrapper {
+    margin-top: 67px;
+    padding-left: 19px;
+}
+
+.button_wrapper {
+    margin-top: 63px;
+}
+
+button+ img {
+    position: relative;
+    top: -8px;
+    left: 160px;
+}

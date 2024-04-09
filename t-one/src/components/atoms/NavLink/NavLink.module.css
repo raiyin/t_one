@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../../../assets/fonts/inter_medium.woff2) format('woff2');
+}
+
+.navlink {
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: none;
+}
+
+.navlink_header {
+      color: #606060;
+}
+
+.navlink_footer {
+      color: #999;
+}

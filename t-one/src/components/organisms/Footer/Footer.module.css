@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../../../assets/fonts/inter_medium.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+footer {
+    width: 1440px;
+    height: 345px;
+    min-width: 1440px;
+    min-height: 345px;
+    background: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 96px 81px;
+    box-sizing: border-box;
+    margin-top: 164px;
+}
+
+.footer_menu {
+    width: 1248px;
+    height: 57px;
+    min-height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hr {
+    width: 1246px;
+    border: 1px solid #818181;
+    margin-top: 30px;
+}
+
+.lower {
+    width: 1248px;
+    height: 25px;
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #999999;
+}

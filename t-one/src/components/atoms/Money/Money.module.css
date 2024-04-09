@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 200 800;
+    font-display: swap;
+    src: url(../../../assets/fonts/manrope.woff2) format('woff2');
+}
+
+.price {
+    height: 33px;
+    font-family: Manrope;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0.3;
+    text-align: right;
+    color: #1A202C;
+}

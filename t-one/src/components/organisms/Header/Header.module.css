@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    column-gap: 98px;
+    width: 1248px;
+    height: 136px;
+    margin-left: 96px;
+    margin-right: 96px;
+    border-bottom: 1px solid #CBCBCB;
+    padding-top: 25px;
+    box-sizing: border-box;
+}

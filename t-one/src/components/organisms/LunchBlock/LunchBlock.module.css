@@ -1,0 +1,19 @@
+.lunch_container {
+    width: 1250px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 104px;
+    border-bottom: 1px solid #CBCBCB;
+    align-self: center;
+}
+
+.lunches_list {
+    display: flex;
+    width: 1250px;
+    height: 300px;
+    column-gap: 25px;
+    margin-top: 87px;
+    padding-inline-start:0px;
+}

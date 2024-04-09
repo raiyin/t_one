@@ -1,0 +1,25 @@
+.faqBlock {
+    width: 1152px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 139px;
+    align-self: center;
+}
+
+.faqBlock_title {
+    text-align: center;
+    width: 408px;
+    margin-left: -8px;
+}
+
+.icon_wrapper {
+    position: relative;
+    left: 244px;
+    top: -128px;
+}
+
+.faqBlock_items {
+    width: 1152px;
+    margin-top: 67px;
+}
