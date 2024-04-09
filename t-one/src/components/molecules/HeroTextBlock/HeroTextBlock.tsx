@@ -8,7 +8,7 @@ import { ArrowDirection } from "../../../types/ArrowProps";
 
 const HeroTextBlock = () => {
     return (
-        <div className={styles['hero_container']}>
+        <section className={styles['hero_container']}>
             <Title
                 text={"Enjoy\u00A0Foods\u00A0All Over\u00A0The\u00A0World"}
                 selectStart={24}
@@ -48,7 +48,7 @@ const HeroTextBlock = () => {
             <div className={styles['before_wrapper']}>
                 <img src={OverImage} alt="" />
             </div>
-        </div>
+        </section>
     );
 };
 

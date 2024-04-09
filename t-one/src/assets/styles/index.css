@@ -1,0 +1,14 @@
+#root {
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+}
+
+html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100dvh;
+}

@@ -1,7 +1,7 @@
-import LinkLocation from "./LinkLocation";
+import Location from "./Location";
 import { NavLinkProps } from "./NavLinkProps";
 
 export type NavBarProps = {
-    location: LinkLocation;
+    location: Location;
     links: NavLinkProps[];
 };

@@ -1,29 +1,36 @@
-.review_container {
-    width: 1440px;
+.review-container__row {
+    max-width: 1440px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 77px;
+    height: 34dvh;
 }
 
 .reviews_row {
-    width: 1440px;
     display: flex;
     margin-left: 180px;
     column-gap: 46px;
 }
 
+.comment-widget__wrapper_row {
+    width: 100%;
+}
+
+.review-container__column {
+    margin-top: 80px;
+}
+
 .reviews_column {
     box-sizing: border-box;
-    width: 1133px;
+    width: 100%;
+    max-width: 1140px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     row-gap: 118px;
 }
 
-.comment-widget__wrapper_row {
-    width: 100%;
-}
 
 .comment-widget__wrapper_column {
     width: 100%;

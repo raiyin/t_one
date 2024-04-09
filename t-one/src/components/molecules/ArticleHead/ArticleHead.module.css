@@ -3,6 +3,7 @@
     flex-direction: column;
     height: 134px;
     min-width: 420px;
+    max-width: 1240px;
     width: 100%;
 }
 

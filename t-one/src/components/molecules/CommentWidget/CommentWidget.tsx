@@ -5,11 +5,11 @@ import Title from '../../atoms/Title/Title'
 
 const CommentWidget = (props: CommentWidgetProps) => {
     return (
-        <div className={styles['widget_container']}>
+        <div className={styles['widget']}>
 
-            <div className={`${styles['widget_body']}`}>
+            <div className={`${styles['widget-body']}`}>
 
-                <div className={`${styles['widget_user']}`}>
+                <div className={`${styles['widget-user']}`}>
                     <Title
                         text={props.user_handle}
                         selectEnd={0}
@@ -20,11 +20,13 @@ const CommentWidget = (props: CommentWidgetProps) => {
                         hideOverflow={false}
                     />
 
-                    <img src={QuoteImage} alt="Quote image" />
+                    <figure>
+                        <img src={QuoteImage} alt="" />
+                    </figure>
 
                 </div>
 
-                <div className={`${styles['widget_quote']}`}>
+                <div className={`${styles['widget-quote']}`}>
                     {props.comment}
                 </div>
             </div>

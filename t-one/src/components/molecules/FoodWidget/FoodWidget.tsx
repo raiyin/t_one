@@ -5,12 +5,12 @@ import { FoodWidgetProps } from "../../../types/FoodWidgetProps";
 const FoodWidget = (props: FoodWidgetProps) => {
     return (
         <div className={`${styles.food_widget_container} ${props.selected && styles.selected}`}>
-            <div className={styles.image}>
+            <figure className={styles.image}>
                 <img
                     src={props.img_url}
                     alt={props.img_alt}
                 />
-            </div>
+            </figure>
             <div className={styles["info_block"]}>
                 <div className={styles["info_block__title"]}>{props.title}</div>
                 <div className={styles["info_block__desc"]}>{props.status}</div>

@@ -1,24 +1,32 @@
 import { Link } from 'react-router-dom'
-import { ArticleWidgetProps } from '../../../types/ArticleProps'
+import { ArticleProps } from '../../../types/ArticleProps'
 import { tagsToHashTagString } from '../../../utils/mappers'
 import HashTag from '../../atoms/HashTag/HashTag'
 import Rating from '../../atoms/Rating/Rating'
 import styles from './ArticleWidget.module.css'
+import WrittenByBlock from '../WrittenByBlock/WrittenByBlock'
 
-const ArticleWidget = (props: ArticleWidgetProps) => {
+const ArticleWidget = (props: ArticleProps) => {
     return (
-        <div className={styles['post-card']}>
+        <div className={styles['article-widget']}>
 
-            <Link to={`/articles/${props.id}`} className={styles['post-card__title']}>
+            <Link to={`/articles/${props.id}`} className={styles['article-widget__title']}>
                 {props.title}
             </Link>
 
-            <div className={styles['post-card__hash-mark']}>
-                <HashTag text={tagsToHashTagString(props.tags)} fontSize={12} />
+            <div className={styles['article-widget__hash-mark']}>
+                <WrittenByBlock
+                    userId={props.userId}
+                    type='small'
+                />
                 <Rating rating={props.reactions} startFirst={false} />
             </div>
+            <HashTag
+                text={tagsToHashTagString(props.tags)}
+                size={'small'}
+            />
 
-            <div className={styles['post-card__text']}>
+            <div className={styles['article-widget__text']}>
                 {props.body}
             </div>
         </div>

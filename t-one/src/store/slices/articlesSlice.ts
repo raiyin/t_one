@@ -1,6 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import type { PayloadAction } from '@reduxjs/toolkit'
-import type { RootState } from '../store'
 
 interface ArticlesState {
     pageNumber: number;
@@ -31,14 +29,7 @@ export const articlesSlice = createSlice({
             }
 
             state.pageNumber += 1
-
-
-            if (state.pageNumber === 1) {
-                state.isBackPageExist = false;
-            }
-            else {
-                state.isBackPageExist = true;
-            }
+            state.isBackPageExist = state.pageNumber !== 1
 
             if (state.pageNumber * state.postsPerPage >= state.postsTotal) {
                 state.isForthPageExist = false;
@@ -54,13 +45,7 @@ export const articlesSlice = createSlice({
             }
 
             state.pageNumber -= 1
-
-            if (state.pageNumber === 1) {
-                state.isBackPageExist = false;
-            }
-            else {
-                state.isBackPageExist = true;
-            }
+            state.isBackPageExist = state.pageNumber !== 1
 
             if (state.pageNumber * state.postsPerPage >= state.postsTotal) {
                 state.isForthPageExist = false;
@@ -70,15 +55,8 @@ export const articlesSlice = createSlice({
             }
         },
 
-        // Use the PayloadAction type to declare the contents of `action.payload`
-        // incrementByAmount: (state, action: PayloadAction<number>) => {
-        //     state.value += action.payload
-        // },
-
     },
 })
 
-//export const { increment, decrement, incrementByAmount } = articlesSlice.actions
 export const { incrementPageNumber, decrementPageNumber } = articlesSlice.actions
-//export const selectCount = (state: RootState) => state.counter.value
 export default articlesSlice.reducer

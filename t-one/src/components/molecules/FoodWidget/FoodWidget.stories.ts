@@ -13,9 +13,9 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const MainSelected: Story = {
+export const Selected: Story = {
     args: {
-        title:'Chicken Hell',
+        title: 'Chicken Hell',
         status: 'On The Way',
         img_alt: 'img alt text',
         img_url: '../../../src/assets/images/pngs/food_image_1.png',
@@ -24,9 +24,9 @@ export const MainSelected: Story = {
     },
 };
 
-export const MainNotSelected: Story = {
+export const NotSelected: Story = {
     args: {
-        title:'Chicken Hell',
+        title: 'Chicken Hell',
         status: 'On The Way',
         img_alt: 'img alt text',
         img_url: '../../../src/assets/images/pngs/food_image_1.png',

@@ -1,7 +1,14 @@
-.container {
+.hero {
     display: flex;
-    height: 607px;
+    justify-content: center;
     margin-top: 48px;
-    margin-right: 96px;
-    margin-left: 96px;
+    max-width: 1250px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
 }

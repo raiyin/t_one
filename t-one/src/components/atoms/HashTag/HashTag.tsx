@@ -1,19 +1,10 @@
-import styles from './HashTag.module.scss'
-import classNames from 'classnames/bind';
-const cx = classNames.bind(styles);
+import { HashTagsProps } from '../../../types/HashTagsProps';
+import styles from './HashTag.module.css'
 
-const HashTag = (props: { text: string; fontSize: number; }) => {
-
-    const titleClass = {
-        title_font: true,
-    }
-    titleClass[('fs_' + props.fontSize) as keyof typeof titleClass] = true
-    titleClass[('hashtag') as keyof typeof titleClass] = true
-
-    const className = cx(titleClass);
+const HashTag = (props: HashTagsProps) => {
 
     return (
-        <div className={className}>
+        <div className={`${styles['hashtag']} ${styles['hashtag__' + props.size]}`}>
             {props.text}
         </div>
     )

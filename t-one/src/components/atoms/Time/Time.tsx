@@ -16,9 +16,9 @@ const Time = (props: TimeProps) => {
     const className = cx(timeClass);
 
     return (
-        <div className={className}>
+        <time className={className}>
             {props.time}
-        </div>)
+        </time>)
 };
 
 export default Time;

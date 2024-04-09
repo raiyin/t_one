@@ -33,6 +33,11 @@
 }
 
 .feature-item__wrapper:not(:last-child):after {
-    /* border-right: #c5c5c5 solid 1px; */
     content: url('../../../assets/images/pngs/feature_line.png');
+}
+
+@media screen and (max-width: 1000px) {
+    .feature-item__wrapper:not(:last-child):after {
+        content: '';
+    }
 }

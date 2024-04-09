@@ -1,50 +1,95 @@
-import styles from './Main.module.css'
+import styles from "./Main.module.css";
+import { Suspense, lazy } from 'react';
 import Title from "../../atoms/Title/Title";
-import AppBlock from "../../organisms/AppBlock/AppBlock";
-import FaqBlock from "../../organisms/FaqBlock/FaqBlock";
-import FeatureBlock from "../../organisms/FeaturesBlock/FeatureBlock";
 import HeroBlock from "../../organisms/HeroBlock/HeroBlock";
-import LunchBlock from "../../organisms/LunchBlock/LunchBlock";
-import PurchasesBlock from "../../organisms/PurchaseBlock/PurchasesBlock";
+
+const FaqBlock = lazy(() => import('../../organisms/FaqBlock/FaqBlock'));
+const FeatureBlock = lazy(() => import('../../organisms/FeaturesBlock/FeatureBlock'));
+const AppBlock = lazy(() => import('../../organisms/AppBlock/AppBlock'));
+const LunchBlock = lazy(() => import('../../organisms/LunchBlock/LunchBlock'));
+const PurchasesBlock = lazy(() => import('../../organisms/PurchaseBlock/PurchasesBlock'));
+
 import ReviewBlock from "../../organisms/ReviewBlock/ReviewBlock";
-import Header from '../../organisms/Header/Header';
-import Footer from '../../organisms/Footer/Footer';
-import { useEffect, useState } from 'react';
+import Header from "../../organisms/Header/Header";
+import Footer from "../../organisms/Footer/Footer";
+import { useEffect, useState } from "react";
+import { FeatureProps } from "../../../types/FeatureProps";
+import featureJsonData from "../../../data/feature_data.json";
+import LoadingBlock from "../../organisms/LoadingBlock/LoadingBlock";
 
 const Main = () => {
-
-    const [comments, setComments] = useState([])
+    const [comments, setComments] = useState([]);
+    const [featureData] = useState<FeatureProps[]>(featureJsonData["features"]);
+    const [commentsError, setCommentsError] = useState(false)
+    const [commentsLoading, setCommentsLoading] = useState(false)
 
     useEffect(() => {
         const fetchData = async () => {
-            await fetch(`https://dummyjson.com/comments?limit=3`)
-                .then(response => response.json())
-                .then(data => setComments(data.comments))
-        }
-        fetchData().catch(console.error);
+            await fetch(`https://dummyjson.com/comments?limit=6`)
+                .then((response) => {
+                    if (response.ok) {
+                        return response.json()
+                    }
+                    throw new Error('Error requesting comments')
+                })
+                .then((data) => {
+                    setComments(data.comments)
+                    setCommentsError(false)
+                }).catch((e) => {
+                    console.error(e);
+                    setCommentsError(true);
+                });
+        };
+        setCommentsLoading(_ => true)
+        fetchData();
+        setCommentsLoading(_ => false)
     }, []);
 
     return (
         <>
             <Header />
+
             <HeroBlock />
-            <FeatureBlock />
-            <AppBlock />
-            <LunchBlock />
-            <PurchasesBlock />
-            <div className={styles['review_title_wrapper']}>
-                <Title
-                    text={'Customer Say'}
-                    selectStart={0}
-                    selectEnd={8}
-                    fontSize={45}
-                    fontWeight={600}
-                    lineHeight={26}
-                    hideOverflow={false}
-                />
-            </div>
-            <ReviewBlock direction={'row'} comments={comments} />
-            <FaqBlock />
+
+            <Suspense fallback={<LoadingBlock />}>
+                <FeatureBlock features={featureData} />
+            </Suspense>
+
+            <Suspense fallback={<LoadingBlock />}>
+                <AppBlock />
+            </Suspense>
+
+            <Suspense fallback={<LoadingBlock />}>
+                <LunchBlock />
+            </Suspense>
+
+            <Suspense fallback={<LoadingBlock />}>
+                <PurchasesBlock />
+            </Suspense>
+
+            {
+                commentsLoading
+                    ?
+                    <LoadingBlock />
+                    :
+                    !commentsError && <>
+                        <div className={styles["review_title_wrapper"]}>
+                            <Title
+                                text={"Customer Say"}
+                                selectStart={0}
+                                selectEnd={8}
+                                fontSize={45}
+                                fontWeight={600}
+                                lineHeight={26}
+                                hideOverflow={false}
+                            />
+                        </div>
+                        <ReviewBlock direction={"row"} comments={comments} />
+                    </>
+            }
+            <Suspense fallback={<LoadingBlock />}>
+                <FaqBlock />
+            </Suspense>
             <Footer />
         </>
     );

@@ -1,7 +1,6 @@
 footer {
-    width: 1440px;
-    height: 345px;
-    min-width: 1440px;
+    max-width: 1440px;
+    width: 100dvw;
     min-height: 345px;
     background: #eaeaea;
     display: flex;
@@ -10,29 +9,40 @@ footer {
     padding: 96px 96px 81px;
     box-sizing: border-box;
     margin-top: 80px;
+    flex: 0 0 auto;
 }
 
 .footer_menu {
-    width: 1248px;
-    height: 57px;
-    min-height: 57px;
+    max-width: 1250px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 15px;
 }
 
-hr {
-    width: 1246px;
-    border: 1px solid #818181;
+.fotter_line {
+    max-width: 1246px;
+    width: 100%;
     margin-top: 30px;
+
+    &:hr {
+        border: 1px solid #818181;
+    }
 }
 
 .lower {
-    width: 1248px;
+    max-width: 1250px;
+    width: 100%;
     height: 25px;
     margin-top: 48px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 15px;
 }
 
 .copy {

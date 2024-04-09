@@ -1,0 +1,32 @@
+.logo {
+    font-weight: 600;
+    color: #6C5FBC;
+    font-style: semibold;
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    text-decoration: none;
+}
+
+.logo-text__header {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    line-height: 29px;
+}
+
+.logo-text__footer {
+    font-family: "Poppins", sans-serif;
+    font-size: 29px;
+    line-height: 37px;
+}
+
+
+.logo-img__header {
+    width: 46px;
+    height: 43px;
+}
+
+.logo-img__footer {
+    width: 62px;
+    height: 57px;
+}

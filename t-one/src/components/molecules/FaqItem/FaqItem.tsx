@@ -25,9 +25,9 @@ const FaqItem = (props: FaqItemProps) => {
                     <img src={expanded ? MinusImage : PlusImage} alt="Collapse/expand button" onClick={() => setExpanded(_ => !expanded)} />
                 </div>
             </div>
-            {expanded && <div className={styles['faqItem-answer']}>
+            <div className={`${styles['faqItem-answer']} ${expanded && styles['faqItem-answer__expanded']}`}>
                 {props.answer}
-            </div>}
+            </div>
         </div>
     )
 }

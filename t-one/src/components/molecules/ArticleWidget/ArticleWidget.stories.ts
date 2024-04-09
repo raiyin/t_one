@@ -13,7 +13,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Article: Story = {
+export const Normal: Story = {
     args: {
         id: 1,
         body: 'delicious paltty',

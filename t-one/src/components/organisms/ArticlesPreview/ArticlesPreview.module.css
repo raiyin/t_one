@@ -8,8 +8,9 @@
 .articles-preview_previews {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
-    width: 1236px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1236px;
     margin-top: 75px;
     column-gap: 65px;
     row-gap: 42px;

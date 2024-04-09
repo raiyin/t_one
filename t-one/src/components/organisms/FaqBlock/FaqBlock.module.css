@@ -1,5 +1,6 @@
 .faqBlock {
-    width: 1152px;
+    max-width: 1152px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,11 +16,13 @@
 
 .icon_wrapper {
     position: relative;
-    left: 244px;
+    left: 430px;
     top: -128px;
+    width: 41px;
+    height: 37px;
 }
 
 .faqBlock_items {
-    width: 1152px;
+    width: 100%;
     margin-top: 67px;
 }

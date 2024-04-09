@@ -1,4 +1,4 @@
-import LinkLocation from '../../../types/LinkLocation';
+import Location from '../../../types/Location';
 import { NavBarProps } from '../../../types/NavBarProps';
 import Logo from '../../atoms/Logo/Logo'
 import NavBar from '../../molecules/NavBar/NavBar'
@@ -7,21 +7,21 @@ import styles from './Footer.module.css'
 
 const Footer = () => {
     const navBarProps: NavBarProps = {
-        location: LinkLocation.Footer,
+        location: Location.Footer,
         links: [
             {
-                location: LinkLocation.Footer,
-                link: "https://site.ru/recipes",
+                location: Location.Footer,
+                link: "/#recipes",
                 content: "Recipes",
             },
             {
-                location: LinkLocation.Footer,
-                link: "https://site.ru/faq",
+                location: Location.Footer,
+                link: "/#faq",
                 content: "FAQ",
             },
             {
-                location: LinkLocation.Footer,
-                link: "https://site.ru/blog",
+                location: Location.Footer,
+                link: "/blog",
                 content: "Blog",
             },
         ],
@@ -31,10 +31,12 @@ const Footer = () => {
         <footer>
 
             <div className={styles['footer_menu']}>
-                <Logo image_size={60} font_size={29} />
+                <Logo location={Location.Footer} />
                 <NavBar {...navBarProps} />
             </div>
-            <hr />
+            <div className={styles['fotter_line']}>
+                <hr />
+            </div>
             <div className={styles['lower']}>
                 <div className={styles['copy']}>
                     © 2023 EATLY All Rights Reserved.

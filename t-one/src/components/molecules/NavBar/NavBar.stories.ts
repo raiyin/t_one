@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import NavBar from './NavBar';
-import LinkLocation from '@types/LinkLocation';
+import Location from '@types/Location';
 
 const meta = {
     title: 't-one/molecules/NavBar',
@@ -14,19 +14,19 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Main: Story = {
+export const Normal: Story = {
     args: {
         links: [
             {
-                location: LinkLocation.Header,
+                location: Location.Header,
                 link: "https://ya.ru",
                 content: "ya.ru site",
             },
             {
-                location: LinkLocation.Header,
+                location: Location.Header,
                 link: "https://mail.ru",
                 content: "mail.ru site",
             },],
-        location: LinkLocation.Header,
+        location: Location.Header,
     },
 };

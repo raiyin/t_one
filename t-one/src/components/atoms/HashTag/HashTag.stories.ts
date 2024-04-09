@@ -13,9 +13,16 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const MainSelected: Story = {
+export const Small: Story = {
     args: {
         text: '#history, #food',
-        fontSize: 16
+        size: "small"
+    },
+};
+
+export const Medium: Story = {
+    args: {
+        text: '#history, #food',
+        size: "medium"
     },
 };

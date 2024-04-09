@@ -13,9 +13,16 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Main: Story = {
+export const StarFirst: Story = {
     args: {
         rating: '4.8',
         startFirst: true
+    },
+};
+
+export const StarLast: Story = {
+    args: {
+        rating: '4.8',
+        startFirst: false
     },
 };

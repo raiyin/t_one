@@ -1,13 +1,38 @@
-.back-button {
-    width: 1248px;
-    height: 60px;
-    margin-top: 90px;
+main {
     display: flex;
-    flex-wrap: wrap;
-    align-self: center;
+    flex-direction: column;
+    padding-left: 96px;
+    padding-right: 96px;
 }
 
-.comments-title {
-    margin-top: 98px;
-    width: 1133px;
+.back-button {
+    margin-top: 90px;
+    display: flex;
+    align-self: self-start;
+    width: 190px;
+}
+
+.comments-block {
+    margin-top: 100px;
+    max-width: 1250px;
+    width: 100%;
+    padding-left: 28px;
+    padding-right: 28px;
+    box-sizing: border-box;
+}
+
+.commets {
+    margin-top: 100px;
+}
+
+.commets-add {
+    width: 100%;
+    margin-top: 100px;
+    max-width: 1250px;
+}
+
+.alert {
+    position: fixed;
+    bottom: 0em;
+    left: 0em;
 }

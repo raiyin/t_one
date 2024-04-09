@@ -14,16 +14,16 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const MainSelected: Story = {
+export const Selected: Story = {
     args: {
-        user_handle:'@omottley2h',
+        user_handle: '@omottley2h',
         comment: 'I cannot believe how I found you, this is so pretty.',
     },
 };
 
-export const MainUnselected: Story = {
+export const Unselected: Story = {
     args: {
-        user_handle:'@omottley2h',
+        user_handle: '@omottley2h',
         comment: 'I cannot believe how I found you, this is so pretty.',
     },
 };
