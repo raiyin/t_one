@@ -27,6 +27,8 @@
 .tag_wrapper {
     margin-top: 7px;
     margin-left: 33px;
+    display: flex;
+    column-gap: 3px;
 }
 
 .text_wrapper {
@@ -34,13 +36,13 @@
     align-items: center;
     height: 43px;
     margin-left: 33px;
+    margin-right: 33px;
     letter-spacing: 0.03em;
 }
 
 .info_wrapper {
     display: flex;
     height: 27px;
-    display: flex;
     margin-left: 32px;
     margin-top: 2px;
     column-gap: 16px;

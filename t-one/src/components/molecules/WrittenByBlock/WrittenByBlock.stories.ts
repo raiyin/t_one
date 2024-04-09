@@ -1,20 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import WidgetTitle from './WidgetTitle';
-import LinkLocation from '@types/LinkLocation';
+import WrittenByBlock from './WrittenByBlock';
 
 const meta = {
-    title: 't-one/atoms/WidgetTitle',
-    component: WidgetTitle,
+    title: 't-one/molecules/WrittenByBlock',
+    component: WrittenByBlock,
     parameters: {
         layout: 'centered',
     },
     tags: ['autodocs'],
-} satisfies Meta<typeof WidgetTitle>;
+} satisfies Meta<typeof WrittenByBlock>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Main: Story = {
     args: {
+        userId: 1
     },
 };

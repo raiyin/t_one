@@ -18,8 +18,9 @@ export const Main: Story = {
         text: "Some Header Text",
         selectStart: 5,
         selectEnd: 11,
-        fontWeight:500,
-        fontSize:45,
-        lineHeight:50
+        fontWeight: 500,
+        fontSize: 45,
+        lineHeight: 50,
+        hideOverflow: false
     },
 };

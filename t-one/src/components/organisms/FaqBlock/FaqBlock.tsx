@@ -11,7 +11,7 @@ const FaqBlock = () => {
     const [faqData] = useState<FaqItemProps[]>(faqJsonData['faqs']);
 
     return (
-        <div className={styles['faqBlock']}>
+        <div className={styles['faqBlock']} id="faq">
 
             <div className={styles['faqBlock_title']}>
                 <Title
@@ -21,6 +21,7 @@ const FaqBlock = () => {
                     fontWeight={600}
                     fontSize={45}
                     lineHeight={54}
+                    hideOverflow={false}
                 />
 
                 <div className={styles['icon_wrapper']}>
@@ -34,7 +35,6 @@ const FaqBlock = () => {
                         <FaqItem
                             quest={faqItem.quest}
                             answer={faqItem.answer}
-                            expanded={faqItem.expanded}
                         />
                     </li>
                 )}

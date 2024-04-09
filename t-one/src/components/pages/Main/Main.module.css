@@ -1,7 +1,8 @@
-.main-container {
+.review_title_wrapper {
+    width: 1440px;
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
-    width: 1440px;
-    overflow: hidden;
+    align-items: center;
+    margin-top: 116px;
+    margin-left: 24px;
 }

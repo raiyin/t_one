@@ -3,10 +3,14 @@ import MinusImage from '../../../assets/images/pngs/minus.png';
 import PlusImage from '../../../assets/images/pngs/plus.png';
 import { FaqItemProps } from '../../../types/FaqItemProps';
 import Title from '../../atoms/Title/Title';
+import { useState } from 'react';
 
 const FaqItem = (props: FaqItemProps) => {
+
+    const [expanded, setExpanded] = useState(false)
+
     return (
-        <div className={`${styles['faqItem']} ${props.expanded && styles.faqItem__expanded}`}>
+        <div className={`${styles['faqItem']} ${expanded && styles.faqItem__expanded}`}>
             <div className={styles['faqItem-conrol']}>
                 <Title
                     text={props.quest}
@@ -15,12 +19,13 @@ const FaqItem = (props: FaqItemProps) => {
                     fontSize={22}
                     fontWeight={600}
                     lineHeight={60}
+                    hideOverflow={false}
                 />
                 <div className={styles['faqItem_image']}>
-                    <img src={props.expanded ? MinusImage : PlusImage} alt="Collapse/expand button" />
+                    <img src={expanded ? MinusImage : PlusImage} alt="Collapse/expand button" onClick={() => setExpanded(_ => !expanded)} />
                 </div>
             </div>
-            {props.expanded && <div className={styles['faqItem-answer']}>
+            {expanded && <div className={styles['faqItem-answer']}>
                 {props.answer}
             </div>}
         </div>

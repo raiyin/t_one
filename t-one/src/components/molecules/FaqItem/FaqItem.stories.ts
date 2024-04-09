@@ -16,16 +16,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Expanded: Story = {
     args: {
-        answer:'You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?',
-        quest:'How long does delivery take?',
-        expanded:true
+        answer: 'You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?',
+        quest: 'How long does delivery take?'
     },
 };
 
 export const Collapsed: Story = {
     args: {
-        answer:'You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?',
-        quest:'How long does delivery take?',
-        expanded:false
+        answer: 'You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?',
+        quest: 'How long does delivery take?'
     },
 };

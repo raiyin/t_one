@@ -16,7 +16,13 @@ const FoodWidget = (props: FoodWidgetProps) => {
                 <div className={styles["info_block__desc"]}>{props.status}</div>
             </div>
             <div className={styles.time}>
-                <Time time={props.time} fontWeight={500} fontSize={10} lineHeight={14} />
+                <Time
+                    time={props.time}
+                    fontWeight={500}
+                    fontSize={10}
+                    lineHeight={14}
+                    font={'poppins'}
+                />
             </div>
         </div>
     );

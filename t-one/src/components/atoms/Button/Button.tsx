@@ -1,8 +1,11 @@
 import ButtonType, { ButtonProps } from "../../../types/ButtonProps";
 import styles from "./Button.module.css";
-import ButtonImage from '../../../assets/images/pngs/btn_arrow.png'
+import ButtonImage_Forth from '../../../assets/images/svgs/btn_arrow_forth.svg'
+import ButtonImage_Back from '../../../assets/images/svgs/btn_arrow_back.svg'
+import { ArrowDirection } from "../../../types/ArrowProps";
 
 const Button = (props: ButtonProps) => {
+
     const typeMap = (type: ButtonType): string => {
         const types = new Map<ButtonType, string>();
         types.set(ButtonType.Primary, styles.button__primary);
@@ -12,9 +15,11 @@ const Button = (props: ButtonProps) => {
     };
 
     return (
-        <button className={`${styles['button']} ${typeMap(props.type)}`}>
+        <button className={`${styles['button']} ${typeMap(props.type)}`} onClick={props.onClick}>
+
+            {props.needArrow && props.direction === ArrowDirection.Back && <img className={styles['button_icon']} src={ButtonImage_Back} alt="" />}
             {props.text}
-            {props.needArrow && <img className={styles['btn_icon']} src={ButtonImage} alt="" />}
+            {props.needArrow && props.direction === ArrowDirection.Forth && <img className={styles['button_icon']} src={ButtonImage_Forth} alt="" />}
         </button>
     );
 };

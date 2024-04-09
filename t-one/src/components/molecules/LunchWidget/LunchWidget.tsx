@@ -1,40 +1,52 @@
 import styles from './LunchWidget.module.css'
-import Chicken_Image from "../../../assets/images/jpgs/chicken_king.jpg";
 import Tag from '../../atoms/Tag/Tag';
-import Text from '../../atoms/Text/Text';
 import Time from '../../atoms/Time/Time';
 import Rating from '../../atoms/Rating/Rating';
 import Title from '../../atoms/Title/Title';
+import { LunchWidgetProps } from '../../../types/LunchWidgetProps';
 
-const LunchWidget = () => {
+const LunchWidget = (props: LunchWidgetProps) => {
     return (
         <div className={styles['container']}>
 
             <div className={styles['image_wrapper']}>
                 <img
-                    src={Chicken_Image}
-                    alt="Grapefruit slice atop a pile of other slices"
+                    src={props.image}
+                    alt={`${props.name} image`}
                 />
             </div>
 
             <div className={styles['tag_wrapper']}>
-                <Tag text={'Pizza'} />
+                {props.tags.map((tag, tag_index) => {
+                    if (tag_index < 4) {
+                        return (
+                            <Tag text={tag} key={tag} />
+                        )
+                    }
+                })}
             </div>
 
             <div className={styles['text_wrapper']}>
                 <Title
-                    text={'The Chiclen King'}
+                    text={props.name}
                     selectStart={0}
                     selectEnd={0}
                     fontSize={26}
                     fontWeight={600}
                     lineHeight={42}
+                    hideOverflow={true}
                 />
             </div>
 
             <div className={styles['info_wrapper']}>
-                <Time time={'24min'} fontWeight={400} lineHeight={26} fontSize={20} />
-                <Rating rating={'4.8'} />
+                <Time
+                    time={`${props.cookTimeMinutes + props.prepTimeMinutes}min`}
+                    fontWeight={400}
+                    lineHeight={26}
+                    fontSize={20}
+                    font={'manrope'}
+                />
+                <Rating rating={props.rating.toString()} startFirst={true} />
             </div>
 
         </div>

@@ -12,6 +12,7 @@ const PurchaseTextBlock = () => {
                 lineHeight={61}
                 fontSize={50}
                 fontWeight={700}
+                hideOverflow={false}
             />
             <ul className={styles['purchase_text-items']}>
                 <li>

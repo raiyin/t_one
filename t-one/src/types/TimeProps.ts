@@ -3,4 +3,5 @@ export type TimeProps = {
     lineHeight: number;
     fontSize: number;
     fontWeight: number;
+    font: 'poppins' | 'manrope'
 };

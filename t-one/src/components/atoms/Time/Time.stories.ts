@@ -16,17 +16,18 @@ type Story = StoryObj<typeof meta>;
 export const First: Story = {
     args: {
         time: '3:05 PM',
-        fontSize:12,
-        fontWeight:600,
-        lineHeight:16
+        fontSize: 12,
+        fontWeight: 600,
+        lineHeight: 16
     },
 };
 
 export const Second: Story = {
     args: {
         time: '3:05 PM •',
-        fontSize:22,
-        fontWeight:600,
-        lineHeight:22
+        fontSize: 22,
+        fontWeight: 600,
+        lineHeight: 22,
+        font: 'poppins'
     },
 };
