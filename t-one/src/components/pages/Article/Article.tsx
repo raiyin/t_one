@@ -1,77 +1,77 @@
-import { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
-import { ArrowDirection } from '../../../types/ArrowProps'
-import { ArticleProps } from '../../../types/ArticleProps'
-import ButtonType from '../../../types/ButtonProps'
-import { Comment } from '../../../types/Comment'
-import Button from '../../atoms/Button/Button'
-import Title from '../../atoms/Title/Title'
-import AddComment from '../../molecules/AddComment/AddComment'
-import ArticleBlock from '../../organisms/ArticleBlock/Article'
-import Footer from '../../organisms/Footer/Footer'
-import Header from '../../organisms/Header/Header'
-import LoadingBlock from '../../organisms/LoadingBlock/LoadingBlock'
-import ReviewBlock from '../../organisms/ReviewBlock/ReviewBlock'
-import styles from './Article.module.css'
-import Alert from '../../molecules/Alert/Alert'
-import { AlertType } from '../../../types/AlertProps'
-import ErrorBlock from '../../organisms/ErrorBlock/ErrorBlock'
+import { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import { ArrowDirection } from '@types/ArrowProps';
+import { ArticleProps } from '@types/ArticleProps';
+import ButtonType from '@types/ButtonProps';
+import { Comment } from '@types/Comment';
+import Button from '@components/atoms/Button/Button';
+import Title from '@components/atoms/Title/Title';
+import AddComment from '@components/molecules/AddComment/AddComment';
+import ArticleBlock from '@components/organisms/ArticleBlock/Article';
+import Footer from '@components/organisms/Footer/Footer';
+import Header from '@components/organisms/Header/Header';
+import LoadingBlock from '@components/organisms/LoadingBlock/LoadingBlock';
+import ReviewBlock from '@components/organisms/ReviewBlock/ReviewBlock';
+import styles from './Article.module.css';
+import Alert from '@components/molecules/Alert/Alert';
+import { AlertType } from '@types/AlertProps';
+import ErrorBlock from '@components/organisms/ErrorBlock/ErrorBlock';
 
 const Article = () => {
 
     const navigate = useNavigate();
     const { post_id } = useParams();
     const [alertShow, setAlertShow] = useState(false);
-    const [article, setArticle] = useState<ArticleProps>({ id: 0, userId: 0, body: '', title: '', tags: [], reactions: '0' })
-    const [comments, setComments] = useState<Comment[]>([])
-    const [isLoading, setIsLoading] = useState(false)
-    const [postError, setPostError] = useState(false)
-    const [commentsError, setCommentsError] = useState(false)
+    const [article, setArticle] = useState<ArticleProps>({ id: 0, userId: 0, body: '', title: '', tags: [], reactions: '0' });
+    const [comments, setComments] = useState<Comment[]>([]);
+    const [isLoading, setIsLoading] = useState(false);
+    const [postError, setPostError] = useState(false);
+    const [commentsError, setCommentsError] = useState(false);
 
     // Test user to load article. As was said on the lection.
     const USER_ID = 5;
 
     useEffect(() => {
         const fetchData = async () => {
-            setIsLoading(_ => true)
+            setIsLoading(_ => true);
             await fetch(`https://dummyjson.com/posts/${post_id}`)
                 .then(response => {
                     if (response.ok) {
                         return response.json();
                     }
-                    throw new Error('Error requesting post')
+                    throw new Error('Error requesting post');
                 })
                 .then(data => {
                     setArticle(data);
-                    setPostError(false)
+                    setPostError(false);
                 }).catch((e) => {
-                    console.error(e)
-                    setPostError(true)
-                })
+                    console.error(e);
+                    setPostError(true);
+                });
 
             await fetch(`https://dummyjson.com/comments/post/${post_id}`)
                 .then(response => {
                     if (response.ok) {
                         return response.json();
                     }
-                    throw new Error('Error requesting comments')
+                    throw new Error('Error requesting comments');
                 })
                 .then(data => {
                     setComments(data.comments);
-                    setCommentsError(false)
+                    setCommentsError(false);
                 }).catch((e) => {
-                    console.error(e)
-                    setCommentsError(true)
-                })
+                    console.error(e);
+                    setCommentsError(true);
+                });
 
-            setIsLoading(_ => false)
-        }
+            setIsLoading(_ => false);
+        };
         fetchData();
     }, []);
 
     const onAllArticlesButtonClick = () => {
         navigate('/blog');
-    }
+    };
 
     async function addComment(commentBody: string): Promise<boolean> {
         const response = await fetch('https://dummyjson.com/comments/add', {
@@ -87,12 +87,12 @@ const Article = () => {
         if (!response.ok) {
             const message = `An error has occured: ${response.status}`;
             console.error(message);
-            setAlertShow(true)
+            setAlertShow(true);
             return false;
         }
 
         const comment = await response.json();
-        setComments([...comments, comment])
+        setComments([...comments, comment]);
         return true;
     }
 
@@ -180,7 +180,7 @@ const Article = () => {
                 />
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Article
+export default Article;

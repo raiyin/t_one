@@ -1,48 +1,48 @@
 import styles from "./Main.module.css";
 import { Suspense, lazy } from 'react';
-import Title from "../../atoms/Title/Title";
-import HeroBlock from "../../organisms/HeroBlock/HeroBlock";
+import Title from "@components/atoms/Title/Title";
+import HeroBlock from "@components/organisms/HeroBlock/HeroBlock";
 
-const FaqBlock = lazy(() => import('../../organisms/FaqBlock/FaqBlock'));
-const FeatureBlock = lazy(() => import('../../organisms/FeaturesBlock/FeatureBlock'));
-const AppBlock = lazy(() => import('../../organisms/AppBlock/AppBlock'));
-const LunchBlock = lazy(() => import('../../organisms/LunchBlock/LunchBlock'));
-const PurchasesBlock = lazy(() => import('../../organisms/PurchaseBlock/PurchasesBlock'));
+const FaqBlock = lazy(() => import('@components/organisms/FaqBlock/FaqBlock'));
+const FeatureBlock = lazy(() => import('@components/organisms/FeaturesBlock/FeatureBlock'));
+const AppBlock = lazy(() => import('@components/organisms/AppBlock/AppBlock'));
+const LunchBlock = lazy(() => import('@components/organisms/LunchBlock/LunchBlock'));
+const PurchasesBlock = lazy(() => import('@components/organisms/PurchaseBlock/PurchasesBlock'));
 
-import ReviewBlock from "../../organisms/ReviewBlock/ReviewBlock";
-import Header from "../../organisms/Header/Header";
-import Footer from "../../organisms/Footer/Footer";
+import ReviewBlock from "@components/organisms/ReviewBlock/ReviewBlock";
+import Header from "@components/organisms/Header/Header";
+import Footer from "@components/organisms/Footer/Footer";
 import { useEffect, useState } from "react";
-import { FeatureProps } from "../../../types/FeatureProps";
+import { FeatureProps } from "@types/FeatureProps";
 import featureJsonData from "../../../data/feature_data.json";
-import LoadingBlock from "../../organisms/LoadingBlock/LoadingBlock";
+import LoadingBlock from "@components/organisms/LoadingBlock/LoadingBlock";
 
 const Main = () => {
     const [comments, setComments] = useState([]);
     const [featureData] = useState<FeatureProps[]>(featureJsonData["features"]);
-    const [commentsError, setCommentsError] = useState(false)
-    const [commentsLoading, setCommentsLoading] = useState(false)
+    const [commentsError, setCommentsError] = useState(false);
+    const [commentsLoading, setCommentsLoading] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
             await fetch(`https://dummyjson.com/comments?limit=6`)
                 .then((response) => {
                     if (response.ok) {
-                        return response.json()
+                        return response.json();
                     }
-                    throw new Error('Error requesting comments')
+                    throw new Error('Error requesting comments');
                 })
                 .then((data) => {
-                    setComments(data.comments)
-                    setCommentsError(false)
+                    setComments(data.comments);
+                    setCommentsError(false);
                 }).catch((e) => {
                     console.error(e);
                     setCommentsError(true);
                 });
         };
-        setCommentsLoading(_ => true)
+        setCommentsLoading(_ => true);
         fetchData();
-        setCommentsLoading(_ => false)
+        setCommentsLoading(_ => false);
     }, []);
 
     return (

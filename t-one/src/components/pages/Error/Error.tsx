@@ -1,7 +1,7 @@
-import Title from '../../atoms/Title/Title'
-import Footer from '../../organisms/Footer/Footer'
-import Header from '../../organisms/Header/Header'
-import styles from './Error.module.css'
+import Title from '@components/atoms/Title/Title';
+import Footer from '@components/organisms/Footer/Footer';
+import Header from '@components/organisms/Header/Header';
+import styles from './Error.module.css';
 
 const NotFound = () => {
     return (
@@ -20,7 +20,7 @@ const NotFound = () => {
             </main>
             <Footer />
         </>
-    )
-}
+    );
+};
 
-export default NotFound
+export default NotFound;
