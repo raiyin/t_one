@@ -14,7 +14,7 @@ import Header from "@components/organisms/Header/Header";
 import Footer from "@components/organisms/Footer/Footer";
 import { useEffect, useState } from "react";
 import { FeatureProps } from "@types/FeatureProps";
-import featureJsonData from "../../../data/feature_data.json";
+import featureJsonData from "@data/feature_data.json";
 import LoadingBlock from "@components/organisms/LoadingBlock/LoadingBlock";
 
 const Main = () => {

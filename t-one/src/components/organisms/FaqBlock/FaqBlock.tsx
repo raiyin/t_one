@@ -1,7 +1,7 @@
 import Title from '@components/atoms/Title/Title';
 import FaqItem from '@components/molecules/FaqItem/FaqItem';
 import styles from './FaqBlock.module.css';
-import faqJsonData from '../../../data/faq_data.json';
+import faqJsonData from '@data/faq_data.json';
 import { useState } from 'react';
 import { FaqItemProps } from '@types/FaqItemProps';
 import FaqRaysImage from '@assets/images/svgs/faq_rays.svg';

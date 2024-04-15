@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArticleProps } from '@types/ArticleProps';
-import { tagsToHashTagString } from '../../../utils/mappers';
+import { tagsToHashTagString } from '@utils/mappers';
 import HashTag from '@components/atoms/HashTag/HashTag';
 import Rating from '@components/atoms/Rating/Rating';
 import styles from './ArticleWidget.module.css';

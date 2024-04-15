@@ -28,7 +28,9 @@
       "@components/*": ["./src/components/*"],
       "@assets/*": ["./src/assets/*"],
       "@types/*": ["./src/types/*"],
-      "@store/*": ["./src/store/*"]
+      "@store/*": ["./src/store/*"],
+      "@data/*": ["./src/data/*"],
+      "@utils/*": ["./src/utils/*"]
     },
   },
   "include": ["src", "src/__ tests __"],
