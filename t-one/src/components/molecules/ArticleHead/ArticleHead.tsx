@@ -1,9 +1,9 @@
-import { ArticleHeadProps } from '../../../types/ArticleProps'
-import { tagsToHashTagString } from '../../../utils/mappers'
-import HashTag from '../../atoms/HashTag/HashTag'
-import Rating from '../../atoms/Rating/Rating'
-import WrittenByBlock from '../WrittenByBlock/WrittenByBlock'
-import styles from './ArticleHead.module.css'
+import { ArticleHeadProps } from '@types/ArticleProps';
+import { tagsToHashTagString } from '../../../utils/mappers';
+import HashTag from '@components/atoms/HashTag/HashTag';
+import Rating from '@components/atoms/Rating/Rating';
+import WrittenByBlock from '@components/molecules/WrittenByBlock/WrittenByBlock';
+import styles from './ArticleHead.module.css';
 
 const ArticleHead = (props: ArticleHeadProps) => {
 
@@ -24,7 +24,7 @@ const ArticleHead = (props: ArticleHeadProps) => {
 
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ArticleHead
+export default ArticleHead;

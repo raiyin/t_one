@@ -1,9 +1,9 @@
-import styles from './LunchWidget.module.css'
-import Tag from '../../atoms/Tag/Tag';
-import Time from '../../atoms/Time/Time';
-import Rating from '../../atoms/Rating/Rating';
-import Title from '../../atoms/Title/Title';
-import { LunchWidgetProps } from '../../../types/LunchWidgetProps';
+import styles from './LunchWidget.module.css';
+import Tag from '@components/atoms/Tag/Tag';
+import Time from '@components/atoms/Time/Time';
+import Rating from '@components/atoms/Rating/Rating';
+import Title from '@components/atoms/Title/Title';
+import { LunchWidgetProps } from '@types/LunchWidgetProps';
 
 const LunchWidget = (props: LunchWidgetProps) => {
     return (
@@ -23,7 +23,7 @@ const LunchWidget = (props: LunchWidgetProps) => {
                     if (tag_index < 4) {
                         return (
                             <Tag text={tag} key={tag} />
-                        )
+                        );
                     }
                 })}
             </div>
@@ -52,7 +52,7 @@ const LunchWidget = (props: LunchWidgetProps) => {
             </div>
 
         </div>
-    )
-}
+    );
+};
 
-export default LunchWidget
+export default LunchWidget;

@@ -1,5 +1,5 @@
 import styles from './Socials.module.css';
-import SMIcon from '../../atoms/SmIcon/SMIcon'
+import SMIcon from '@components/atoms/SmIcon/SMIcon';
 
 const Socials = () => {
     return (
@@ -9,7 +9,7 @@ const Socials = () => {
             <SMIcon sm_name="facebook" />
             <SMIcon sm_name="twitter" />
         </div>
-    )
-}
+    );
+};
 
-export default Socials
+export default Socials;

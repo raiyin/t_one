@@ -1,23 +1,23 @@
-import { AlertProps, AlertType } from '../../../types/AlertProps'
-import styles from './Alert.module.css'
-import SuccesIcon from '../../../assets/images/svgs/success.svg'
-import InfoIcon from '../../../assets/images/svgs/information.svg'
-import WarningIcon from '../../../assets/images/svgs/warning.svg'
-import CloseIcon from '../../../assets/images/svgs/close.svg'
-import ErrorIcon from '../../../assets/images/svgs/error.svg'
+import { AlertProps, AlertType } from '@types/AlertProps';
+import styles from './Alert.module.css';
+import SuccesIcon from '@assets/images/svgs/success.svg';
+import InfoIcon from '@assets/images/svgs/information.svg';
+import WarningIcon from '@assets/images/svgs/warning.svg';
+import CloseIcon from '@assets/images/svgs/close.svg';
+import ErrorIcon from '@assets/images/svgs/error.svg';
 
 function ChooseIcon(type: AlertType) {
     if (type === AlertType.success) {
-        return SuccesIcon
+        return SuccesIcon;
     }
     else if (type === AlertType.info) {
-        return InfoIcon
+        return InfoIcon;
     }
     else if (type === AlertType.warning) {
-        return WarningIcon
+        return WarningIcon;
     }
     else {
-        return ErrorIcon
+        return ErrorIcon;
     }
 }
 
@@ -39,7 +39,7 @@ const Alert = (props: AlertProps) => {
                     </div>
                 </div>
             </div>
-        )
-}
+        );
+};
 
-export default Alert
+export default Alert;

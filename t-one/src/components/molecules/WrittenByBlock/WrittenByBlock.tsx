@@ -1,12 +1,12 @@
-import styles from './WrittenByBlock.module.css'
-import { WrittenByProps } from '../../../types/WrittenByProps'
-import { useEffect, useState } from 'react'
-import { User } from '../../../types/User'
+import styles from './WrittenByBlock.module.css';
+import { WrittenByProps } from '@types/WrittenByProps';
+import { useEffect, useState } from 'react';
+import { User } from '@types/User';
 
 const WrittenByBlock = (props: WrittenByProps) => {
 
-    const [user, setUser] = useState<User>({ id: 0, lastName: '', firstName: '', image: '' })
-    const [error, setError] = useState(false)
+    const [user, setUser] = useState<User>({ id: 0, lastName: '', firstName: '', image: '' });
+    const [error, setError] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -20,17 +20,17 @@ const WrittenByBlock = (props: WrittenByProps) => {
                     if (response.ok) {
                         return response.json();
                     }
-                    throw new Error('Error requesting user')
+                    throw new Error('Error requesting user');
                 })
                 .then(json => {
-                    setUser({ ...json, image: json.image + '&size=100x100' })
+                    setUser({ ...json, image: json.image + '&size=100x100' });
                     setError(false);
                 }).catch((e) => {
                     console.error(e);
                     setError(true);
                 });
-        }
-        fetchData()
+        };
+        fetchData();
     }, []);
 
     return (
@@ -62,7 +62,7 @@ const WrittenByBlock = (props: WrittenByProps) => {
                     </>
             }
         </div>
-    )
-}
+    );
+};
 
-export default WrittenByBlock
+export default WrittenByBlock;

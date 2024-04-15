@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styles from "./Slider.module.css";
-import CommentWidget from "../CommentWidget/CommentWidget";
-import { Comment } from "../../../types/Comment";
+import CommentWidget from "@components/molecules/CommentWidget/CommentWidget";
+import { Comment } from "@types/Comment";
 
-const Slider = (props: { items: Comment[] }) => {
+const Slider = (props: { items: Comment[]; }) => {
     const [offset, setOffset] = useState(1);
 
     return (

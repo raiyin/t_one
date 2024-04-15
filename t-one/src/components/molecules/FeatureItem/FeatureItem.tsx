@@ -1,5 +1,5 @@
-import { FeatureProps } from '../../../types/FeatureProps'
-import styles from './FeatureItem.module.css'
+import { FeatureProps } from '@types/FeatureProps';
+import styles from './FeatureItem.module.css';
 
 const FeatureItem = (props: FeatureProps) => {
     return (
@@ -9,7 +9,7 @@ const FeatureItem = (props: FeatureProps) => {
                 <div className={styles['feature-item__desc']}>{props.text}</div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default FeatureItem
+export default FeatureItem;

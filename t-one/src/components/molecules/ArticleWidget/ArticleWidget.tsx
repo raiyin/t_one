@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom'
-import { ArticleProps } from '../../../types/ArticleProps'
-import { tagsToHashTagString } from '../../../utils/mappers'
-import HashTag from '../../atoms/HashTag/HashTag'
-import Rating from '../../atoms/Rating/Rating'
-import styles from './ArticleWidget.module.css'
-import WrittenByBlock from '../WrittenByBlock/WrittenByBlock'
+import { Link } from 'react-router-dom';
+import { ArticleProps } from '@types/ArticleProps';
+import { tagsToHashTagString } from '../../../utils/mappers';
+import HashTag from '@components/atoms/HashTag/HashTag';
+import Rating from '@components/atoms/Rating/Rating';
+import styles from './ArticleWidget.module.css';
+import WrittenByBlock from '@components/molecules/WrittenByBlock/WrittenByBlock';
 
 const ArticleWidget = (props: ArticleProps) => {
     return (
@@ -30,7 +30,7 @@ const ArticleWidget = (props: ArticleProps) => {
                 {props.body}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ArticleWidget
+export default ArticleWidget;

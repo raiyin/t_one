@@ -1,10 +1,10 @@
-import ButtonType from "../../../types/ButtonProps";
-import Button from "../../atoms/Button/Button";
-import Title from "../../atoms/Title/Title";
-import HeroText from "../../atoms/HeroText/HeroText";
+import ButtonType from "@types/ButtonProps";
+import Button from "@components/atoms/Button/Button";
+import Title from "@components/atoms/Title/Title";
+import HeroText from "@components/atoms/HeroText/HeroText";
 import styles from "./HeroTextBlock.module.css";
-import OverImage from '../../../assets/images/pngs/over_1000.png'
-import { ArrowDirection } from "../../../types/ArrowProps";
+import OverImage from '@assets/images/pngs/over_1000.png';
+import { ArrowDirection } from "@types/ArrowProps";
 
 const HeroTextBlock = () => {
     return (

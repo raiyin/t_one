@@ -1,10 +1,10 @@
-import ButtonType from '../../../types/ButtonProps'
-import Button from '../../atoms/Button/Button'
-import Title from '../../atoms/Title/Title'
-import List from '../../atoms/List/List'
-import styles from './AppTextBlock.module.css'
-import Arrow_Image from "../../../assets/images/svgs/app_arrow.svg";
-import { ArrowDirection } from '../../../types/ArrowProps'
+import ButtonType from '@types/ButtonProps';
+import Button from '@components/atoms/Button/Button';
+import Title from '@components/atoms/Title/Title';
+import List from '@components/atoms/List/List';
+import styles from './AppTextBlock.module.css';
+import Arrow_Image from "@assets/images/svgs/app_arrow.svg";
+import { ArrowDirection } from '@types/ArrowProps';
 
 const AppTextBlock = () => {
     return (
@@ -42,7 +42,7 @@ const AppTextBlock = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default AppTextBlock
+export default AppTextBlock;

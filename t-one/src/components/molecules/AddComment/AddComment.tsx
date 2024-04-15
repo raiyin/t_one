@@ -1,26 +1,26 @@
-import { useState } from 'react'
-import TextInput from '../../atoms/TextInput/TextInput'
-import Title from '../../atoms/Title/Title'
-import styles from './AddComment.module.css'
-import Button from '../../atoms/Button/Button'
-import ButtonType from '../../../types/ButtonProps'
-import { ArrowDirection } from '../../../types/ArrowProps'
-import { AddCommentProps } from '../../../types/AddCommentProps'
+import { useState } from 'react';
+import TextInput from '@components/atoms/TextInput/TextInput';
+import Title from '@components/atoms/Title/Title';
+import styles from './AddComment.module.css';
+import Button from '@components/atoms/Button/Button';
+import ButtonType from '@types/ButtonProps';
+import { ArrowDirection } from '@types/ArrowProps';
+import { AddCommentProps } from '@types/AddCommentProps';
 
 const AddComment = (props: AddCommentProps) => {
 
-    const [comment, setComment] = useState('')
+    const [comment, setComment] = useState('');
 
     const onSendButtonClick = async () => {
         const success = await props.buttonAction(comment);
         if (success) {
-            setComment('')
+            setComment('');
         }
-    }
+    };
 
     const onTextChangeHandler = (text: string) => {
-        setComment(text)
-    }
+        setComment(text);
+    };
 
     return (
         <div className={styles['comment-block']}>
@@ -56,7 +56,7 @@ const AddComment = (props: AddCommentProps) => {
                 />
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default AddComment
+export default AddComment;

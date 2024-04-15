@@ -1,7 +1,7 @@
-import styles from './PaginationArrows.module.css'
-import { PaginaitonArrowsProps } from '../../../types/PaginationsArrowProps'
-import ArrowIcon from '../../atoms/ArrowIcon/ArrowIcon'
-import { ArrowDirection } from '../../../types/ArrowProps'
+import styles from './PaginationArrows.module.css';
+import { PaginaitonArrowsProps } from '@types/PaginationsArrowProps';
+import ArrowIcon from '@components/atoms/ArrowIcon/ArrowIcon';
+import { ArrowDirection } from '@types/ArrowProps';
 
 const PaginationArrows = (props: PaginaitonArrowsProps) => {
     return (
@@ -10,7 +10,7 @@ const PaginationArrows = (props: PaginaitonArrowsProps) => {
 
             <ArrowIcon direction={ArrowDirection.Forth} isEnable={props.rightArrowIsEnable} onClick={props.rightArrowOnClick} />
         </div>
-    )
-}
+    );
+};
 
-export default PaginationArrows
+export default PaginationArrows;

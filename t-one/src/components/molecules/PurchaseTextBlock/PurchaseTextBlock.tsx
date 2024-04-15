@@ -1,6 +1,6 @@
-import Title from '../../atoms/Title/Title'
-import FoodWidget from '../FoodWidget/FoodWidget'
-import styles from './Purchase.module.css'
+import Title from '@components/atoms/Title/Title';
+import FoodWidget from '@components/molecules/FoodWidget/FoodWidget';
+import styles from './Purchase.module.css';
 
 const PurchaseTextBlock = () => {
     return (
@@ -47,7 +47,7 @@ const PurchaseTextBlock = () => {
                 </li>
             </ul>
         </div>
-    )
-}
+    );
+};
 
-export default PurchaseTextBlock
+export default PurchaseTextBlock;

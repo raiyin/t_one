@@ -1,7 +1,7 @@
-import { CommentWidgetProps } from '../../../types/CommentWidgetProps'
-import styles from './CommentWidget.module.css'
-import QuoteImage from '../../../assets/images/svgs/quote.svg'
-import Title from '../../atoms/Title/Title'
+import { CommentWidgetProps } from '@types/CommentWidgetProps';
+import styles from './CommentWidget.module.css';
+import QuoteImage from '@assets/images/svgs/quote.svg';
+import Title from '@components/atoms/Title/Title';
 
 const CommentWidget = (props: CommentWidgetProps) => {
     return (
@@ -32,7 +32,7 @@ const CommentWidget = (props: CommentWidgetProps) => {
             </div>
 
         </div>
-    )
-}
+    );
+};
 
-export default CommentWidget
+export default CommentWidget;

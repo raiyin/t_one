@@ -1,8 +1,8 @@
-import { NavBarProps } from "../../../types/NavBarProps";
-import NavLink from "../../atoms/NavLink/NavLink";
+import { NavBarProps } from "@types/NavBarProps";
+import NavLink from "@components/atoms/NavLink/NavLink";
 import styles from "./NavBar.module.css";
-import { NavLinkProps } from "../../../types/NavLinkProps";
-import Location from "../../../types/Location";
+import { NavLinkProps } from "@types/NavLinkProps";
+import Location from "@types/Location";
 
 const NavBar = (props: NavBarProps) => {
     return (
