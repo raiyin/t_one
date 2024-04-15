@@ -1,7 +1,7 @@
-import { ArticleProps } from '../../../types/ArticleProps'
-import Title from '../../atoms/Title/Title'
-import ArticleHead from '../../molecules/ArticleHead/ArticleHead'
-import styles from './Article.module.css'
+import { ArticleProps } from '@types/ArticleProps';
+import Title from '@components/atoms/Title/Title';
+import ArticleHead from '@components/molecules/ArticleHead/ArticleHead';
+import styles from './Article.module.css';
 
 const Article = (props: ArticleProps) => {
 
@@ -29,7 +29,7 @@ const Article = (props: ArticleProps) => {
                 {props.body}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Article
+export default Article;

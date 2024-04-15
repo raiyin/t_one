@@ -1,9 +1,9 @@
-import Title from '../../atoms/Title/Title'
-import ArticleWidget from '../../molecules/ArticleWidget/ArticleWidget'
-import styles from './ArticlesPreview.module.css'
-import { ArticleProps } from '../../../types/ArticleProps'
+import Title from '@components/atoms/Title/Title';
+import ArticleWidget from '@components/molecules/ArticleWidget/ArticleWidget';
+import styles from './ArticlesPreview.module.css';
+import { ArticleProps } from '@types/ArticleProps';
 
-const ArticlesPreview = (props: { articles: ArticleProps[], leftArrowIsEnable: boolean, rightArrowIsEnable: boolean }) => {
+const ArticlesPreview = (props: { articles: ArticleProps[], leftArrowIsEnable: boolean, rightArrowIsEnable: boolean; }) => {
 
     return (
         <div className={styles['article-preview']}>
@@ -33,7 +33,7 @@ const ArticlesPreview = (props: { articles: ArticleProps[], leftArrowIsEnable: b
             </div>
 
         </div>
-    )
-}
+    );
+};
 
-export default ArticlesPreview
+export default ArticlesPreview;

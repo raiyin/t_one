@@ -1,16 +1,16 @@
-import { useEffect, useState } from 'react'
-import Title from '../../atoms/Title/Title'
-import LunchWidget from '../../molecules/LunchWidget/LunchWidget'
-import styles from './LunchBlock.module.css'
-import { LunchWidgetProps } from '../../../types/LunchWidgetProps'
-import LoadingBlock from '../LoadingBlock/LoadingBlock'
-import { AnchorSection } from 'react-anchor-navigation'
+import { useEffect, useState } from 'react';
+import Title from '@components/atoms/Title/Title';
+import LunchWidget from '@components/molecules/LunchWidget/LunchWidget';
+import styles from './LunchBlock.module.css';
+import { LunchWidgetProps } from '@types/LunchWidgetProps';
+import LoadingBlock from '@components/organisms/LoadingBlock/LoadingBlock';
+import { AnchorSection } from 'react-anchor-navigation';
 
 const LunchBlock = () => {
 
-    const [lunchWidgetProps, setLunchWidgetProps] = useState<LunchWidgetProps[]>([])
-    const [error, setError] = useState<boolean>(false)
-    const [loading, setLoading] = useState<boolean>(false)
+    const [lunchWidgetProps, setLunchWidgetProps] = useState<LunchWidgetProps[]>([]);
+    const [error, setError] = useState<boolean>(false);
+    const [loading, setLoading] = useState<boolean>(false);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -20,22 +20,22 @@ const LunchBlock = () => {
                         return response.json();
                     }
 
-                    throw new Error('Error requesting recipes')
+                    throw new Error('Error requesting recipes');
                 })
                 .then(data => data.recipes as LunchWidgetProps[])
                 .then(data => data.sort((x, y) => y.rating - x.rating).splice(0, 3))
                 .then(data => {
-                    setLunchWidgetProps(data)
-                    setError(false)
+                    setLunchWidgetProps(data);
+                    setError(false);
                 }).catch(() => {
                     console.error();
                     setError(true);
                 });
-        }
+        };
 
-        setLoading(true)
-        fetchData()
-        setLoading(false)
+        setLoading(true);
+        fetchData();
+        setLoading(false);
     }, []);
 
     return (
@@ -78,7 +78,7 @@ const LunchBlock = () => {
             }
         </>
 
-    )
-}
+    );
+};
 
-export default LunchBlock
+export default LunchBlock;

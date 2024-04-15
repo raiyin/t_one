@@ -1,9 +1,9 @@
-import Location from '../../../types/Location';
-import { NavBarProps } from '../../../types/NavBarProps';
-import Logo from '../../atoms/Logo/Logo'
-import NavBar from '../../molecules/NavBar/NavBar'
-import Socials from '../../molecules/Socials/Socials';
-import styles from './Footer.module.css'
+import Location from '@types/Location';
+import { NavBarProps } from '@types/NavBarProps';
+import Logo from '@components/atoms/Logo/Logo';
+import NavBar from '@components/molecules/NavBar/NavBar';
+import Socials from '@components/molecules/Socials/Socials';
+import styles from './Footer.module.css';
 
 const Footer = () => {
     const navBarProps: NavBarProps = {
@@ -44,7 +44,7 @@ const Footer = () => {
                 <Socials />
             </div>
         </footer>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;

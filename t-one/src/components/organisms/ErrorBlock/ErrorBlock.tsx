@@ -1,7 +1,7 @@
-import Title from '../../atoms/Title/Title'
-import styles from './ErrorBlock.module.css'
+import Title from '@components/atoms/Title/Title';
+import styles from './ErrorBlock.module.css';
 
-const ErrorBlock = (props: { errorText: string }) => {
+const ErrorBlock = (props: { errorText: string; }) => {
     return (
         <div className={styles['error-wrapper']}>
             <Title
@@ -14,7 +14,7 @@ const ErrorBlock = (props: { errorText: string }) => {
                 hideOverflow={false}
             />
         </div>
-    )
-}
+    );
+};
 
-export default ErrorBlock
+export default ErrorBlock;

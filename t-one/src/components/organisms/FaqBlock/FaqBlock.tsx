@@ -1,10 +1,10 @@
-import Title from '../../atoms/Title/Title'
-import FaqItem from '../../molecules/FaqItem/FaqItem'
-import styles from './FaqBlock.module.css'
+import Title from '@components/atoms/Title/Title';
+import FaqItem from '@components/molecules/FaqItem/FaqItem';
+import styles from './FaqBlock.module.css';
 import faqJsonData from '../../../data/faq_data.json';
 import { useState } from 'react';
-import { FaqItemProps } from '../../../types/FaqItemProps';
-import FaqRaysImage from '../../../assets/images/svgs/faq_rays.svg'
+import { FaqItemProps } from '@types/FaqItemProps';
+import FaqRaysImage from '@assets/images/svgs/faq_rays.svg';
 import {
     AnchorSection,
 } from "react-anchor-navigation";
@@ -43,7 +43,7 @@ const FaqBlock = () => {
                 )}
             </ul>
         </section>
-    )
-}
+    );
+};
 
-export default FaqBlock
+export default FaqBlock;

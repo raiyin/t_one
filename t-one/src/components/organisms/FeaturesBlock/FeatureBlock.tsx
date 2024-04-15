@@ -1,8 +1,8 @@
-import FeatureItem from '../../molecules/FeatureItem/FeatureItem'
-import styles from './FeatureBlock.module.css'
-import { FeatureProps } from '../../../types/FeatureProps';
+import FeatureItem from '@components/molecules/FeatureItem/FeatureItem';
+import styles from './FeatureBlock.module.css';
+import { FeatureProps } from '@types/FeatureProps';
 
-const FeatureBlock = (props: { features: FeatureProps[] }) => {
+const FeatureBlock = (props: { features: FeatureProps[]; }) => {
 
     return (
         <div className={styles['features']}>
@@ -16,7 +16,7 @@ const FeatureBlock = (props: { features: FeatureProps[] }) => {
                 ))
             }
         </div>
-    )
-}
+    );
+};
 
-export default FeatureBlock
+export default FeatureBlock;

@@ -1,7 +1,7 @@
-import CommentWidget from "../../molecules/CommentWidget/CommentWidget";
+import CommentWidget from "@components/molecules/CommentWidget/CommentWidget";
 import styles from "./ReviewBlock.module.css";
-import { ReviewProps } from "../../../types/ReviewProps";
-import Slider from "../../molecules/Slider/Slider";
+import { ReviewProps } from "@types/ReviewProps";
+import Slider from "@components/molecules/Slider/Slider";
 import { useEffect, useState } from "react";
 
 const ReviewBlock = (props: ReviewProps) => {

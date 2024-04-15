@@ -1,5 +1,5 @@
-import AppTextBlock from '../../molecules/AppTextBlock/AppTextBlock'
-import styles from './AppBlock.module.css'
+import AppTextBlock from '@components/molecules/AppTextBlock/AppTextBlock';
+import styles from './AppBlock.module.css';
 
 const AppBlock = () => {
     return (
@@ -17,7 +17,7 @@ const AppBlock = () => {
             </div>
             <AppTextBlock />
         </section>
-    )
-}
+    );
+};
 
-export default AppBlock
+export default AppBlock;
