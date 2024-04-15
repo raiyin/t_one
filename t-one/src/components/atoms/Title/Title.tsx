@@ -1,5 +1,5 @@
 import styles from "./Title.module.scss";
-import { TitleProps as TitleProps } from "../../../types/TitleProps";
+import { TitleProps as TitleProps } from "@types/TitleProps";
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 
@@ -7,11 +7,11 @@ const Title = (props: TitleProps) => {
 
     const titleClass = {
         title_font: true,
-    }
-    titleClass[('lh_' + props.lineHeight) as keyof typeof titleClass] = true
-    titleClass[('fs_' + props.fontSize) as keyof typeof titleClass] = true
-    titleClass[('fw_' + props.fontWeight) as keyof typeof titleClass] = true
-    titleClass[('title_overflow') as keyof typeof titleClass] = props.hideOverflow
+    };
+    titleClass[('lh_' + props.lineHeight) as keyof typeof titleClass] = true;
+    titleClass[('fs_' + props.fontSize) as keyof typeof titleClass] = true;
+    titleClass[('fw_' + props.fontWeight) as keyof typeof titleClass] = true;
+    titleClass[('title_overflow') as keyof typeof titleClass] = props.hideOverflow;
 
     const className = cx(titleClass);
 

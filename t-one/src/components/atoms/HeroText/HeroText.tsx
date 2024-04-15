@@ -1,4 +1,4 @@
-import { HeroTextProps } from "../../../types/HeroTextProps";
+import { HeroTextProps } from "@types/HeroTextProps";
 import styles from "./HeroText.module.css";
 
 const HeroText = (props: HeroTextProps) => {
@@ -10,7 +10,7 @@ const HeroText = (props: HeroTextProps) => {
                 {props.text_bonus}
             </div>
         </div>
-    )
+    );
 };
 
 export default HeroText;

@@ -1,6 +1,6 @@
-import styles from './Rating.module.css'
-import Rating_Star from '../../../assets/images/svgs/star.svg';
-import { RatingProps } from '../../../types/RatingProps';
+import styles from './Rating.module.css';
+import Rating_Star from '@assets/images/svgs/star.svg';
+import { RatingProps } from '@types/RatingProps';
 
 const Rating = (props: RatingProps) => {
     return (
@@ -27,7 +27,7 @@ const Rating = (props: RatingProps) => {
             }
 
         </div>
-    )
-}
+    );
+};
 
-export default Rating
+export default Rating;
