@@ -1,4 +1,4 @@
-import styles from "./Main.module.css";
+import styles from "./styles.module.css";
 import { Suspense, lazy } from 'react';
 import Title from "@/components/atoms/Title";
 import HeroBlock from "@/components/organisms/HeroBlock";

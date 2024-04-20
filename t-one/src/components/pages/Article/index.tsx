@@ -12,7 +12,7 @@ import Footer from '@/components/organisms/Footer';
 import Header from '@/components/organisms/Header';
 import LoadingBlock from '@/components/organisms/LoadingBlock';
 import ReviewBlock from '@/components/organisms/ReviewBlock';
-import styles from './Article.module.css';
+import styles from './styles.module.css';
 import Alert from '@/components/molecules/Alert';
 import { AlertType } from '@types/AlertProps';
 import ErrorBlock from '@/components/organisms/ErrorBlock';

@@ -1,7 +1,7 @@
 import ArticlesPreview from '@/components/organisms/ArticlesPreview';
 import Footer from '@/components/organisms/Footer';
 import Header from '@/components/organisms/Header';
-import styles from './Blog.module.css';
+import styles from './styles.module.css';
 import { useAppSelector, useAppDispatch } from '@store/hooks';
 import { decrementPageNumber, incrementPageNumber } from '@store/slices/articlesSlice';
 import { RootState } from '@store/store';
