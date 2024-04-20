@@ -1,5 +1,5 @@
 import { CommentWidgetProps } from '@types/CommentWidgetProps';
-import styles from './CommentWidget.module.css';
+import styles from './styles.module.css';
 import QuoteImage from '@assets/images/svgs/quote.svg';
 import Title from '@/components/atoms/Title';
 

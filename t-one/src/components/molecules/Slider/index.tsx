@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./Slider.module.css";
+import styles from "./styles.module.css";
 import CommentWidget from "@/components/molecules/CommentWidget";
 import { Comment } from "@types/Comment";
 

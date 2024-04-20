@@ -3,7 +3,7 @@ import { tagsToHashTagString } from '@utils/mappers';
 import HashTag from '@/components/atoms/HashTag';
 import Rating from '@/components/atoms/Rating';
 import WrittenByBlock from '@/components/molecules/WrittenByBlock';
-import styles from './ArticleHead.module.css';
+import styles from './styles.module.css';
 
 const ArticleHead = (props: ArticleHeadProps) => {
 

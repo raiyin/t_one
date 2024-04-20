@@ -1,4 +1,4 @@
-import styles from './WrittenByBlock.module.css';
+import styles from './styles.module.css';
 import { WrittenByProps } from '@types/WrittenByProps';
 import { useEffect, useState } from 'react';
 import { User } from '@types/User';

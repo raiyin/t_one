@@ -2,7 +2,7 @@ import ButtonType from "@types/ButtonProps";
 import Button from "@/components/atoms/Button";
 import Title from "@/components/atoms/Title";
 import HeroText from "@/components/atoms/HeroText";
-import styles from "./HeroTextBlock.module.css";
+import styles from "./styles.module.css";
 import OverImage from '@assets/images/pngs/over_1000.png';
 import { ArrowDirection } from "@types/ArrowProps";
 

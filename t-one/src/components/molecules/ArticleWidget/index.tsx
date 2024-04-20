@@ -3,7 +3,7 @@ import { ArticleProps } from '@types/ArticleProps';
 import { tagsToHashTagString } from '@utils/mappers';
 import HashTag from '@/components/atoms/HashTag';
 import Rating from '@/components/atoms/Rating';
-import styles from './ArticleWidget.module.css';
+import styles from './styles.module.css';
 import WrittenByBlock from '@/components/molecules/WrittenByBlock';
 
 const ArticleWidget = (props: ArticleProps) => {

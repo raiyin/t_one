@@ -1,4 +1,4 @@
-import styles from './PaginationArrows.module.css';
+import styles from './styles.module.css';
 import { PaginaitonArrowsProps } from '@types/PaginationsArrowProps';
 import ArrowIcon from '@/components/atoms/ArrowIcon';
 import { ArrowDirection } from '@types/ArrowProps';

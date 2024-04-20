@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import TextInput from '@/components/atoms/TextInput';
 import Title from '@/components/atoms/Title';
-import styles from './AddComment.module.css';
+import styles from './styles.module.css';
 import Button from '@/components/atoms/Button';
 import ButtonType from '@types/ButtonProps';
 import { ArrowDirection } from '@types/ArrowProps';

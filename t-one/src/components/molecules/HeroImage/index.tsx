@@ -1,4 +1,4 @@
-import styles from "./HeroImage.module.css";
+import styles from "./styles.module.css";
 import Waves_Image from "@assets/images/svgs/waves.svg";
 import Arrow_Image from "@assets/images/svgs/arrow.svg";
 import Rays_Image from "@assets/images/svgs/rays.svg";

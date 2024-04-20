@@ -2,7 +2,7 @@ import ButtonType from '@types/ButtonProps';
 import Button from '@/components/atoms/Button';
 import Title from '@/components/atoms/Title';
 import List from '@/components/atoms/List';
-import styles from './AppTextBlock.module.css';
+import styles from './styles.module.css';
 import Arrow_Image from "@assets/images/svgs/app_arrow.svg";
 import { ArrowDirection } from '@types/ArrowProps';
 

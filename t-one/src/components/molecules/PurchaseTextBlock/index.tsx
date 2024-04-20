@@ -1,6 +1,6 @@
 import Title from '@/components/atoms/Title';
 import FoodWidget from '@/components/molecules/FoodWidget';
-import styles from './Purchase.module.css';
+import styles from './styles.module.css';
 
 const PurchaseTextBlock = () => {
     return (

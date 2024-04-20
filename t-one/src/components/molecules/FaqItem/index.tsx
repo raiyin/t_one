@@ -1,4 +1,4 @@
-import styles from './FaqItem.module.css';
+import styles from './styles.module.css';
 import MinusImage from '@assets/images/pngs/minus.png';
 import PlusImage from '@assets/images/pngs/plus.png';
 import { FaqItemProps } from '@types/FaqItemProps';

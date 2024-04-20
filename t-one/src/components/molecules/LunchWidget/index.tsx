@@ -1,4 +1,4 @@
-import styles from './LunchWidget.module.css';
+import styles from './styles.module.css';
 import Tag from '@/components/atoms/Tag';
 import Time from '@/components/atoms/Time';
 import Rating from '@/components/atoms/Rating';

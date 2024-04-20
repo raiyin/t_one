@@ -1,4 +1,4 @@
-import styles from './Socials.module.css';
+import styles from './styles.module.css';
 import SMIcon from '@/components/atoms/SmIcon';
 
 const Socials = () => {

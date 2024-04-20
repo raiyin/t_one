@@ -1,5 +1,5 @@
 import Time from "@/components/atoms/Time";
-import styles from "./FoodWidget.module.css";
+import styles from "./styles.module.css";
 import { FoodWidgetProps } from "@types/FoodWidgetProps";
 
 const FoodWidget = (props: FoodWidgetProps) => {

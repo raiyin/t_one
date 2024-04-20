@@ -1,5 +1,5 @@
 import { AlertProps, AlertType } from '@types/AlertProps';
-import styles from './Alert.module.css';
+import styles from './styles.module.css';
 import SuccesIcon from '@assets/images/svgs/success.svg';
 import InfoIcon from '@assets/images/svgs/information.svg';
 import WarningIcon from '@assets/images/svgs/warning.svg';
