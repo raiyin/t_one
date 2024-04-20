@@ -1,6 +1,6 @@
 import Location from "@types/Location";
 import { NavLinkProps } from "@types/NavLinkProps";
-import styles from "./NavLink.module.css";
+import styles from "./styles.module.css";
 import { AnchorLink } from "react-anchor-navigation";
 
 const NavLink = (props: NavLinkProps) => {

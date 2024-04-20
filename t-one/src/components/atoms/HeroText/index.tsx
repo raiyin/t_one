@@ -1,5 +1,5 @@
 import { HeroTextProps } from "@types/HeroTextProps";
-import styles from "./HeroText.module.css";
+import styles from "./styles.module.css";
 
 const HeroText = (props: HeroTextProps) => {
     return (

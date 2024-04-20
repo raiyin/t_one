@@ -1,4 +1,4 @@
-import styles from './Rating.module.css';
+import styles from './styles.module.css';
 import Rating_Star from '@assets/images/svgs/star.svg';
 import { RatingProps } from '@types/RatingProps';
 

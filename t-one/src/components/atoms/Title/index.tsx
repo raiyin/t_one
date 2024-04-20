@@ -1,4 +1,4 @@
-import styles from "./Title.module.scss";
+import styles from "./styles.module.scss";
 import { TitleProps as TitleProps } from "@types/TitleProps";
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);

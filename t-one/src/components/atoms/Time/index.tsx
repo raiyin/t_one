@@ -1,4 +1,4 @@
-import styles from "./Time.module.scss";
+import styles from "./styles.module.scss";
 import { TimeProps } from "@types/TimeProps";
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);

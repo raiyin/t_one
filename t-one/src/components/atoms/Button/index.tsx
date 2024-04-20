@@ -1,5 +1,5 @@
 import ButtonType, { ButtonProps } from "@types/ButtonProps";
-import styles from "./Button.module.css";
+import styles from "./styles.module.css";
 import ButtonImage_Forth from '@assets/images/svgs/btn_arrow_forth.svg';
 import ButtonImage_Back from '@assets/images/svgs/btn_arrow_back.svg';
 import { ArrowDirection } from "@types/ArrowProps";

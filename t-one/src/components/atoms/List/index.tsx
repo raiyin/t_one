@@ -1,6 +1,6 @@
-import styles from './List.module.css'
+import styles from './styles.module.css';
 
-const List = (props: { texts: string[] }) => {
+const List = (props: { texts: string[]; }) => {
     return (
         <ul className={styles['list']}>
             {props.texts.map(text =>
@@ -9,7 +9,7 @@ const List = (props: { texts: string[] }) => {
                 </li>
             )}
         </ul>
-    )
-}
+    );
+};
 
-export default List
+export default List;
