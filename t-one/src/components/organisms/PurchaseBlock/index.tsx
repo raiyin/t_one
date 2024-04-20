@@ -1,5 +1,5 @@
 import PurchaseTextBlock from '@/components/molecules/PurchaseTextBlock';
-import styles from './PurchasesBlock.module.css';
+import styles from './styles.module.css';
 
 const PurchasesBlock = () => {
     return (

@@ -1,5 +1,5 @@
 import AppTextBlock from '@/components/molecules/AppTextBlock';
-import styles from './AppBlock.module.css';
+import styles from './styles.module.css';
 
 const AppBlock = () => {
     return (

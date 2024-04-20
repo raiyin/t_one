@@ -1,5 +1,5 @@
 import Title from '@/components/atoms/Title';
-import styles from './ErrorBlock.module.css';
+import styles from './styles.module.css';
 
 const ErrorBlock = (props: { errorText: string; }) => {
     return (

@@ -3,7 +3,7 @@ import { NavBarProps } from '@types/NavBarProps';
 import Logo from '@/components/atoms/Logo';
 import NavBar from '@/components/molecules/NavBar';
 import Socials from '@/components/molecules/Socials';
-import styles from './Footer.module.css';
+import styles from './styles.module.css';
 
 const Footer = () => {
     const navBarProps: NavBarProps = {

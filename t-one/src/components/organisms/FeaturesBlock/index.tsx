@@ -1,5 +1,5 @@
 import FeatureItem from '@/components/molecules/FeatureItem';
-import styles from './FeatureBlock.module.css';
+import styles from './styles.module.css';
 import { FeatureProps } from '@types/FeatureProps';
 
 const FeatureBlock = (props: { features: FeatureProps[]; }) => {

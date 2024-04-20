@@ -1,5 +1,5 @@
 import CommentWidget from "@/components/molecules/CommentWidget";
-import styles from "./ReviewBlock.module.css";
+import styles from "./styles.module.css";
 import { ReviewProps } from "@types/ReviewProps";
 import Slider from "@/components/molecules/Slider";
 import { useEffect, useState } from "react";

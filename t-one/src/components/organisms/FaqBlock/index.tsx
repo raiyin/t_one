@@ -1,6 +1,6 @@
 import Title from '@/components/atoms/Title';
 import FaqItem from '@/components/molecules/FaqItem';
-import styles from './FaqBlock.module.css';
+import styles from './styles.module.css';
 import faqJsonData from '@data/faq_data.json';
 import { useState } from 'react';
 import { FaqItemProps } from '@types/FaqItemProps';

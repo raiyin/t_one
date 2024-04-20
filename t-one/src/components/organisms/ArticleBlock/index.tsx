@@ -1,7 +1,7 @@
 import { ArticleProps } from '@types/ArticleProps';
 import Title from '@/components/atoms/Title';
 import ArticleHead from '@/components/molecules/ArticleHead';
-import styles from './Article.module.css';
+import styles from './styles.module.css';
 
 const Article = (props: ArticleProps) => {
 

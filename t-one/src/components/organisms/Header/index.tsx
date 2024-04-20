@@ -1,4 +1,4 @@
-import styles from "./Header.module.css";
+import styles from "./styles.module.css";
 import Logo from "@/components/atoms/Logo";
 import NavBar from "@/components/molecules/NavBar";
 import Location from "@types/Location";

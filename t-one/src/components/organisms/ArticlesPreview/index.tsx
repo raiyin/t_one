@@ -1,6 +1,6 @@
 import Title from '@/components/atoms/Title';
 import ArticleWidget from '@/components/molecules/ArticleWidget';
-import styles from './ArticlesPreview.module.css';
+import styles from './styles.module.css';
 import { ArticleProps } from '@types/ArticleProps';
 
 const ArticlesPreview = (props: { articles: ArticleProps[], leftArrowIsEnable: boolean, rightArrowIsEnable: boolean; }) => {

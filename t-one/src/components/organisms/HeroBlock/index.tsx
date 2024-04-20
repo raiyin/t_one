@@ -1,6 +1,6 @@
 import HeroImage from '@/components/molecules/HeroImage';
 import HeroTextBlock from '@/components/molecules/HeroTextBlock';
-import styles from './HeroBlock.module.css';
+import styles from './styles.module.css';
 
 const HeroBlock = () => {
     return (
