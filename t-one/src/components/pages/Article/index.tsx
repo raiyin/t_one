@@ -1,21 +1,21 @@
-import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import { ArrowDirection } from '@types/ArrowProps';
-import { ArticleProps } from '@types/ArticleProps';
-import ButtonType from '@types/ButtonProps';
-import { Comment } from '@types/Comment';
 import Button from '@/components/atoms/Button';
 import Title from '@/components/atoms/Title';
 import AddComment from '@/components/molecules/AddComment';
+import Alert from '@/components/molecules/Alert';
 import ArticleBlock from '@/components/organisms/ArticleBlock';
+import ErrorBlock from '@/components/organisms/ErrorBlock';
 import Footer from '@/components/organisms/Footer';
 import Header from '@/components/organisms/Header';
 import LoadingBlock from '@/components/organisms/LoadingBlock';
 import ReviewBlock from '@/components/organisms/ReviewBlock';
-import styles from './styles.module.css';
-import Alert from '@/components/molecules/Alert';
 import { AlertType } from '@types/AlertProps';
-import ErrorBlock from '@/components/organisms/ErrorBlock';
+import { ArrowDirection } from '@types/ArrowProps';
+import { ArticleProps } from '@types/ArticleProps';
+import ButtonType from '@types/ButtonProps';
+import { Comment } from '@types/Comment';
+import { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import styles from './styles.module.css';
 
 const Article = () => {
 

@@ -1,7 +1,7 @@
 .container {
     width: 680px;
     height: 607px;
-    background: #fff;
+    background: var(--colors-interface-white-bg);
     padding-left: 50px;
 }
 

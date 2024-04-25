@@ -7,7 +7,7 @@ const PurchasesBlock = () => {
             <PurchaseTextBlock />
             <div className={styles['purchases_image_wrapper']}>
                 <img
-                    src="@assets/images/webps/purchases.webp"
+                    src="../../../src/assets/images/webps/purchases.webp"
                     alt="purchases dashboard"
                     loading='lazy'
                     decoding='async'

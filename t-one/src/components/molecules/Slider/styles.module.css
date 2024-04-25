@@ -18,6 +18,7 @@
 .slide {
     width: 37dvw;
     height: 17dvh;
+    min-height: 114px;
 }
 
 .slides_1 {

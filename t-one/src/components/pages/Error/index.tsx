@@ -1,7 +1,7 @@
 import Title from '@/components/atoms/Title';
 import Footer from '@/components/organisms/Footer';
 import Header from '@/components/organisms/Header';
-import styles from './Error.module.css';
+import styles from './styles.module.css';
 
 const NotFound = () => {
     return (

@@ -30,7 +30,8 @@
       "@types/*": ["./src/types/*"],
       "@store/*": ["./src/store/*"],
       "@data/*": ["./src/data/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@routes/*": ["./src/routes/*"]
     },
   },
   "include": ["src", "src/__ tests __"],
