@@ -3,25 +3,25 @@ import { TitleProps as TitleProps } from "@types/TitleProps";
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 
-const Title = (props: TitleProps) => {
+const Title = ({ text = '', selectStart = 0, selectEnd = 0, lineHeight = 20, fontSize = 16, fontWeight = 400, hideOverflow = true }: TitleProps) => {
 
     const titleClass = {
         title_font: true,
     };
-    titleClass[('lh_' + props.lineHeight) as keyof typeof titleClass] = true;
-    titleClass[('fs_' + props.fontSize) as keyof typeof titleClass] = true;
-    titleClass[('fw_' + props.fontWeight) as keyof typeof titleClass] = true;
-    titleClass[('title_overflow') as keyof typeof titleClass] = props.hideOverflow;
+    titleClass[('lh_' + lineHeight) as keyof typeof titleClass] = true;
+    titleClass[('fs_' + fontSize) as keyof typeof titleClass] = true;
+    titleClass[('fw_' + fontWeight) as keyof typeof titleClass] = true;
+    titleClass[('title_overflow') as keyof typeof titleClass] = hideOverflow;
 
     const className = cx(titleClass);
 
     return (
         <div className={className}>
-            {props.text.slice(0, props.selectStart)}
+            {text.slice(0, selectStart)}
             <span className="selected">
-                {props.text.slice(props.selectStart, props.selectEnd)}
+                {text.slice(selectStart, selectEnd)}
             </span>
-            {props.text.slice(props.selectEnd)}
+            {text.slice(selectEnd)}
         </div>
     );
 };
