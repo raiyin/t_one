@@ -4,6 +4,7 @@ import Time from '@/components/atoms/Time';
 import Rating from '@/components/atoms/Rating';
 import Title from '@/components/atoms/Title';
 import { LunchWidgetProps } from '@types/LunchWidgetProps';
+import { TitleType } from '@/types/TitleProps';
 
 const LunchWidget = (props: LunchWidgetProps) => {
     return (
@@ -33,9 +34,7 @@ const LunchWidget = (props: LunchWidgetProps) => {
                     text={props.name}
                     selectStart={0}
                     selectEnd={0}
-                    fontSize={26}
-                    fontWeight={600}
-                    lineHeight={42}
+                    titleType={TitleType.H5}
                     hideOverflow={true}
                 />
             </div>

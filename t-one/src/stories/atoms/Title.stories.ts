@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Title from '@components/atoms/Title';
+import { TitleType } from '@/types/TitleProps';
 
 const meta = {
     title: 't-one/atoms/Title',
@@ -18,9 +19,7 @@ export const Normal_600: Story = {
         text: "Some Header Text",
         selectStart: 5,
         selectEnd: 11,
-        fontWeight: 600,
-        fontSize: 45,
-        lineHeight: 50,
+        titleType: TitleType.H1,
         hideOverflow: false
     },
 };

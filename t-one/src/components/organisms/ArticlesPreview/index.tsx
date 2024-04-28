@@ -2,6 +2,7 @@ import Title from '@/components/atoms/Title';
 import ArticleWidget from '@/components/molecules/ArticleWidget';
 import styles from './styles.module.css';
 import { ArticleProps } from '@types/ArticleProps';
+import { TitleType } from '@/types/TitleProps';
 
 const ArticlesPreview = (props: { articles: ArticleProps[], leftArrowIsEnable: boolean, rightArrowIsEnable: boolean; }) => {
 
@@ -11,9 +12,7 @@ const ArticlesPreview = (props: { articles: ArticleProps[], leftArrowIsEnable: b
                 text={'Latest Articles'}
                 selectStart={7}
                 selectEnd={15}
-                fontSize={45}
-                fontWeight={600}
-                lineHeight={54}
+                titleType={TitleType.H3}
                 hideOverflow={false}
             />
 

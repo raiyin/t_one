@@ -1,12 +1,12 @@
-.title_font {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: semibold;
-    font-size: 76px;
-    line-height: 91px;
-    margin: 0;
-    padding: 0;
-}
+// .title_font {
+//     font-family: "Poppins", sans-serif;
+//     font-weight: 600;
+//     font-style: semibold;
+//     font-size: 76px;
+//     line-height: 91px;
+//     margin: 0;
+//     padding: 0;
+// }
 
 .title_overflow{
     overflow: hidden;
@@ -18,22 +18,47 @@ span {
     color: #6C5FBC;
 }
 
-@for $i from 14 through 96 {
-    .lh_#{$i} {
-        line-height: #{$i}px;
-    }
+.H1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 7.6rem;
+    line-height: 9.1rem;
 }
 
-@for $i from 10 through 72 {
-    .fs_#{$i} {
-        font-size: #{$i}px;
-    }
+.H2 {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 5.8rem;
 }
 
-$weights: 100, 200, 300, 400, 500, 600, 700;
+.H3 {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 4.5rem;
+    line-height: 5.4rem;
+}
 
-@each $size in $weights {
-    .fw_#{$size} {
-        font-weight: $size;
-    }
+.H4 {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 4.5rem;
+}
+
+.H5 {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 4.2rem;
 }

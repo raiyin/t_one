@@ -5,6 +5,7 @@ import styles from './styles.module.css';
 import { LunchWidgetProps } from '@types/LunchWidgetProps';
 import LoadingBlock from '@/components/organisms/LoadingBlock';
 import { AnchorSection } from 'react-anchor-navigation';
+import { TitleType } from '@/types/TitleProps';
 
 const LunchBlock = () => {
 
@@ -56,9 +57,7 @@ const LunchBlock = () => {
                                         text={'Our Top Lunch'}
                                         selectStart={8}
                                         selectEnd={13}
-                                        fontWeight={600}
-                                        fontSize={45}
-                                        lineHeight={26}
+                                        titleType={TitleType.H3}
                                         hideOverflow={false}
                                     />
                                     <ul className={styles['lunches_list']}>

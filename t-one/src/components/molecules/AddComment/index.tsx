@@ -6,6 +6,7 @@ import Button from '@/components/atoms/Button';
 import ButtonType from '@types/ButtonProps';
 import { ArrowDirection } from '@types/ArrowProps';
 import { AddCommentProps } from '@types/AddCommentProps';
+import { TitleType } from '@/types/TitleProps';
 
 const AddComment = (props: AddCommentProps) => {
 
@@ -28,9 +29,7 @@ const AddComment = (props: AddCommentProps) => {
             <div className={styles['comment-block_title']}>
                 <Title
                     text={'Add comment'}
-                    fontSize={40}
-                    fontWeight={600}
-                    lineHeight={55}
+                    titleType={TitleType.H4}
                     selectStart={4}
                     selectEnd={11}
                     hideOverflow={false}

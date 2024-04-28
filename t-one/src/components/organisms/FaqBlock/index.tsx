@@ -8,6 +8,7 @@ import FaqRaysImage from '@assets/images/svgs/faq_rays.svg';
 import {
     AnchorSection,
 } from "react-anchor-navigation";
+import { TitleType } from '@/types/TitleProps';
 
 const FaqBlock = () => {
 
@@ -21,9 +22,7 @@ const FaqBlock = () => {
                     text={`Frequently Asked Questions`}
                     selectStart={17}
                     selectEnd={26}
-                    fontWeight={600}
-                    fontSize={45}
-                    lineHeight={54}
+                    titleType={TitleType.H3}
                     hideOverflow={false}
                 />
 

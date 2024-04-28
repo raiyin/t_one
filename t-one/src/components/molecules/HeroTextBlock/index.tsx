@@ -5,6 +5,7 @@ import HeroText from "@/components/atoms/HeroText";
 import styles from "./styles.module.css";
 import OverImage from '@assets/images/pngs/over_1000.png';
 import { ArrowDirection } from "@types/ArrowProps";
+import { TitleType } from "@/types/TitleProps";
 
 const HeroTextBlock = () => {
     return (
@@ -13,9 +14,7 @@ const HeroTextBlock = () => {
                 text={"Enjoy\u00A0Foods\u00A0All Over\u00A0The\u00A0World"}
                 selectStart={24}
                 selectEnd={30}
-                fontSize={76}
-                fontWeight={600}
-                lineHeight={91}
+                titleType={TitleType.H1}
                 hideOverflow={false}
             />
 

@@ -16,6 +16,7 @@ import { Comment } from '@types/Comment';
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import styles from './styles.module.css';
+import { TitleType } from '@/types/TitleProps';
 
 const Article = () => {
 
@@ -141,9 +142,7 @@ const Article = () => {
                                             text={'Comments'}
                                             selectStart={0}
                                             selectEnd={0}
-                                            fontSize={30}
-                                            fontWeight={600}
-                                            lineHeight={45}
+                                            titleType={TitleType.H5}
                                             hideOverflow={false}
                                         />
 

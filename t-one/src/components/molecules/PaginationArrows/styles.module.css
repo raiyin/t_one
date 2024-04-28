@@ -1,6 +1,6 @@
 .pagination {
-    width: 228px;
-    height: 64px;
+    width: 17rem;
+    height: 3rem;
     display: flex;
-    column-gap: 80px;
+    column-gap: 8rem;
 }

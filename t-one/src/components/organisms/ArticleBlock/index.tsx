@@ -2,6 +2,7 @@ import { ArticleProps } from '@types/ArticleProps';
 import Title from '@/components/atoms/Title';
 import ArticleHead from '@/components/molecules/ArticleHead';
 import styles from './styles.module.css';
+import { TitleType } from '@/types/TitleProps';
 
 const Article = (props: ArticleProps) => {
 
@@ -12,10 +13,8 @@ const Article = (props: ArticleProps) => {
                     text={props.title}
                     selectStart={0}
                     selectEnd={0}
-                    fontSize={40}
-                    fontWeight={600}
-                    hideOverflow={false}
-                    lineHeight={45} />
+                    titleType={TitleType.H4}
+                    hideOverflow={false} />
             </div>
 
             <div className={styles['article-head']}>

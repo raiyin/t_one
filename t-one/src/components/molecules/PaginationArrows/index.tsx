@@ -6,9 +6,15 @@ import { ArrowDirection } from '@types/ArrowProps';
 const PaginationArrows = (props: PaginaitonArrowsProps) => {
     return (
         <div className={styles['pagination']}>
-            <ArrowIcon direction={ArrowDirection.Back} isEnable={props.leftArrowIsEnable} onClick={props.leftArrowOnClick} />
+            <ArrowIcon
+                direction={ArrowDirection.Back}
+                isEnable={props.leftArrowIsEnable}
+                onClick={props.leftArrowOnClick} />
 
-            <ArrowIcon direction={ArrowDirection.Forth} isEnable={props.rightArrowIsEnable} onClick={props.rightArrowOnClick} />
+            <ArrowIcon
+                direction={ArrowDirection.Forth}
+                isEnable={props.rightArrowIsEnable}
+                onClick={props.rightArrowOnClick} />
         </div>
     );
 };

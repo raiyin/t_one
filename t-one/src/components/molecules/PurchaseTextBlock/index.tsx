@@ -1,6 +1,7 @@
 import Title from '@/components/atoms/Title';
 import FoodWidget from '@/components/molecules/FoodWidget';
 import styles from './styles.module.css';
+import { TitleType } from '@/types/TitleProps';
 
 const PurchaseTextBlock = () => {
     return (
@@ -9,9 +10,7 @@ const PurchaseTextBlock = () => {
                 text={'Control\u00A0Purchases Via\u00A0Dashboard'}
                 selectStart={8}
                 selectEnd={17}
-                lineHeight={61}
-                fontSize={50}
-                fontWeight={700}
+                titleType={TitleType.H2}
                 hideOverflow={false}
             />
             <ul className={styles['purchase_text-items']}>

@@ -5,6 +5,7 @@ import List from '@/components/atoms/List';
 import styles from './styles.module.css';
 import Arrow_Image from "@assets/images/svgs/app_arrow.svg";
 import { ArrowDirection } from '@types/ArrowProps';
+import { TitleType } from '@/types/TitleProps';
 
 const AppTextBlock = () => {
     return (
@@ -13,9 +14,7 @@ const AppTextBlock = () => {
                 text={'Premium\u00A0Quality For\u00A0Your\u00A0Health'}
                 selectStart={8}
                 selectEnd={15}
-                fontWeight={700}
-                fontSize={50}
-                lineHeight={58}
+                titleType={TitleType.H2}
                 hideOverflow={false}
             />
             <div className={styles['list_wrapper']}>

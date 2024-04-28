@@ -1,15 +1,15 @@
 .article-head {
     display: flex;
     flex-direction: column;
-    height: 134px;
-    min-width: 420px;
-    max-width: 1240px;
+    min-width: 42rem;
+    max-width: 124rem;
     width: 100%;
 }
 
 .article-head_info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .article-head_subinfo {

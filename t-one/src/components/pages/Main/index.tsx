@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 import { FeatureProps } from "@types/FeatureProps";
 import featureJsonData from "@data/feature_data.json";
 import LoadingBlock from "@/components/organisms/LoadingBlock";
+import { TitleType } from "@/types/TitleProps";
 
 const Main = () => {
     const [comments, setComments] = useState([]);
@@ -78,9 +79,7 @@ const Main = () => {
                                 text={"Customer Say"}
                                 selectStart={0}
                                 selectEnd={8}
-                                fontSize={45}
-                                fontWeight={600}
-                                lineHeight={26}
+                                titleType={TitleType.H3}
                                 hideOverflow={false}
                             />
                         </div>
