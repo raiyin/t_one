@@ -9,14 +9,24 @@ const FaqItem = (props: FaqItemProps) => {
     const [expanded, setExpanded] = useState(false);
 
     return (
-        <div className={`${styles['faqItem']} ${expanded && styles.faqItem__expanded}`}>
+        <div
+            className={`${styles['faqItem']} ${expanded && styles.faqItem__expanded}`}
+            onClick={() => setExpanded(_ => !expanded)}
+        >
             <div className={styles['faqItem-conrol']}>
                 <span className={styles['faqItem_header']}>{props.quest}</span>
                 <div className={styles['faqItem_image']}>
-                    <img
-                        src={expanded ? MinusImage : PlusImage}
-                        alt="Collapse/expand button"
-                        onClick={() => setExpanded(_ => !expanded)} />
+                    {
+                        expanded
+                            ?
+                            <img
+                                src={MinusImage}
+                                alt="Collapse/expand button" />
+                            :
+                            <img
+                                src={PlusImage}
+                                alt="Collapse/expand button" />
+                    }
                 </div>
             </div>
             <div className={`${styles['faqItem-answer']} ${expanded && styles['faqItem-answer__expanded']}`}>

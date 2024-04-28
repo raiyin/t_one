@@ -9,6 +9,7 @@
     padding-right: 13px;
     justify-content: flex-start;
     transition: height 300ms ease-in-out;
+    cursor: pointer;
 }
 
 .faqItem__expanded {
@@ -37,7 +38,6 @@
 .faqItem_image {
     width: 3rem;
     height: 3rem;
-    cursor: pointer;
 }
 
 .faqItem-answer {
