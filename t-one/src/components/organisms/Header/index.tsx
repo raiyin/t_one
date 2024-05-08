@@ -29,12 +29,14 @@ const Header = () => {
 
     return (
         <header className={styles.header}>
-            <Logo location={Location.Header} />
-            <div className={styles['header_navbar']}>
-                <NavBar {...navBarProps} />
-            </div>
-            <div className={styles['header_bars']}>
-                <img src={BasrIcon} alt="" />
+            <div className={styles.header_conrainer}>
+                <Logo location={Location.Header} />
+                <div className={styles['header_navbar']}>
+                    <NavBar {...navBarProps} />
+                </div>
+                <div className={styles['header_bars']}>
+                    <img src={BasrIcon} alt="" />
+                </div>
             </div>
         </header>
     );

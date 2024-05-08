@@ -1,32 +1,73 @@
 .logo {
     font-weight: 600;
-    color: #6C5FBC;
+    color: var(--colors-button-primary-default);
     font-style: semibold;
     display: flex;
     align-items: center;
-    column-gap: 14px;
+    column-gap: clamp(5px, 1.4rem, 40px);
     text-decoration: none;
 }
 
 .logo-text__header {
     font-family: "Poppins", sans-serif;
-    font-size: 22px;
-    line-height: 29px;
+    font-size: clamp(10px, 2.2rem, 44px);
+    line-height: 1.3;
 }
 
 .logo-text__footer {
     font-family: "Poppins", sans-serif;
-    font-size: 29px;
-    line-height: 37px;
+    font-size: 2.9rem;
+    line-height: 1.3;
 }
 
 
 .logo-img__header {
-    width: 46px;
-    height: 43px;
+    width: 4.6rem;
+    height: 4.3rem;
 }
 
 .logo-img__footer {
-    width: 62px;
-    height: 57px;
+    width: 6.2rem;
+    height: 5.7rem;
+}
+
+
+@media screen and (width<1200px) {
+
+    .logo-text__footer {
+        font-size: 2.9rem;
+    }
+
+
+    .logo-img__header {
+        width: 4.6rem;
+        height: 4.3rem;
+    }
+
+    .logo-img__footer {
+        width: 6.2rem;
+        height: 5.7rem;
+    }
+}
+
+@media screen and (width<992px) {
+
+    .logo-text__header {
+        font-size: clamp(10px, 2.9rem, 44px);
+        line-height: 1.3;
+    }
+
+    .logo-text__footer {
+        font-size: 2.9rem;
+    }
+
+    .logo-img__header {
+        width: 4.6rem;
+        height: 4.3rem;
+    }
+
+    .logo-img__footer {
+        width: 6.2rem;
+        height: 5.7rem;
+    }
 }

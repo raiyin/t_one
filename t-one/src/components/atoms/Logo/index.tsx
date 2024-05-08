@@ -10,8 +10,15 @@ const Logo = (props: LogoProps) => {
 
     return (
         <Link to={`/`} className={styles['logo']}>
-            <img src={LogoSvg} alt="Logo" className={isOnHeader ? styles['logo-img__header'] : styles['logo-img__footer']} />
-            <div className={isOnHeader ? styles['logo-text__header'] : styles['logo-text__footer']}>eatly</div>
+            <img
+                src={LogoSvg}
+                alt="Logo"
+                className={isOnHeader ? styles['logo-img__header'] : styles['logo-img__footer']}
+            />
+            <div
+                className={isOnHeader ? styles['logo-text__header'] : styles['logo-text__footer']}>
+                eatly
+            </div>
         </Link>
     );
 };
