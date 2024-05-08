@@ -1,13 +1,12 @@
 .navbar {
     display: flex;
-    column-gap: 52px;
     align-items: center;
 }
 
 .navbar_header {
-    column-gap: 52px;
+    column-gap: 5.2rem;
 }
 
 .navbar_footer {
-    column-gap: 72px;
+    column-gap: 7.2rem;
 }

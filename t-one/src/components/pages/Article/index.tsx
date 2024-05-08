@@ -8,6 +8,7 @@ import Footer from '@/components/organisms/Footer';
 import Header from '@/components/organisms/Header';
 import LoadingBlock from '@/components/organisms/LoadingBlock';
 import ReviewBlock from '@/components/organisms/ReviewBlock';
+import { TitleType } from '@/types/TitleProps';
 import { AlertType } from '@types/AlertProps';
 import { ArrowDirection } from '@types/ArrowProps';
 import { ArticleProps } from '@types/ArticleProps';
@@ -16,7 +17,6 @@ import { Comment } from '@types/Comment';
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import styles from './styles.module.css';
-import { TitleType } from '@/types/TitleProps';
 
 const Article = () => {
 
@@ -25,7 +25,7 @@ const Article = () => {
     const [alertShow, setAlertShow] = useState(false);
     const [article, setArticle] = useState<ArticleProps>({ id: 0, userId: 0, body: '', title: '', tags: [], reactions: '0' });
     const [comments, setComments] = useState<Comment[]>([]);
-    const [isLoading, setIsLoading] = useState(false);
+    const [isPageLoading, setIsPageLoading] = useState(false);
     const [postError, setPostError] = useState(false);
     const [commentsError, setCommentsError] = useState(false);
 
@@ -34,7 +34,7 @@ const Article = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            setIsLoading(_ => true);
+            setIsPageLoading(_ => true);
             await fetch(`https://dummyjson.com/posts/${post_id}`)
                 .then(response => {
                     if (response.ok) {
@@ -65,10 +65,10 @@ const Article = () => {
                     setCommentsError(true);
                 });
 
-            setIsLoading(_ => false);
+            setIsPageLoading(_ => false);
         };
         fetchData();
-    }, []);
+    }, [post_id]);
 
     const onAllArticlesButtonClick = () => {
         navigate('/blog');
@@ -100,7 +100,7 @@ const Article = () => {
     return (
         <>
             <Header />
-            {isLoading
+            {isPageLoading
                 ?
                 <LoadingBlock />
                 :
