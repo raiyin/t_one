@@ -9,7 +9,7 @@ import { TitleType } from "@/types/TitleProps";
 
 const HeroTextBlock = () => {
     return (
-        <section className={styles['hero_container']}>
+        <div className={styles['hero_container']}>
             <Title
                 text={"Enjoy\u00A0Foods\u00A0All Over\u00A0The\u00A0World"}
                 selectStart={24}
@@ -47,7 +47,7 @@ const HeroTextBlock = () => {
             <div className={styles['before_wrapper']}>
                 <img src={OverImage} alt="" />
             </div>
-        </section>
+        </div>
     );
 };
 

@@ -5,7 +5,7 @@ import { FeatureProps } from '@types/FeatureProps';
 const FeatureBlock = (props: { features: FeatureProps[]; }) => {
 
     return (
-        <div className={styles['features']}>
+        <section className={styles['features']}>
             {
                 props.features.map(item => (
                     <FeatureItem
@@ -15,7 +15,7 @@ const FeatureBlock = (props: { features: FeatureProps[]; }) => {
                     />
                 ))
             }
-        </div>
+        </section>
     );
 };
 

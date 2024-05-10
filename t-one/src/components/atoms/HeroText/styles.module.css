@@ -2,15 +2,15 @@
     opacity: 70%;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 156%;
+    font-size: 1.8rem;
+    line-height: 1.6;
     text-align: justify;
-    color: #676767;
+    color: var(--colors-interface-gray);
     letter-spacing: 0;
 }
 
 .main-text_bonus {
     display: inline-block;
     font-weight: 500;
-    color: #6155ae;
+    color: var(--colors-button-primary-default);
 }

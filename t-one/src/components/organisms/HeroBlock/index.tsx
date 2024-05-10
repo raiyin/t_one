@@ -4,10 +4,12 @@ import styles from './styles.module.css';
 
 const HeroBlock = () => {
     return (
-        <div className={styles['hero']}>
-            <HeroTextBlock />
-            <HeroImage />
-        </div>
+        <section className={styles['hero']}>
+            <div className={styles['hero_container']}>
+                <HeroTextBlock />
+                <HeroImage />
+            </div>
+        </section>
     );
 };
 

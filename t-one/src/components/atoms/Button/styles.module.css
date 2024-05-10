@@ -2,37 +2,37 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    border-radius: 12.4px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    border-radius: 1.3rem;
     height: 100%;
     width: 100%;
-    padding: 18px 30px;
+    padding: 1.8rem 3rem;
     text-align: center;
     text-wrap: nowrap;
 }
 
 .button__iconed {
     display: flex;
-    column-gap: 13px;
+    column-gap: 1.3rem;
 }
 
 .button__primary {
-    color: #fff;
-    background-color: #6C5FBC;
+    color: var(--colors-interface-white);
+    background-color: var(--colors-button-primary-default);
     border: none;
 }
 
 .button__ghost {
-    border-color: #6C5FBC;
-    color: #6C5FBC;
-    border-width: 1.5px;
-    background-color: #fff;
+    border-color: var(--colors-button-primary-default);
+    color: var(--colors-button-primary-default);
+    border-width: 0.15rem;
+    background-color: var(--colors-button-secondary-default);
 }
 
 .button_icon {
-    width: 26px;
-    height: 26px;
+    width: 2.6rem;
+    height: 2.6rem;
 }
 
 

@@ -7,12 +7,14 @@ import FoodWidget from "@/components/molecules/FoodWidget";
 const HeroImage = () => {
     return (
         <div className={styles.container}>
+
             <div className={styles["waves_wrapper"]}>
                 <img
                     src={Waves_Image}
                     alt=""
                 />
             </div>
+
             <div className={styles["widget_wrapper"]}>
                 <FoodWidget
                     title={'Chicken Hell'}
@@ -22,6 +24,7 @@ const HeroImage = () => {
                     img_alt={'Chicken hell'}
                     selected />
             </div>
+
             <figure className={styles["hero_image_wrapper"]}>
                 <img
                     src="../../../src/assets/images/webps/hero_food_image.webp"
@@ -36,26 +39,32 @@ const HeroImage = () => {
 
                     alt="Our main food"
                 />
-                <div className={styles["arrow_wrapper"]}>
-                    <img
-                        src={Arrow_Image}
-                        alt=""
-                    />
-                </div>
-                <div className={styles["hero_image__mask"]}></div>
             </figure>
+
+            <div className={styles["hero_image__mask"]}></div>
+
+            <div className={styles["arrow_wrapper"]}>
+                <img
+                    src={Arrow_Image}
+                    alt=""
+                />
+            </div>
+
+
             <div className={styles["graph_wrapper"]}>
                 <img
                     src="../../../src/assets/images/webps/hero_graph.webp"
                     alt="Example of our app"
                 />
             </div>
+
             <div className={styles["rays_wrapper"]}>
                 <img
                     src={Rays_Image}
                     alt=""
                 />
             </div>
+
         </div>
     );
 };
