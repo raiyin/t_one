@@ -4,11 +4,11 @@
     flex-direction: column;
     padding-top: 11rem;
     letter-spacing: -0.2rem;
+    width: 100%;
 }
 
 .herotext-container {
     margin-top: 1.4rem;
-    padding-left: 0.2rem;
     width: 50rem;
     height: 8.4rem;
 }
@@ -22,9 +22,6 @@
 }
 
 .before_wrapper {
-    position: relative;
-    bottom: 43rem;
-    left: 0.2rem;
     width: 24rem;
     height: 2rem;
 }

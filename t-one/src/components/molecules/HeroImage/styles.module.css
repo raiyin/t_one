@@ -1,8 +1,14 @@
 .container {
-    /* width: 68rem;
-    height: 60rem; */
     flex: 0 1 50%;
     background: var(--colors-interface-white-bg);
+    width: 60rem;
+    height: 56rem;
+    position: relative;
+}
+
+.container_relative {
+    width: 60rem;
+    height: 56rem;
     position: relative;
 }
 

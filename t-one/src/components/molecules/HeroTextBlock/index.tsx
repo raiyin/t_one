@@ -10,6 +10,11 @@ import { TitleType } from "@/types/TitleProps";
 const HeroTextBlock = () => {
     return (
         <div className={styles['hero_container']}>
+
+            <div className={styles['before_wrapper']}>
+                <img src={OverImage} alt="" />
+            </div>
+
             <Title
                 text={"Enjoy\u00A0Foods\u00A0All Over\u00A0The\u00A0World"}
                 selectStart={24}
@@ -44,9 +49,6 @@ const HeroTextBlock = () => {
                 />
             </div>
 
-            <div className={styles['before_wrapper']}>
-                <img src={OverImage} alt="" />
-            </div>
         </div>
     );
 };
