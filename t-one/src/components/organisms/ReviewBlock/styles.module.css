@@ -1,17 +1,20 @@
-.review-container__row {
-    max-width: 1440px;
+.review-container {
     width: 100%;
+}
+
+.review-container__row {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    height: 34dvh;
+    height: 34rem;
     overflow-x: clip;
+    margin-left: 9.7rem;
+    margin-right: 9.7rem;
 }
 
 .reviews_row {
     display: flex;
-    margin-left: 180px;
-    column-gap: 46px;
+    margin-left: 18rem;
+    column-gap: 4.6rem;
 }
 
 .comment-widget__wrapper_row {
@@ -19,17 +22,17 @@
 }
 
 .review-container__column {
-    margin-top: 80px;
+    margin-top: 8rem;
+    margin-left: 9.7rem;
+    margin-right: 9.7rem;
 }
 
 .reviews_column {
     box-sizing: border-box;
-    width: 100%;
-    max-width: 1140px;
-    min-width: 300px;
+    min-width: 30rem;
     display: flex;
     flex-direction: column;
-    row-gap: 118px;
+    row-gap: 12rem;
 }
 
 

@@ -9,17 +9,19 @@ const ReviewBlock = (props: ReviewProps) => {
     const [isWide, setIsWide] = useState(true);
 
     useEffect(() => {
-        const mql = window.matchMedia("(min-width: 1300px)");
+        const mql = window.matchMedia("(width > 576px)");
         const onChange = () => setIsWide(!!mql.matches);
 
         mql.addListener(onChange);
         setIsWide(mql.matches);
+        console.log(props.direction);
+        console.log(isWide);
 
         return () => mql.removeListener(onChange);
     }, []);
 
     return (
-        <section>
+        <section className={styles['review-container']}>
             {
                 props.direction === "row" && isWide
                     ? (

@@ -1,48 +1,48 @@
 .slideshow {
     height: 100%;
-    width: 92dvw;
+    width: 92rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    row-gap: 10px;
+    row-gap: 1rem;
 }
 
 .slides {
     position: relative;
     display: flex;
-    column-gap: 1dvw;
+    column-gap: 1rem;
     transition: left 1s ease-out;
 }
 
 .slide {
-    width: 37dvw;
-    height: 17dvh;
-    min-height: 114px;
+    width: 37rem;
+    height: 17rem;
+    min-height: 11.5rem;
 }
 
 .slides_1 {
-    left: 93dvw;
+    left: 93rem;
 }
 
 .slides_2 {
-    left: 56dvw;
+    left: 56rem;
 }
 
 .slides_3 {
-    left: 19dvw;
+    left: 19rem;
 }
 
 .slides_4 {
-    left: -18dvw;
+    left: -18rem;
 }
 
 .slides_5 {
-    left: -57dvw;
+    left: -57rem;
 }
 
 .slides_6 {
-    left: -94dvw;
+    left: -94rem;
 }
 
 
@@ -53,18 +53,17 @@ img {
 
 .dots {
     display: flex;
-    column-gap: 1dvw;
+    column-gap: 1rem;
     align-items: center;
-    width: 15dvw;
-    margin-top: 2dvh;
+    width: 15rem;
+    margin-top: 2rem;
     justify-content: space-around;
 }
 
 .dot {
     cursor: pointer;
-    height: 16px;
-    width: 16px;
-    margin: 0 2px;
+    height: 1.6rem;
+    width: 1.6rem;
     background-color: #6C5FBC;
     border-radius: 50%;
     display: inline-block;

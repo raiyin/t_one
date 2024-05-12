@@ -3,13 +3,13 @@
 .comment-block_title {}
 
 .comment-block_body {
-    margin-top: 51px;
-    height: 35dvh;
+    margin-top: 5rem;
+    height: 3.5rem;
 }
 
 .comment-block_button {
-    margin-top: 51px;
-    width: 19dvh;
+    margin-top: 5rem;
+    width: 19rem;
     min-width: none;
-    height: 60px;
+    height: 6rem;
 }
