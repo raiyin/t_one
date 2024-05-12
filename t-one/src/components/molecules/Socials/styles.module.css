@@ -1,6 +1,6 @@
 .socials {
-    width: 237px;
-    height: 20px;
+    width: 24rem;
+    height: 2rem;
     display: flex;
     justify-content: space-between;
 }

@@ -15,32 +15,36 @@ const FaqBlock = () => {
     const [faqData] = useState<FaqItemProps[]>(faqJsonData['faqs']);
 
     return (
-        <section className={styles['faqBlock']} id="faq">
-            <AnchorSection className="dBlock anchor" id="faq" />
-            <div className={styles['faqBlock_title']}>
-                <Title
-                    text={`Frequently Asked Questions`}
-                    selectStart={17}
-                    selectEnd={26}
-                    titleType={TitleType.H3}
-                    hideOverflow={false}
-                />
 
-                <div className={styles['icon_wrapper']}>
-                    <img src={FaqRaysImage} alt="" />
+        <section className={styles['faq-container']}>
+            <div className={styles['faq']} id="faq">
+                <AnchorSection className="dBlock anchor" id="faq" />
+                <div className={styles['faq_title']}>
+                    <Title
+                        text={`Frequently Asked Questions`}
+                        selectStart={17}
+                        selectEnd={26}
+                        titleType={TitleType.H3}
+                        hideOverflow={false}
+                    />
+
+                    <div className={styles['icon_wrapper']}>
+                        <img src={FaqRaysImage} alt="" />
+                    </div>
                 </div>
+
+                <ul className={styles['faq_items']}>
+                    {faqData.map(faqItem =>
+                        <li key={faqItem.quest}>
+                            <FaqItem
+                                quest={faqItem.quest}
+                                answer={faqItem.answer}
+                            />
+                        </li>
+                    )}
+                </ul>
             </div>
 
-            <ul className={styles['faqBlock_items']}>
-                {faqData.map(faqItem =>
-                    <li key={faqItem.quest}>
-                        <FaqItem
-                            quest={faqItem.quest}
-                            answer={faqItem.answer}
-                        />
-                    </li>
-                )}
-            </ul>
         </section>
     );
 };

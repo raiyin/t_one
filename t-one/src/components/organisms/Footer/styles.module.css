@@ -1,54 +1,55 @@
 footer {
-    max-width: 1440px;
-    width: 100dvw;
-    min-height: 345px;
+    width: 100%;
     background: #eaeaea;
+    margin-top: 16.4rem;
+    padding-top: 8rem;
+}
+
+.footer-container {
+    min-height: 34.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 96px 96px 81px;
     box-sizing: border-box;
-    margin-top: 80px;
     flex: 0 0 auto;
+    margin-left: 9.7rem;
+    margin-right: 9.7rem;
 }
 
 .footer_menu {
-    max-width: 1250px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 1rem;
-    column-gap: 15px;
+    column-gap: 1.5rem;
 }
 
 .fotter_line {
-    max-width: 1246px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 3rem;
 
     &:hr {
-        border: 1px solid #818181;
+        border: .1rem solid #818181;
     }
 }
 
 .lower {
-    max-width: 1250px;
     width: 100%;
-    height: 25px;
-    margin-top: 48px;
+    height: 2.5rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 1rem;
-    column-gap: 15px;
+    column-gap: 1.5rem;
 }
 
 .copy {
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 1.56;
     color: #999999;
 }

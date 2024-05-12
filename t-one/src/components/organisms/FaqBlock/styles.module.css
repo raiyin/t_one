@@ -1,28 +1,31 @@
-.faqBlock {
-    max-width: 1152px;
+.faq-container {
     width: 100%;
+    margin-top: 14rem;
+}
+
+.faq {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 139px;
     align-self: center;
+    margin: 0 14.5rem;
 }
 
-.faqBlock_title {
+.faq_title {
     text-align: center;
-    width: 408px;
-    margin-left: -8px;
+    width: 41rem;
+    margin-left: 1rem;
 }
 
 .icon_wrapper {
     position: relative;
-    left: 430px;
-    top: -128px;
-    width: 41px;
-    height: 37px;
+    left: 43rem;
+    top: -13rem;
+    width: 4rem;
+    height: 4rem;
 }
 
-.faqBlock_items {
+.faq_items {
     width: 100%;
-    margin-top: 67px;
+    margin-top: 7rem;
 }

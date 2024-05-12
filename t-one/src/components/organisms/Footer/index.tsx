@@ -29,19 +29,21 @@ const Footer = () => {
 
     return (
         <footer>
+            <div className={styles['footer-container']}>
 
-            <div className={styles['footer_menu']}>
-                <Logo location={Location.Footer} />
-                <NavBar {...navBarProps} />
-            </div>
-            <div className={styles['fotter_line']}>
-                <hr />
-            </div>
-            <div className={styles['lower']}>
-                <div className={styles['copy']}>
-                    © 2023 EATLY All Rights Reserved.
+                <div className={styles['footer_menu']}>
+                    <Logo location={Location.Footer} />
+                    <NavBar {...navBarProps} />
                 </div>
-                <Socials />
+                <div className={styles['fotter_line']}>
+                    <hr />
+                </div>
+                <div className={styles['lower']}>
+                    <div className={styles['copy']}>
+                        © 2023 EATLY All Rights Reserved.
+                    </div>
+                    <Socials />
+                </div>
             </div>
         </footer>
     );
