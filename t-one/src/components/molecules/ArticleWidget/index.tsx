@@ -19,7 +19,7 @@ const ArticleWidget = (props: ArticleProps) => {
                     userId={props.userId}
                     type='small'
                 />
-                <Rating rating={props.reactions} startFirst={false} />
+                <Rating rating={props.reactions} starFirst={false} />
             </div>
             <HashTag
                 text={tagsToHashTagString(props.tags)}

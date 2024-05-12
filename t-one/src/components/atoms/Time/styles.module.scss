@@ -1,38 +1,19 @@
-.time {
-    font-family: "Manrope", sans-serif;
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 14px;
-    letter-spacing: 0px;
-    text-align: right;
-    height: 18px;
+time {
     color: #ACADB9;
+    line-height: 1.8;
+    display:  inline-block;
+    vertical-align: top;
 }
 
-@for $i from 14 through 72 {
-    .lh_#{$i}{
-        line-height: #{$i}px;
-    }
-}
-
-@for $i from 10 through 72 {
-    .fs_#{$i}{
-        font-size: #{$i}px;
-    }
-}
-
-$weights: 100,200,300,400,500,600;
-
-@each $size in $weights {
-  .fw_#{$size} {
-    font-weight: $size;
-  }
-}
-
-.font_poppins{
+.small{
     font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: right;
 }
 
-.font_manrope{
+.medium{
     font-family: "Manrope", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
 }

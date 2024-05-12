@@ -7,18 +7,18 @@ const Rating = (props: RatingProps) => {
         <div className={styles['rating']}>
 
             {
-                props.startFirst
+                props.starFirst
                     ?
                     <>
                         <img
                             src={Rating_Star}
                             alt="Rating mark"
                         />
-                        {props.rating}
+                        <span>{props.rating}</span>
                     </>
                     :
                     <>
-                        {props.rating}
+                        <span>{props.rating}</span>
                         <img
                             src={Rating_Star}
                             alt="Rating mark"

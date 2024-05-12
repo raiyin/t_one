@@ -1,6 +1,7 @@
 import Time from "@/components/atoms/Time";
 import styles from "./styles.module.css";
 import { FoodWidgetProps } from "@types/FoodWidgetProps";
+import { TimeType } from "@/types/TimeProps";
 
 const FoodWidget = (props: FoodWidgetProps) => {
     return (
@@ -18,10 +19,7 @@ const FoodWidget = (props: FoodWidgetProps) => {
             <div className={styles.time}>
                 <Time
                     time={props.time}
-                    fontWeight={500}
-                    fontSize={10}
-                    lineHeight={14}
-                    font={'poppins'}
+                    timeType={TimeType.medium}
                 />
             </div>
         </div>

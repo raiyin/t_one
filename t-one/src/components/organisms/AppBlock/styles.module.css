@@ -1,21 +1,31 @@
 .app_block {
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.app_block__container {
     display: flex;
-    height: 740px;
+    height: 74rem;
     align-self: center;
-    margin-top: 106px;
     border-bottom: 1px solid #CBCBCB;
-    column-gap: 219px;
+    /* column-gap: 22rem; */
+
+    margin-left: 9.7rem;
+    margin-right: 9.7rem;
 }
 
 .images {
-    padding-left: 112px;
+    /* padding-left: 11rem; */
+    flex: 0 1 50%;
 }
 
 .images_phone {
-    padding-left: 5px;
+    padding-left: 11.5rem;
+    width: 37rem;
+    height: 62.5rem;
 }
 
-@media screen and (max-width: 1300px) {
+/* @media screen and (max-width: 1300px) {
     .app_block {
         flex-direction: column;
         height: fit-content;
@@ -24,4 +34,4 @@
         text-align: center;
         padding-bottom: 0;
     }
-}
+} */

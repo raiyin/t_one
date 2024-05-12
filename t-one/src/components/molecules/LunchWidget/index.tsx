@@ -5,6 +5,7 @@ import Rating from '@/components/atoms/Rating';
 import Title from '@/components/atoms/Title';
 import { LunchWidgetProps } from '@types/LunchWidgetProps';
 import { TitleType } from '@/types/TitleProps';
+import { TimeType } from '@/types/TimeProps';
 
 const LunchWidget = (props: LunchWidgetProps) => {
     return (
@@ -42,12 +43,9 @@ const LunchWidget = (props: LunchWidgetProps) => {
             <div className={styles['info_wrapper']}>
                 <Time
                     time={`${props.cookTimeMinutes + props.prepTimeMinutes}min`}
-                    fontWeight={400}
-                    lineHeight={26}
-                    fontSize={20}
-                    font={'manrope'}
+                    timeType={TimeType.medium}
                 />
-                <Rating rating={props.rating.toString()} startFirst={true} />
+                <Rating rating={props.rating.toString()} starFirst={true} />
             </div>
 
         </div>

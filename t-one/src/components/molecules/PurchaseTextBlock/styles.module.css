@@ -1,15 +1,12 @@
 .purchase_text-block {
-    width: 571px;
-    height: 460px;
-    margin-left: 28px;
-    margin-top: 2px;
+    width: 57rem;
+    height: 46rem;
 }
 
 .purchase_text-items {
-    margin-top: 46px;
-    margin-left: -10px;
+    margin-top: 4.6rem;
     display: flex;
     flex-direction: column;
-    row-gap: 13px;
+    row-gap: 1.3rem;
     list-style: none;
 }

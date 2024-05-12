@@ -10,6 +10,7 @@ import { TitleType } from '@/types/TitleProps';
 const AppTextBlock = () => {
     return (
         <div className={styles['app_text_block']}>
+
             <Title
                 text={'Premium\u00A0Quality For\u00A0Your\u00A0Health'}
                 selectStart={8}
@@ -17,12 +18,14 @@ const AppTextBlock = () => {
                 titleType={TitleType.H2}
                 hideOverflow={false}
             />
+
             <div className={styles['list_wrapper']}>
                 <List texts={[
                     'Premium quality food is made with ingredients that are packed with essential vitamins, minerals.',
                     'These foods promote overall wellness by support healthy digestion and boosting immunity'
                 ]} />
             </div>
+
             <div className={styles['button-arrow_wrapper']}>
                 <div className={styles['button-wrapper']}>
                     <Button

@@ -16,13 +16,13 @@ type Story = StoryObj<typeof meta>;
 export const StarFirst: Story = {
     args: {
         rating: '4.8',
-        startFirst: true
+        starFirst: true
     },
 };
 
 export const StarLast: Story = {
     args: {
         rating: '4.8',
-        startFirst: false
+        starFirst: false
     },
 };

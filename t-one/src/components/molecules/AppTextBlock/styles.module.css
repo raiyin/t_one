@@ -1,29 +1,29 @@
 .app_text_block {
-    max-width: 560px;
-    max-height: 555px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 90px;
+    flex: 0 1 50%;
+    padding-left: 12rem;
+    padding-top: 7rem;
 }
 
 .list_wrapper {
-    margin-top: 67px;
-    padding-left: 19px;
+    margin-top: 5rem;
+    padding-left: 2rem;
 }
 
 .button-arrow_wrapper {
-    margin-top: 63px;
+    margin-top: 6rem;
 }
 
 .button-wrapper {
-    width: 188px;
-    height: 60px;
+    width: 19rem;
+    height: 6rem;
 }
 
 .arrow-wrapper {
     position: relative;
-    top: -8px;
-    left: 160px;
-    width: 176px;
+    top: -1rem;
+    left: 16rem;
+    width: 17.6rem;
 }
