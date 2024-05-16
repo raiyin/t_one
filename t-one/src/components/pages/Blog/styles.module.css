@@ -1,5 +1,14 @@
+.main-container {
+    width: 100%;
+}
+
+.main {
+    margin-left: 9.7rem;
+    margin-right: 9.7rem;
+}
+
 .arrows {
-    margin-top: 60px;
+    margin-top: 6rem;
     display: flex;
     justify-content: center;
 }

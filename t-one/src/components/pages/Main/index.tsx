@@ -89,6 +89,7 @@ const Main = () => {
             <Suspense fallback={<LoadingBlock />}>
                 <FaqBlock />
             </Suspense>
+
             <Footer />
         </>
     );

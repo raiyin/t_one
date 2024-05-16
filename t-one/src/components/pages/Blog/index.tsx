@@ -51,6 +51,7 @@ const Blog = () => {
     return (
         <>
             <Header />
+
             {isLoading
                 ?
                 <LoadingBlock />
@@ -59,22 +60,24 @@ const Blog = () => {
                     ?
                     <ErrorBlock errorText={'Oooops!!! Error fetching posts...'} />
                     :
-                    <main>
-                        <ArticlesPreview
-                            articles={articles}
-                            leftArrowIsEnable={isBackPageExist}
-                            rightArrowIsEnable={isForthPageExist}
-                        />
-
-                        <div className={styles['arrows']}>
-                            <PaginationArrows
+                    <div className={styles['main-container']}>
+                        <main className={styles['main']}>
+                            <ArticlesPreview
+                                articles={articles}
                                 leftArrowIsEnable={isBackPageExist}
                                 rightArrowIsEnable={isForthPageExist}
-                                leftArrowOnClick={() => dispatch(decrementPageNumber())}
-                                rightArrowOnClick={() => dispatch(incrementPageNumber())}
                             />
-                        </div>
-                    </main>
+
+                            <div className={styles['arrows']}>
+                                <PaginationArrows
+                                    leftArrowIsEnable={isBackPageExist}
+                                    rightArrowIsEnable={isForthPageExist}
+                                    leftArrowOnClick={() => dispatch(decrementPageNumber())}
+                                    rightArrowOnClick={() => dispatch(incrementPageNumber())}
+                                />
+                            </div>
+                        </main>
+                    </div>
             }
 
             <Footer />

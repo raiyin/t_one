@@ -1,23 +1,23 @@
 .article-widget {
-    width: 349px;
-    height: 270px;
+    width: 35rem;
+    height: 27rem;
     box-sizing: border-box;
-    border-radius: 16px;
+    border-radius: 1.6rem;
     display: flex;
     flex-direction: column;
-    padding: 26px 20px;
-    box-shadow: 0px 4px 47px 0px #C5C5C540,
+    padding: 2.6rem 2rem;
+    box-shadow: 0px .4rem 5rem 0px #C5C5C540,
         rgba(50, 49, 66, 0.6) 0px 0px 90px;
 }
 
 .article-widget__title {
     color: #252525;
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
-    line-height: 26px;
+    line-height: 1.8;
     white-space: nowrap;
-    overflow: hidden;
+    overflow-x: clip;
     text-overflow: ellipsis;
     text-decoration: none;
 }
@@ -25,20 +25,21 @@
 .article-widget__hash-mark {
     display: flex;
     justify-content: space-between;
-    margin-top: 19px;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .article-widget__text {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.45;
     text-align: justify;
-    margin-top: 19px;
+    margin-top: 2rem;
     color: #081420;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
+    overflow-y: clip;
 }
