@@ -28,7 +28,7 @@ const Footer = () => {
     };
 
     return (
-        <footer>
+        <footer >
             <div className={styles['footer-container']}>
 
                 <div className={styles['footer_menu']}>
@@ -45,6 +45,7 @@ const Footer = () => {
                     <Socials />
                 </div>
             </div>
+
         </footer>
     );
 };

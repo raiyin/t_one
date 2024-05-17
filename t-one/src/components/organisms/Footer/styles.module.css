@@ -2,11 +2,12 @@ footer {
     width: 100%;
     background: #eaeaea;
     margin-top: 16.4rem;
-    padding-top: 8rem;
 }
 
 .footer-container {
-    min-height: 34.5rem;
+    /* min-height: 34.5rem; */
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
