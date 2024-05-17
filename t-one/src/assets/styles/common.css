@@ -32,15 +32,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100dvh;
-
+    /* min-height: 100dvh; */
+    /* min-height: 100vh; */
     align-items: center;
     overflow: hidden;
     overflow: visible;
 }
 
 html {
-    min-height: 100dvh;
+    /* min-height: 100dvh; */
     scroll-behavior: smooth;
     font-size: calc(100vw/1440*10);
 }
@@ -53,8 +53,8 @@ body {
     -moz-text-size-adjust: 100%;
     background: var(--colors-interface-white-bg);
     margin: 0 auto;
-    max-width: 144rem;
-    height: 100dvh;
+    /* max-width: 144rem; */
+    /* height: 100dvh; */
 }
 
 ::-webkit-scrollbar {

@@ -1,6 +1,6 @@
 .article {
-    margin-top: 125px;
-    max-width: 1250px;
+    margin-top: 12.5rem;
+    /* max-width: 1250px; */
 }
 
 .article-title {
@@ -8,15 +8,15 @@
 }
 
 .article-head {
-    margin-top: 32px;
+    margin-top: 3rem;
 }
 
 .article-text {
-    margin-top: 60px;
+    margin-top: 6rem;
     font-family: "Poppins", sans-serif;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 400;
-    line-height: 44.55px;
+    line-height: 2;
     text-align: justify;
     color: #252525;
 }

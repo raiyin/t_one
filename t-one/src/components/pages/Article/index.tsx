@@ -100,6 +100,7 @@ const Article = () => {
     return (
         <>
             <Header />
+
             {isPageLoading
                 ?
                 <LoadingBlock />
@@ -110,66 +111,70 @@ const Article = () => {
                         errorText='Oooops!!! Error fetching post information...'
                     />
                     :
-                    <main>
+                    <main className={styles['main-container']}>
+                        <div className={styles['main']}>
 
-                        <ArticleBlock
-                            id={article.id}
-                            userId={article.userId}
-                            body={article.body}
-                            title={article.title}
-                            reactions={article.reactions}
-                            tags={article.tags}
-                        />
-
-
-                        <div className={styles['back-button']}>
-                            <Button
-                                type={ButtonType.Ghost}
-                                text={'All Articles'}
-                                needArrow={true}
-                                direction={ArrowDirection.Back}
-                                onClick={onAllArticlesButtonClick}
+                            <ArticleBlock
+                                id={article.id}
+                                userId={article.userId}
+                                body={article.body}
+                                title={article.title}
+                                reactions={article.reactions}
+                                tags={article.tags}
                             />
-                        </div>
 
-                        {
-                            (!commentsError && !postError)
-                                ?
-                                <>
-                                    <div className={styles['comments-block']}>
 
-                                        <Title
-                                            text={'Comments'}
-                                            selectStart={0}
-                                            selectEnd={0}
-                                            titleType={TitleType.H5}
-                                            hideOverflow={false}
-                                        />
-
-                                        <div className={styles['commets']}>
-                                            <ReviewBlock direction={'column'} comments={comments} />
-
-                                        </div>
-                                    </div>
-
-                                    <div className={styles['commets-add']}>
-                                        <AddComment
-                                            placeholder={'Enter your comment'}
-                                            buttonAction={addComment}
-                                        />
-                                    </div>
-                                </>
-                                :
-
-                                <ErrorBlock
-                                    errorText='Oooops!!! Error fetching comments...'
+                            <div className={styles['back-button']}>
+                                <Button
+                                    type={ButtonType.Ghost}
+                                    text={'All Articles'}
+                                    needArrow={true}
+                                    direction={ArrowDirection.Back}
+                                    onClick={onAllArticlesButtonClick}
                                 />
-                        }
+                            </div>
+
+                            {
+                                (!commentsError && !postError)
+                                    ?
+                                    <>
+                                        <div className={styles['comments-block']}>
+
+                                            <Title
+                                                text={'Comments'}
+                                                selectStart={0}
+                                                selectEnd={0}
+                                                titleType={TitleType.H5}
+                                                hideOverflow={false}
+                                            />
+
+                                            <div className={styles['commets']}>
+                                                <ReviewBlock direction={'column'} comments={comments} />
+
+                                            </div>
+                                        </div>
+
+                                        <div className={styles['commets-add']}>
+                                            <AddComment
+                                                placeholder={'Enter your comment'}
+                                                buttonAction={addComment}
+                                            />
+                                        </div>
+                                    </>
+                                    :
+
+                                    <ErrorBlock
+                                        errorText='Oooops!!! Error fetching comments...'
+                                    />
+                            }
+                        </div>
 
 
                     </main>
             }
+
             <Footer />
+
             <div className={styles['alert']}>
                 <Alert
                     type={AlertType.error}

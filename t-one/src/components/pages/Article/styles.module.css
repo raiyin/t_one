@@ -1,38 +1,42 @@
-/* main {
+.main-container {
+    width: 100%;
+}
+
+.main {
     display: flex;
     flex-direction: column;
-    padding-left: 96px;
-    padding-right: 96px;
-} */
+    margin-left: 9.7rem;
+    margin-right: 9.7rem;
+}
 
 .back-button {
-    margin-top: 90px;
+    margin-top: 9rem;
     display: flex;
     align-self: self-start;
-    width: 190px;
+    width: 19rem;
 }
 
 .comments-block {
-    margin-top: 100px;
-    max-width: 1250px;
+    margin-top: 10rem;
+    max-width: 125rem;
     width: 100%;
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-left: 3rem;
+    padding-right: 3rem;
     box-sizing: border-box;
 }
 
 .commets {
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 .commets-add {
     width: 100%;
-    margin-top: 100px;
-    max-width: 1250px;
+    margin-top: 10rem;
+    max-width: 125rem;
 }
 
 .alert {
     position: fixed;
-    bottom: 0em;
-    left: 0em;
+    bottom: 0rem;
+    left: 0rem;
 }
