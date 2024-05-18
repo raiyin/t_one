@@ -1,5 +1,5 @@
-import Location from "@types/Location";
-import { NavLinkProps } from "@types/NavLinkProps";
+import Location from "@/types/Location";
+import { NavLinkProps } from "@/types/NavLinkProps";
 import styles from "./styles.module.css";
 import { AnchorLink } from "react-anchor-navigation";
 

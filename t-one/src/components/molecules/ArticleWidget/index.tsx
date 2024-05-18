@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArticleProps } from '@types/ArticleProps';
+import { ArticleProps } from '@/types/ArticleProps';
 import { tagsToHashTagString } from '@utils/mappers';
 import HashTag from '@/components/atoms/HashTag';
 import Rating from '@/components/atoms/Rating';

@@ -1,4 +1,4 @@
-import { TextProps } from "@types/TextProps";
+import { TextProps } from "@/types/TextProps";
 import styles from "./styles.module.css";
 
 const Text = (props: TextProps) => {

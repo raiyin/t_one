@@ -1,7 +1,7 @@
 import styles from './styles.module.css';
-import { PaginaitonArrowsProps } from '@types/PaginationsArrowProps';
+import { PaginaitonArrowsProps } from '@/types/PaginationsArrowProps';
 import ArrowIcon from '@/components/atoms/ArrowIcon';
-import { ArrowDirection } from '@types/ArrowProps';
+import { ArrowDirection } from '@/types/ArrowProps';
 
 const PaginationArrows = (props: PaginaitonArrowsProps) => {
     return (

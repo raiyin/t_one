@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Title from '@/components/atoms/Title';
 import LunchWidget from '@/components/molecules/LunchWidget';
 import styles from './styles.module.css';
-import { LunchWidgetProps } from '@types/LunchWidgetProps';
+import { LunchWidgetProps } from '@/types/LunchWidgetProps';
 import LoadingBlock from '@/components/organisms/LoadingBlock';
 import { AnchorSection } from 'react-anchor-navigation';
 import { TitleType } from '@/types/TitleProps';

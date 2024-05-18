@@ -3,9 +3,9 @@ import TextInput from '@/components/atoms/TextInput';
 import Title from '@/components/atoms/Title';
 import styles from './styles.module.css';
 import Button from '@/components/atoms/Button';
-import ButtonType from '@types/ButtonProps';
-import { ArrowDirection } from '@types/ArrowProps';
-import { AddCommentProps } from '@types/AddCommentProps';
+import ButtonType from '@/types/ButtonProps';
+import { ArrowDirection } from '@/types/ArrowProps';
+import { AddCommentProps } from '@/types/AddCommentProps';
 import { TitleType } from '@/types/TitleProps';
 
 const AddComment = (props: AddCommentProps) => {

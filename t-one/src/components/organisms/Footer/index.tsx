@@ -1,5 +1,5 @@
-import Location from '@types/Location';
-import { NavBarProps } from '@types/NavBarProps';
+import Location from '@/types/Location';
+import { NavBarProps } from '@/types/NavBarProps';
 import Logo from '@/components/atoms/Logo';
 import NavBar from '@/components/molecules/NavBar';
 import Socials from '@/components/molecules/Socials';

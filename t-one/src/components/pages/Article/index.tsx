@@ -9,11 +9,11 @@ import Header from '@/components/organisms/Header';
 import LoadingBlock from '@/components/organisms/LoadingBlock';
 import ReviewBlock from '@/components/organisms/ReviewBlock';
 import { TitleType } from '@/types/TitleProps';
-import { AlertType } from '@types/AlertProps';
-import { ArrowDirection } from '@types/ArrowProps';
-import { ArticleProps } from '@types/ArticleProps';
-import ButtonType from '@types/ButtonProps';
-import { Comment } from '@types/Comment';
+import { AlertType } from '@/types/AlertProps';
+import { ArrowDirection } from '@/types/ArrowProps';
+import { ArticleProps } from '@/types/ArticleProps';
+import ButtonType from '@/types/ButtonProps';
+import { Comment } from '@/types/Comment';
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import styles from './styles.module.css';
@@ -34,7 +34,7 @@ const Article = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            setIsPageLoading(_ => true);
+            setIsPageLoading(() => true);
             await fetch(`https://dummyjson.com/posts/${post_id}`)
                 .then(response => {
                     if (response.ok) {
@@ -65,7 +65,7 @@ const Article = () => {
                     setCommentsError(true);
                 });
 
-            setIsPageLoading(_ => false);
+            setIsPageLoading(() => false);
         };
         fetchData();
     }, [post_id]);
@@ -75,6 +75,12 @@ const Article = () => {
     };
 
     async function addComment(commentBody: string): Promise<boolean> {
+
+        if (commentBody == null || (typeof commentBody === "string" && commentBody.trim().length === 0)) {
+            return false;
+        }
+
+
         const response = await fetch('https://dummyjson.com/comments/add', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

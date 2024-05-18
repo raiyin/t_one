@@ -1,4 +1,4 @@
-import { FeatureProps } from '@types/FeatureProps';
+import { FeatureProps } from '@/types/FeatureProps';
 import styles from './styles.module.css';
 
 const FeatureItem = (props: FeatureProps) => {

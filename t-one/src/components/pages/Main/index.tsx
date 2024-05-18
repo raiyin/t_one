@@ -13,7 +13,7 @@ import ReviewBlock from "@/components/organisms/ReviewBlock";
 import Header from "@/components/organisms/Header";
 import Footer from "@/components/organisms/Footer";
 import { useEffect, useState } from "react";
-import { FeatureProps } from "@types/FeatureProps";
+import { FeatureProps } from "@/types/FeatureProps";
 import featureJsonData from "@data/feature_data.json";
 import LoadingBlock from "@/components/organisms/LoadingBlock";
 import { TitleType } from "@/types/TitleProps";
@@ -41,9 +41,9 @@ const Main = () => {
                     setCommentsError(true);
                 });
         };
-        setCommentsLoading(_ => true);
+        setCommentsLoading(() => true);
         fetchData();
-        setCommentsLoading(_ => false);
+        setCommentsLoading(() => false);
     }, []);
 
     return (

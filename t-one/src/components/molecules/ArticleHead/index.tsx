@@ -1,4 +1,4 @@
-import { ArticleHeadProps } from '@types/ArticleProps';
+import { ArticleHeadProps } from '@/types/ArticleProps';
 import { tagsToHashTagString } from '@utils/mappers';
 import HashTag from '@/components/atoms/HashTag';
 import Rating from '@/components/atoms/Rating';

@@ -1,6 +1,6 @@
 import styles from './styles.module.css';
 import Rating_Star from '@assets/images/svgs/star.svg';
-import { RatingProps } from '@types/RatingProps';
+import { RatingProps } from '@/types/RatingProps';
 
 const Rating = (props: RatingProps) => {
     return (

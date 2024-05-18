@@ -3,7 +3,7 @@ import Tag from '@/components/atoms/Tag';
 import Time from '@/components/atoms/Time';
 import Rating from '@/components/atoms/Rating';
 import Title from '@/components/atoms/Title';
-import { LunchWidgetProps } from '@types/LunchWidgetProps';
+import { LunchWidgetProps } from '@/types/LunchWidgetProps';
 import { TitleType } from '@/types/TitleProps';
 import { TimeType } from '@/types/TimeProps';
 

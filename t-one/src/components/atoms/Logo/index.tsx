@@ -1,8 +1,8 @@
 import LogoSvg from "@assets/images/svgs/logo.svg";
-import { LogoProps } from "@types/LogoProps";
+import { LogoProps } from "@/types/LogoProps";
 import styles from "./styles.module.css";
 import { Link } from "react-router-dom";
-import Location from "@types/Location";
+import Location from "@/types/Location";
 
 const Logo = (props: LogoProps) => {
 

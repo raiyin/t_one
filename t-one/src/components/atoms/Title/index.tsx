@@ -1,28 +1,15 @@
 import styles from "./styles.module.scss";
-import { TitleProps as TitleProps } from "@types/TitleProps";
-import { TitleType } from "@types/TitleProps";
-// import classNames from 'classnames/bind';
-// const cx = classNames.bind(styles);
+import { TitleProps as TitleProps } from "@/types/TitleProps";
+import { TitleType } from "@/types/TitleProps";
 
 const Title = ({
     text = '',
     selectStart = 0,
     selectEnd = 0,
-    titleType = TitleType.H1,
-    hideOverflow = true
+    titleType = TitleType.H1
 }: TitleProps) => {
 
-    // const titleClass = {
-    //     title_font: true,
-    // };
-
-    //titleClass[(titleType) as keyof typeof titleClass] = true;
-    // titleClass[('title_overflow') as keyof typeof titleClass] = hideOverflow;
-
-    // const className = cx(titleClass);
-
     return (
-        // <div className={className}>
 
         <div className={styles[TitleType[titleType]]}>
             {text.slice(0, selectStart)}

@@ -1,7 +1,7 @@
 import styles from './styles.module.css';
-import { WrittenByProps } from '@types/WrittenByProps';
+import { WrittenByProps } from '@/types/WrittenByProps';
 import { useEffect, useState } from 'react';
-import { User } from '@types/User';
+import { User } from '@/types/User';
 
 const WrittenByBlock = (props: WrittenByProps) => {
 
@@ -31,7 +31,7 @@ const WrittenByBlock = (props: WrittenByProps) => {
                 });
         };
         fetchData();
-    }, []);
+    }, [props.userId]);
 
     return (
         <div className={`${styles['written-by']} ${styles['written-by__' + props.type]}`}>

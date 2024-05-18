@@ -1,7 +1,7 @@
 import styles from './styles.module.css';
 import MinusImage from '@assets/images/pngs/minus.png';
 import PlusImage from '@assets/images/pngs/plus.png';
-import { FaqItemProps } from '@types/FaqItemProps';
+import { FaqItemProps } from '@/types/FaqItemProps';
 import { useState } from 'react';
 
 const FaqItem = (props: FaqItemProps) => {
@@ -11,7 +11,7 @@ const FaqItem = (props: FaqItemProps) => {
     return (
         <div
             className={`${styles['faqItem']} ${expanded && styles.faqItem__expanded}`}
-            onClick={() => setExpanded(_ => !expanded)}
+            onClick={() => setExpanded(() => !expanded)}
         >
             <div className={styles['faqItem-conrol']}>
                 <span className={styles['faqItem_header']}>{props.quest}</span>

@@ -1,8 +1,8 @@
 import styles from "./styles.module.css";
 import Logo from "@/components/atoms/Logo";
 import NavBar from "@/components/molecules/NavBar";
-import Location from "@types/Location";
-import { NavBarProps } from "@types/NavBarProps";
+import Location from "@/types/Location";
+import { NavBarProps } from "@/types/NavBarProps";
 import BasrIcon from '@assets/images/svgs/bars.svg';
 
 const Header = () => {

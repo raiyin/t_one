@@ -1,4 +1,4 @@
-import { HashTagsProps } from '@types/HashTagsProps';
+import { HashTagsProps } from '@/types/HashTagsProps';
 import styles from './styles.module.css';
 
 const HashTag = (props: HashTagsProps) => {

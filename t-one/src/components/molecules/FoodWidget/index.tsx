@@ -1,6 +1,6 @@
 import Time from "@/components/atoms/Time";
 import styles from "./styles.module.css";
-import { FoodWidgetProps } from "@types/FoodWidgetProps";
+import { FoodWidgetProps } from "@/types/FoodWidgetProps";
 import { TimeType } from "@/types/TimeProps";
 
 const FoodWidget = (props: FoodWidgetProps) => {
@@ -19,7 +19,7 @@ const FoodWidget = (props: FoodWidgetProps) => {
             <div className={styles.time}>
                 <Time
                     time={props.time}
-                    timeType={TimeType.medium}
+                    timeType={TimeType.small}
                 />
             </div>
         </div>

@@ -1,6 +1,6 @@
 import CommentWidget from "@/components/molecules/CommentWidget";
 import styles from "./styles.module.css";
-import { ReviewProps } from "@types/ReviewProps";
+import { ReviewProps } from "@/types/ReviewProps";
 import Slider from "@/components/molecules/Slider";
 import { useEffect, useState } from "react";
 
@@ -14,9 +14,6 @@ const ReviewBlock = (props: ReviewProps) => {
 
         mql.addListener(onChange);
         setIsWide(mql.matches);
-        console.log(props.direction);
-        console.log(isWide);
-
         return () => mql.removeListener(onChange);
     }, []);
 

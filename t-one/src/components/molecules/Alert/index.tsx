@@ -1,4 +1,4 @@
-import { AlertProps, AlertType } from '@types/AlertProps';
+import { AlertProps, AlertType } from '@/types/AlertProps';
 import styles from './styles.module.css';
 import SuccesIcon from '@assets/images/svgs/success.svg';
 import InfoIcon from '@assets/images/svgs/information.svg';
@@ -34,7 +34,7 @@ const Alert = (props: AlertProps) => {
                         <h3>{AlertType[props.type]}</h3>
                         <p>{props.text}</p>
                     </div>
-                    <div className={styles['icon-times']} onClick={_ => props.setShow(false)}>
+                    <div className={styles['icon-times']} onClick={() => props.setShow(false)}>
                         <img src={CloseIcon} />
                     </div>
                 </div>

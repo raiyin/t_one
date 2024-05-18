@@ -3,7 +3,7 @@ import FaqItem from '@/components/molecules/FaqItem';
 import styles from './styles.module.css';
 import faqJsonData from '@data/faq_data.json';
 import { useState } from 'react';
-import { FaqItemProps } from '@types/FaqItemProps';
+import { FaqItemProps } from '@/types/FaqItemProps';
 import FaqRaysImage from '@assets/images/svgs/faq_rays.svg';
 import {
     AnchorSection,

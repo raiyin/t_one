@@ -6,7 +6,7 @@ import { useAppSelector, useAppDispatch } from '@store/hooks';
 import { decrementPageNumber, incrementPageNumber } from '@store/slices/articlesSlice';
 import { RootState } from '@store/store';
 import { useEffect, useState } from 'react';
-import { ArticleProps } from '@types/ArticleProps';
+import { ArticleProps } from '@/types/ArticleProps';
 import PaginationArrows from '@/components/molecules/PaginationArrows';
 import LoadingBlock from '@/components/organisms/LoadingBlock';
 import ErrorBlock from '@/components/organisms/ErrorBlock';
@@ -25,7 +25,7 @@ const Blog = () => {
 
     useEffect(() => {
         const fetchData = async (limit: number, skip: number) => {
-            setIsLoading(_ => true);
+            setIsLoading(() => true);
 
             await fetch(`https://dummyjson.com/posts?limit=${limit}&skip=${skip}`)
                 .then(response => {
@@ -43,7 +43,7 @@ const Blog = () => {
                     setError(true);
                 });
 
-            setIsLoading(_ => false);
+            setIsLoading(() => false);
         };
         fetchData(postPerPage, postPerPage * (articlesPageNumber - 1));
     }, [articlesPageNumber]);

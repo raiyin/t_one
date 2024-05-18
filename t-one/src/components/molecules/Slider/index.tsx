@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./styles.module.css";
 import CommentWidget from "@/components/molecules/CommentWidget";
-import { Comment } from "@types/Comment";
+import { Comment } from "@/types/Comment";
 
 const Slider = (props: { items: Comment[]; }) => {
     const [offset, setOffset] = useState(1);
