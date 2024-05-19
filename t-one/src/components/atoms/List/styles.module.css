@@ -16,7 +16,7 @@
     line-height: 1.5;
     letter-spacing: -0.005em;
     text-align: left;
-    color: #676767;
+    color: var(--colors-interface-gray);
     padding-inline-start: 1rem;
     list-style-position: outside;
     max-width: 51rem;

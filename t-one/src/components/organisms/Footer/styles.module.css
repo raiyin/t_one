@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    background: #eaeaea;
+    background: var(--colors-interface-bg-footer);
     margin-top: 16.4rem;
 }
 
@@ -32,7 +32,7 @@ footer {
     margin-top: 3rem;
 
     &:hr {
-        border: .1rem solid #818181;
+        border: .1rem solid var(--colors-interface-border);
     }
 }
 
@@ -52,5 +52,5 @@ footer {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.56;
-    color: #999999;
+    color: var(--colors-interface-navlink);
 }

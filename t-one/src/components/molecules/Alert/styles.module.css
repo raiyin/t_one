@@ -10,7 +10,7 @@ h3 {
     font-family: 'Poppins', sans-serif;
     width: 620px;
     height: 120px;
-    background-color: #fff;
+    background-color: var(--colors-interface-white);
     padding: 10px 20px;
     display: flex;
     justify-content: space-around;
@@ -33,7 +33,7 @@ h3 {
 }
 
 p {
-    color: #909092;
+    color: var(--colors-interface-grey-medium);
 }
 
 .icon-times {
@@ -43,19 +43,19 @@ p {
 }
 
 .alert__success {
-    border-left: 5px solid #059e6f;
+    border-left: 5px solid var(--colors-interface-alert-success);
 }
 
 .alert__info {
-    border-left: 5px solid #3286e9;
+    border-left: 5px solid var(--colors-interface-alert-info);
 }
 
 .alert__warning {
-    border-left: 5px solid #fdc220;
+    border-left: 5px solid var(--colors-interface-alert-warning);
 }
 
 .alert__error {
-    border-left: 5px solid #d72828;
+    border-left: 5px solid var(--colors-interface-alert-error);
 }
 
 .icon {

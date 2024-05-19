@@ -18,7 +18,7 @@ export const Normal: Story = {
     args: {
         id: 1,
         name: 'pizza',
-        tags: ['#sdfsd', '#sdfg'],
+        tags: ['#food', '#lunch'],
         rating: 5,
         prepTimeMinutes: 34,
         cookTimeMinutes: 23,

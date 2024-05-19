@@ -7,7 +7,7 @@
     display: flex;
     margin-top: 13rem;
     justify-content: space-between;
-    border-bottom: .1rem solid #CBCBCB;
+    border-bottom: .1rem solid var(--colors-interface-border);
     align-self: center;
     margin-left: 9.7rem;
     margin-right: 9.7rem;

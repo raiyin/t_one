@@ -7,7 +7,7 @@
     column-gap: 9.8rem;
     margin: 0 9.7rem;
     height: 13.6rem;
-    border-bottom: 1px solid #CBCBCB;
+    border-bottom: 1px solid var(--colors-interface-border);
     padding-top: 2.5rem;
     box-sizing: border-box;
     align-items: center;

@@ -16,8 +16,9 @@ type Story = StoryObj<typeof meta>;
 export const Normal: Story = {
     args: {
         id: 1,
+        userId: 1,
         body: 'delicious paltty',
-        tags: ['#sdfsdf', '#lkjsdf'],
+        tags: ['#food', '#lunch'],
         reactions: '6',
         title: 'The truth title of the story'
     },

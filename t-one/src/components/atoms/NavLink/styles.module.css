@@ -8,12 +8,12 @@
 }
 
 .navlink_header {
-      color: #606060;
+      color: var(--colors-interface-gray-dark);
       text-decoration: none;
 }
 
 .navlink_footer {
-      color: #999;
+      color: var(--colors-interface-navlink);
       text-decoration: none;
 }
 

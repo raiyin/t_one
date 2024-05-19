@@ -43,7 +43,7 @@
     width: 38rem;
     height: 38rem;
     border-radius: 50%;
-    border: 2rem solid #6C5FBC;
+    border: 2rem solid var(--colors-interface-violet);
     position: absolute;
     top: 5.5rem;
     left: 12.4rem;

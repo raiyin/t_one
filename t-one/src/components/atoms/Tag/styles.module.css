@@ -8,8 +8,8 @@
     text-wrap: nowrap;
     border-radius: .54rem;
     padding: .3rem .7rem;
-    background-color: #F7EDD0;
-    color: #DAA31A;
+    background-color: var(--colors-interface-yellow-light);
+    color: var(--colors-interface-yellow);
     font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
     font-weight: 400;

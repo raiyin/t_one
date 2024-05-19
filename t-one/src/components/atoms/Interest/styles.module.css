@@ -6,5 +6,5 @@
     line-height: 24px;
     letter-spacing: 0.6pxpx;
     text-align: left;
-    color: #A0AEC0;
+    color: var(--colors-interface-interest);
 }

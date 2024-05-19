@@ -6,5 +6,5 @@
     line-height: 33px;
     letter-spacing: 0.3;
     text-align: right;
-    color: #1A202C;
+    color: var(--colors-interface-money-dark);
 }

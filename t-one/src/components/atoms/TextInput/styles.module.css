@@ -7,11 +7,11 @@
     font-size: 1.6rem;
     font-weight: 400;
     border-radius: 1.8rem;
-    border: .2rem solid #6C5FBC;
+    border: .2rem solid var(--colors-interface-violet);
     padding: .23rem .27rem;
     box-sizing: border-box;
     resize: none;
-    color: #B6B6B6;
+    color: var(--colors-interface-gray-medium);
     padding: 2.3rem 2.7rem;
 }
 
@@ -22,5 +22,5 @@
     font-weight: 600;
     line-height: 1;
     text-align: left;
-    color: #B6B6B6;
+    color: var(--colors-interface-gray-medium);
 }

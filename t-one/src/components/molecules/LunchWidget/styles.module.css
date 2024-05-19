@@ -1,9 +1,9 @@
 .container {
     width: 40rem;
     height: 30rem;
-    border: 0.125rem solid #F4F4F6;
+    border: 0.125rem solid var(--colors-interface-gray-light);
     border-radius: 3rem;
-    box-shadow: .6rem 7rem 3.6rem 0px #E5E5E5B2;
+    box-shadow: .6rem 7rem 3.6rem 0px var(--color-inteface-gray-medium);
     overflow: hidden;
     display: flex;
     flex-direction: column;

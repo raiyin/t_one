@@ -2,7 +2,7 @@
     width: 33rem;
     height: 9rem;
     border-radius: 1.6rem;
-    background-color: #fff;
+    background-color: var(--colors-interface-white);
     display: flex;
     padding: 0.8rem 2.5rem .8rem 1.5rem;
     align-items: center;
@@ -39,7 +39,7 @@
     line-height: 1.375;
     margin: 0;
     padding: 0;
-    color: #323142;
+    color: var(--colors-interface-food);
 }
 
 .info_block__desc {
@@ -52,7 +52,7 @@
     margin: 0;
     margin-top: .4rem;
     padding: 0;
-    color: #323142;
+    color: var(--colors-interface-food);
 }
 
 .time {
