@@ -32,6 +32,18 @@
     white-space: pre-wrap;
 }
 
+@media screen and (width < 768px) {
+    .feature-item__title {
+        font-size: 5rem;
+    }
+
+    .feature-item__desc {
+        font-size: 2.2rem;
+        width: 32rem;
+        height: 12rem;
+    }
+}
+
 @media screen and (width > 576px) {
     .feature-item__wrapper:not(:last-child) {
         border-right: 1px solid rgba(197, 197, 197, 0.15);

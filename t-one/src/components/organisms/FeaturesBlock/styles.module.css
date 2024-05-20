@@ -1,5 +1,4 @@
 .features {
-    max-width: 1440px;
     width: 100%;
     height: 22rem;
     background-image: url("../../../assets/images/pngs/feature_bg.png");
@@ -8,6 +7,12 @@
     justify-content: center;
     margin-top: 8rem;
 }
+
+/* @media screen and (width < 768px) {
+    .features {
+        height: 28rem;
+    }
+} */
 
 @media screen and (width < 576px) {
     .features {

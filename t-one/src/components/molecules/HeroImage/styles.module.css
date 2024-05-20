@@ -68,11 +68,16 @@
     height: 10rem;
 }
 
-
 .rays_wrapper {
     position: absolute;
     top: 46rem;
     left: 18px;
     width: 4rem;
     height: 3rem;
+}
+
+@media screen and (width<768px) {
+    .waves_wrapper {
+        visibility: hidden;
+    }
 }

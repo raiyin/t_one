@@ -59,3 +59,27 @@
     align-self: flex-end;
     margin-left: auto;
 }
+
+@media screen and (width<768px) {
+    .food_widget_container {
+        width: 40rem;
+        height: 12rem;
+    }
+
+    .image {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .info_block {
+        height: 6.5rem;
+    }
+
+    .info_block__title {
+        font-size: 2.1rem;
+    }
+
+    .info_block__desc {
+        font-size: 1.5rem;
+    }
+}

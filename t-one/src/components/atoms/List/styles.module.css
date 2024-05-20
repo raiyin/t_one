@@ -21,3 +21,9 @@
     list-style-position: outside;
     max-width: 51rem;
 }
+
+@media screen and (width<768px) {
+    .list_item {
+        font-size: 2.8rem;
+    }
+}

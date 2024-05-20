@@ -24,18 +24,8 @@
     /* padding-left: 1rem; */
 }
 
-/* .purchases_image {
-    margin-left: 1rem;
-} */
-
-/* @media screen and (max-width: 1300px) {
-    .purchases_container {
-        flex-direction: column;
-        height: fit-content;
-        row-gap: 3.5rem;
-        border-bottom: none;
-        margin-top: 0px;
-        text-align: center;
-        padding-bottom: 0;
+@media screen and (width<768px) {
+    .purchases__image {
+        height: 55rem;
     }
-} */
+}

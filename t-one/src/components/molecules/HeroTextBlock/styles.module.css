@@ -10,7 +10,6 @@
 .herotext-container {
     margin-top: 1.4rem;
     width: 50rem;
-    height: 8.4rem;
 }
 
 .cta_buttons {
@@ -24,4 +23,16 @@
 .before_wrapper {
     width: 24rem;
     height: 2rem;
+}
+
+@media screen and (width<768px) {
+    .before_wrapper {
+        width: 36rem;
+        height: 3rem;
+    }
+
+    .cta_buttons {
+        width: 40rem;
+        height: 8rem;
+    }
 }

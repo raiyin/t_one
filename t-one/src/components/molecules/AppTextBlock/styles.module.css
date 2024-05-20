@@ -27,3 +27,10 @@
     left: 16rem;
     width: 17.6rem;
 }
+
+@media screen and (width<768px) {
+    .button-wrapper {
+        width: 25rem;
+        height: 8rem;
+    }
+}
