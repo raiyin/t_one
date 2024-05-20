@@ -14,7 +14,7 @@ const ArticleWidget = (props: ArticleProps) => {
                 {props.title}
             </Link>
 
-            <div className={styles['article-widget__hash-mark']}>
+            <div className={styles['article-widget__written-raiting']}>
                 <WrittenByBlock
                     userId={props.userId}
                     type='small'
@@ -22,10 +22,12 @@ const ArticleWidget = (props: ArticleProps) => {
                 <Rating rating={props.reactions} starFirst={false} />
             </div>
 
-            <HashTag
-                text={tagsToHashTagString(props.tags)}
-                size={'small'}
-            />
+            <div className={styles['article-widget__hashtag']}>
+                <HashTag
+                    text={tagsToHashTagString(props.tags)}
+                    size={'small'}
+                />
+            </div>
 
             <div className={styles['article-widget__text']}>
                 {props.body}

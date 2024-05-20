@@ -13,9 +13,15 @@
 }
 
 .article-head_subinfo {
-    height: 49px;
+    height: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: end;
+}
+
+@media screen and (width<768px) {
+    .article-head_subinfo {
+        height: 9rem;
+    }
 }

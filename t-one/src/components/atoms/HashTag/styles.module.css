@@ -19,4 +19,8 @@
     .hashtag__small {
         font-size: 2rem;
     }
+
+    .hashtag__medium {
+        font-size: 2.6rem;
+    }
 }

@@ -22,11 +22,16 @@
     text-decoration: none;
 }
 
-.article-widget__hash-mark {
+.article-widget__written-raiting {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
+}
+
+.article-widget__hashtag {
+    display: flex;
+    margin-top: 1rem;
 }
 
 .article-widget__text {
@@ -51,6 +56,10 @@
 
     .article-widget__title {
         font-size: 3rem;
+    }
+
+    .article-widget__hashtag {
+        margin-top: 2rem;
     }
 
     .article-widget__text {

@@ -1,6 +1,5 @@
 .article {
     margin-top: 12.5rem;
-    /* max-width: 1250px; */
 }
 
 .article-title {
@@ -19,4 +18,10 @@
     line-height: 2;
     text-align: justify;
     color: var(--colors-interface-article);
+}
+
+@media screen and (width<768px) {
+    .article-text {
+        font-size: 3rem;
+    }
 }

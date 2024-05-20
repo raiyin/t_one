@@ -1,5 +1,4 @@
 .written-by {
-    /* width: 22.5rem; */
     height: 5.5rem;
     display: flex;
     align-items: center;
@@ -113,5 +112,22 @@
 
     .written-by_name__small {
         font-size: 2.5rem;
+    }
+
+    .written-by__medium {
+        height: 9rem;
+    }
+
+    .written-by_ava__medium {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .written-by_label__medium {
+        font-size: 3.3rem;
+    }
+
+    .written-by_name__medium {
+        font-size: 3.3rem;
     }
 }

@@ -41,3 +41,10 @@
     bottom: 0rem;
     left: 0rem;
 }
+
+@media screen and (width<768px) {
+    .back-button {
+        width: 25rem;
+    }
+
+}
