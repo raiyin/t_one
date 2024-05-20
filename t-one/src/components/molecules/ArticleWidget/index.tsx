@@ -21,6 +21,7 @@ const ArticleWidget = (props: ArticleProps) => {
                 />
                 <Rating rating={props.reactions} starFirst={false} />
             </div>
+
             <HashTag
                 text={tagsToHashTagString(props.tags)}
                 size={'small'}
@@ -29,6 +30,7 @@ const ArticleWidget = (props: ArticleProps) => {
             <div className={styles['article-widget__text']}>
                 {props.body}
             </div>
+
         </div>
     );
 };

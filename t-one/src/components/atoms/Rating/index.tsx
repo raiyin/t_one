@@ -19,7 +19,7 @@ const Rating = (props: RatingProps) => {
                     :
                     <>
                         <span>{props.rating}</span>
-                        <img
+                        <img className={styles['rating__star']}
                             src={Rating_Star}
                             alt="Rating mark"
                         />

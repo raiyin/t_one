@@ -14,3 +14,9 @@
 .hashtag__medium {
     font-size: 1.6rem;
 }
+
+@media screen and (width<768px) {
+    .hashtag__small {
+        font-size: 2rem;
+    }
+}

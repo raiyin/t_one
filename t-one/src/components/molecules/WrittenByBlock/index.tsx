@@ -52,10 +52,10 @@ const WrittenByBlock = (props: WrittenByProps) => {
                         </figure>
 
                         <div className={styles['written-by_author']}>
-                            <div className={`${styles['written-by_label']}`}>
+                            <div className={`${styles['written-by_label']} ${styles['written-by_label__' + props.type]}`}>
                                 Written By
                             </div>
-                            <div className={`${styles['written-by_name']}`}>
+                            <div className={`${styles['written-by_name']} ${styles['written-by_name__' + props.type]}`}>
                                 {`${user.firstName} ${user.lastName}`}
                             </div>
                         </div>

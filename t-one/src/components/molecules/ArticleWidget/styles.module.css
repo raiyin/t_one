@@ -42,3 +42,19 @@
     -webkit-box-orient: vertical;
     overflow-y: clip;
 }
+
+@media screen and (width<768px) {
+    .article-widget {
+        width: 58rem;
+        height: 45rem;
+    }
+
+    .article-widget__title {
+        font-size: 3rem;
+    }
+
+    .article-widget__text {
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+}

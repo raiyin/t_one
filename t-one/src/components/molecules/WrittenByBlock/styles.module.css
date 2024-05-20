@@ -1,5 +1,5 @@
 .written-by {
-    width: 22.5rem;
+    /* width: 22.5rem; */
     height: 5.5rem;
     display: flex;
     align-items: center;
@@ -59,11 +59,11 @@
 }
 
 .written-by_author__small {
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 .written-by_author__medium {
-    margin-left: 16px;
+    margin-left: 1.6rem;
 }
 
 .written-by_label {
@@ -78,7 +78,7 @@
     font-size: 1.4rem;
 }
 
-.written-by_label__madium {
+.written-by_label__medium {
     font-size: 1.6rem;
 }
 
@@ -99,4 +99,19 @@
 .written-by_name__medium {
     font-size: 1.8rem;
     line-height: 1.45;
+}
+
+@media screen and (width<768px) {
+    .written-by_ava__small {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .written-by_label__small {
+        font-size: 2.5rem;
+    }
+
+    .written-by_name__small {
+        font-size: 2.5rem;
+    }
 }
