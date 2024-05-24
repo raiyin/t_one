@@ -17,7 +17,7 @@
 
 @media screen and (width<768px) {
     .hashtag__small {
-        font-size: 2rem;
+        font-size: clamp(6px, 2rem, 10px);
     }
 
     .hashtag__medium {

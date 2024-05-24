@@ -15,7 +15,7 @@ const ArticleHead = (props: ArticleHeadProps) => {
                 <WrittenByBlock userId={props.userId} type='medium' />
 
                 <div className={styles['article-head_subinfo']}>
-                    <Rating rating={props.reactions} starFirst={false} />
+                    <Rating rating={props.reactions.likes.toString()} starFirst={false} />
                     <HashTag
                         text={tagsToHashTagString(props.tags)}
                         size={"medium"}

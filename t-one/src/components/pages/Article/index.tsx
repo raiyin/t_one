@@ -23,7 +23,7 @@ const Article = () => {
     const navigate = useNavigate();
     const { post_id } = useParams();
     const [alertShow, setAlertShow] = useState(false);
-    const [article, setArticle] = useState<ArticleProps>({ id: 0, userId: 0, body: '', title: '', tags: [], reactions: '0' });
+    const [article, setArticle] = useState<ArticleProps>({ id: 0, userId: 0, body: '', title: '', tags: [], reactions: { likes: 0, dislikes: 0 } });
     const [comments, setComments] = useState<Comment[]>([]);
     const [isPageLoading, setIsPageLoading] = useState(false);
     const [postError, setPostError] = useState(false);
