@@ -15,7 +15,6 @@
 }
 
 .images {
-    /* padding-left: 11rem; */
     flex: 0 1 50%;
 }
 
@@ -25,13 +24,14 @@
     height: 62.5rem;
 }
 
-/* @media screen and (max-width: 1300px) {
-    .app_block {
-        flex-direction: column;
-        height: fit-content;
-        row-gap: 35px;
-        border-bottom: none;
-        text-align: center;
-        padding-bottom: 0;
+@media screen and (width<576px) {
+    .app_block__container {
+        height: unset;
     }
-} */
+
+    .images_phone {
+        padding-left: 11.5rem;
+        width: 50rem;
+        height: 80rem;
+    }
+}

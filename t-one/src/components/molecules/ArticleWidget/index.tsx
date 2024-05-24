@@ -19,7 +19,7 @@ const ArticleWidget = (props: ArticleProps) => {
                     userId={props.userId}
                     type='small'
                 />
-                <Rating rating={props.reactions} starFirst={false} />
+                <Rating rating={props.reactions.likes.toString()} starFirst={false} />
             </div>
 
             <div className={styles['article-widget__hashtag']}>

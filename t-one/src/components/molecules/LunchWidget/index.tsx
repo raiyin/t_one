@@ -24,7 +24,7 @@ const LunchWidget = (props: LunchWidgetProps) => {
                 {props.tags.map((tag, tag_index) => {
                     if (tag_index < 4) {
                         return (
-                            <Tag text={tag} key={tag} />
+                            <Tag text={tag} type='small' key={tag} />
                         );
                     }
                 })}

@@ -1,29 +1,54 @@
+.lunch_block {
+    width: 100%;
+}
+
+.lunch_title {
+    text-align: center;
+}
+
 .lunch_container {
     padding-bottom: 23rem;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10rem;
     border-bottom: 0.1rem solid var(--colors-interface-border);
-    align-self: center;
+    margin-right: 9.7rem;
+    margin-left: 9.7rem;
 }
 
 .lunches_list {
+    width: 100%;
+    height: 30rem;
     display: flex;
     column-gap: 2.5rem;
     margin-top: 9rem;
     padding-inline-start: 0px;
 }
 
-/* @media screen and (max-width: 1300px) {
+.lunches_list_item {
+    width: 40rem;
+    height: 30rem;
+}
+
+.lunches_list_item::marker {
+    content: none;
+}
+
+@media screen and (width < 576px) {
     .lunches_list {
+        width: 75%;
         flex-direction: column;
-        height: fit-content;
+        height: unset;
         row-gap: 25px;
+    }
+
+    .lunches_list_item {
+        width: 100%;
+        height: unset;
     }
 
     .lunch_container {
         border-bottom: none;
     }
-} */
+}

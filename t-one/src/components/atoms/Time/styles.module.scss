@@ -1,6 +1,5 @@
 time {
     color: var(--colors-interface-alt);
-    line-height: 1.8;
     display:  inline-block;
     vertical-align: top;
 }
@@ -15,16 +14,15 @@ time {
 .medium{
     font-family: "Manrope", sans-serif;
     font-size: 2rem;
-    line-height: 1.3;
     font-weight: 400;
 }
 
  @media screen and (width<768px){
     .small{
-        font-size: 1.5rem;
+        font-size: clamp(5px,1rem,30px);
     }
 
     .medium{
-        font-size: 2.3rem;
+        font-size: clamp(12px,1.3rem,35px);
     }
  }

@@ -14,11 +14,11 @@ const Rating = (props: RatingProps) => {
                             src={Rating_Star}
                             alt="Rating mark"
                         />
-                        <span>{props.rating}</span>
+                        {props.rating}
                     </>
                     :
                     <>
-                        <span>{props.rating}</span>
+                        {props.rating}
                         <img className={styles['rating__star']}
                             src={Rating_Star}
                             alt="Rating mark"

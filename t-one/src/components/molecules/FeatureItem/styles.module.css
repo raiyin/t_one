@@ -44,6 +44,24 @@
     }
 }
 
+@media screen and (width < 576px) {
+    .feature-item {
+        font-size: 3.2rem;
+        width: 42rem;
+        height: 22rem;
+    }
+
+    .feature-item__title {
+        font-size: 8rem;
+    }
+
+    .feature-item__desc {
+        font-size: 3.2rem;
+        width: 52rem;
+        height: 12rem;
+    }
+}
+
 @media screen and (width > 576px) {
     .feature-item__wrapper:not(:last-child) {
         border-right: 1px solid rgba(197, 197, 197, 0.15);

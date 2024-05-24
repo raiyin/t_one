@@ -3,8 +3,13 @@ export type ArticleProps = {
     body: string;
     title: string;
     userId: number;
-    reactions: string;
+    reactions: Reactions;
     tags: string[];
 };
 
-export type ArticleHeadProps = Omit<ArticleProps, "body" | "title" | "id">
+type Reactions = {
+    likes: number;
+    dislikes: number;
+};
+
+export type ArticleHeadProps = Omit<ArticleProps, "body" | "title" | "id">;

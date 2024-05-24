@@ -45,35 +45,46 @@ const LunchBlock = () => {
                 error ?
                     <></>
                     :
-                    (<section className={styles['lunch_container']}>
-                        <AnchorSection className="dBlock anchor" id="recipes" />
+                    (
 
-                        {
-                            loading ?
-                                <LoadingBlock />
-                                :
-                                <>
-                                    <Title
-                                        text={'Our Top Lunch'}
-                                        selectStart={8}
-                                        selectEnd={13}
-                                        titleType={TitleType.H3}
-                                        hideOverflow={false}
-                                    />
-                                    <ul className={styles['lunches_list']}>
-                                        {
-                                            lunchWidgetProps.map(recipe =>
-                                                <li key={recipe.id}>
-                                                    <LunchWidget {...recipe} />
-                                                </li>
-                                            )
-                                        }
-                                    </ul>
-                                </>
-                        }
+                        <section className={styles['lunch_block']}>
 
-                    </section>)
+                            <section className={styles['lunch_container']}>
 
+                                <AnchorSection className="dBlock anchor" id="recipes" />
+
+                                {
+                                    loading ?
+                                        <LoadingBlock />
+                                        :
+                                        <>
+                                            <div className={styles['lunch_title']}>
+                                                <Title
+                                                    text={'Our Top Lunch'}
+                                                    selectStart={8}
+                                                    selectEnd={13}
+                                                    titleType={TitleType.H3}
+                                                    hideOverflow={false}
+                                                />
+
+                                            </div>
+
+                                            <ul className={styles['lunches_list']}>
+                                                {
+                                                    lunchWidgetProps.map(recipe =>
+                                                        <li key={recipe.id} className={styles['lunches_list_item']}>
+                                                            <LunchWidget {...recipe} />
+                                                        </li>
+                                                    )
+                                                }
+                                            </ul>
+                                        </>
+                                }
+
+                            </section>
+
+                        </section>
+                    )
             }
         </>
 

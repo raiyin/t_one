@@ -86,3 +86,14 @@
         left: 50rem;
     }
 }
+
+@media screen and (width<576px) {
+    .container {
+        width: 80rem;
+        height: 60rem;
+    }
+
+    .rays_wrapper {
+        left: 10px;
+    }
+}

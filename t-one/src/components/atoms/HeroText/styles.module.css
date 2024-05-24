@@ -15,15 +15,16 @@
     color: var(--colors-button-primary-default);
 }
 
-@media screen and (width< 768px) {
+@media screen and (width < 768px) {
     .main-text {
-        /* opacity: 70%; */
-        /* font-family: 'Inter', sans-serif;
-        font-weight: 400; */
         font-size: 2.8rem;
         line-height: 1.6;
-        /* text-align: justify;
-        color: var(--colors-interface-gray);
-        letter-spacing: 0; */
+    }
+}
+
+@media screen and (width < 576px) {
+    .main-text {
+        font-size: 3.8rem;
+        line-height: 1.6;
     }
 }

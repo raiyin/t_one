@@ -36,3 +36,14 @@
         height: 8rem;
     }
 }
+
+@media screen and (width<576px) {
+    .herotext-container {
+        width: 75%;
+    }
+
+    .cta_buttons {
+        width: 50rem;
+        height: 12rem;
+    }
+}
