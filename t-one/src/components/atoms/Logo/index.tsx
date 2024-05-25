@@ -13,10 +13,10 @@ const Logo = (props: LogoProps) => {
             <img
                 src={LogoSvg}
                 alt="Logo"
-                className={isOnHeader ? styles['logo-img__header'] : styles['logo-img__footer']}
+                className={isOnHeader ? styles['logo__img_header'] : styles['logo__img_footer']}
             />
             <div
-                className={isOnHeader ? styles['logo-text__header'] : styles['logo-text__footer']}>
+                className={isOnHeader ? styles['logo__text_header'] : styles['logo__text_footer']}>
                 eatly
             </div>
         </Link>

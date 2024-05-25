@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 const HashTag = (props: HashTagsProps) => {
 
     return (
-        <div className={`${styles['hashtag']} ${styles['hashtag__' + props.size]}`}>
+        <div className={`${styles['hashtag']} ${styles['hashtag_' + props.size]}`}>
             {props.text}
         </div>
     );

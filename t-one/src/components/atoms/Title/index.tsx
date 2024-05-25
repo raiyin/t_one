@@ -18,7 +18,7 @@ const Title = ({
                 (selectStart == 0 && selectEnd == 0) ?
                     <></>
                     :
-                    <div className={styles['selected']}>
+                    <div className={styles['title_selected']}>
                         {text.slice(selectStart, selectEnd)}
                     </div>
             }

@@ -8,13 +8,13 @@ const Button = (props: ButtonProps) => {
 
     const typeMap = (type: ButtonType): string => {
         const types = new Map<ButtonType, string>();
-        types.set(ButtonType.Primary, styles.button__primary);
-        types.set(ButtonType.Ghost, styles.button__ghost);
+        types.set(ButtonType.Primary, styles.button_primary);
+        types.set(ButtonType.Ghost, styles.button_ghost);
         return types.get(type) || "";
     };
 
     return (
-        <button className={`${styles['button']} ${typeMap(props.type)} ${props.needArrow ? styles['button__iconed'] : ''}`} onClick={props.onClick}>
+        <button className={`${styles['button']} ${typeMap(props.type)} ${props.needArrow ? styles['button_iconed'] : ''}`} onClick={props.onClick}>
 
             {props.needArrow && props.direction === ArrowDirection.Back && <img className={styles['button_icon']} src={ButtonImage_Back} alt="" />}
 

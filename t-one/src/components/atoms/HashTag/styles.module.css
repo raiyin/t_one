@@ -7,20 +7,20 @@
     color: var(--colors-interface-gray-hashtag);
 }
 
-.hashtag__small {
+.hashtag_small {
     font-size: 1.2rem;
 }
 
-.hashtag__medium {
+.hashtag_medium {
     font-size: 1.6rem;
 }
 
 @media screen and (width<768px) {
-    .hashtag__small {
+    .hashtag_small {
         font-size: clamp(6px, 2rem, 10px);
     }
 
-    .hashtag__medium {
+    .hashtag_medium {
         font-size: 2.6rem;
     }
 }

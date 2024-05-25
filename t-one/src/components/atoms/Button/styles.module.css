@@ -12,19 +12,19 @@
     text-wrap: nowrap;
 }
 
-.button__iconed {
+.button_iconed {
     display: flex;
     column-gap: 1.3rem;
     align-items: center;
 }
 
-.button__primary {
+.button_primary {
     color: var(--colors-interface-white);
     background-color: var(--colors-button-primary-default);
     border: none;
 }
 
-.button__ghost {
+.button_ghost {
     border-color: var(--colors-button-primary-default);
     color: var(--colors-button-primary-default);
     border-width: 0.15rem;
