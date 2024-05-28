@@ -117,8 +117,8 @@ const Article = () => {
                         errorText='Oooops!!! Error fetching post information...'
                     />
                     :
-                    <main className={styles['main-container']}>
-                        <div className={styles['main']}>
+                    <main className={styles['article-container']}>
+                        <div className={styles['article']}>
 
                             <ArticleBlock
                                 id={article.id}
@@ -130,7 +130,7 @@ const Article = () => {
                             />
 
 
-                            <div className={styles['back-button']}>
+                            <div className={styles['article__back-button']}>
                                 <Button
                                     type={ButtonType.Ghost}
                                     text={'All Articles'}
@@ -144,7 +144,7 @@ const Article = () => {
                                 (!commentsError && !postError)
                                     ?
                                     <>
-                                        <div className={styles['comments-block']}>
+                                        <div className={styles['article__comments']}>
 
                                             <Title
                                                 text={'Comments'}
@@ -154,13 +154,13 @@ const Article = () => {
                                                 hideOverflow={false}
                                             />
 
-                                            <div className={styles['commets']}>
+                                            <div className={styles['article__comments-items']}>
                                                 <ReviewBlock direction={'column'} comments={comments} />
 
                                             </div>
                                         </div>
 
-                                        <div className={styles['commets-add']}>
+                                        <div className={styles['article__comments-addition']}>
                                             <AddComment
                                                 placeholder={'Enter your comment'}
                                                 buttonAction={addComment}
@@ -181,7 +181,7 @@ const Article = () => {
 
             <Footer />
 
-            <div className={styles['alert']}>
+            <div className={styles['main__alert']}>
                 <Alert
                     type={AlertType.error}
                     text={"Couldn't add a comment. Try again later."}

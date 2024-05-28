@@ -19,6 +19,6 @@
 @media screen and (width<768px) {
     .rating {
         height: 100%;
-        font-size: clamp(12px, 1.3rem, 35px);
+        font-size: clamp(10px, 1.3rem, 35px);
     }
 }

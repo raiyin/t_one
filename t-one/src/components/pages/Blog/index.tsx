@@ -60,15 +60,15 @@ const Blog = () => {
                     ?
                     <ErrorBlock errorText={'Oooops!!! Error fetching posts...'} />
                     :
-                    <div className={styles['main-container']}>
-                        <main className={styles['main']}>
+                    <div className={styles['blog-container']}>
+                        <main className={styles['blog']}>
                             <ArticlesPreview
                                 articles={articles}
                                 leftArrowIsEnable={isBackPageExist}
                                 rightArrowIsEnable={isForthPageExist}
                             />
 
-                            <div className={styles['arrows']}>
+                            <div className={styles['blog__arrows']}>
                                 <PaginationArrows
                                     leftArrowIsEnable={isBackPageExist}
                                     rightArrowIsEnable={isForthPageExist}

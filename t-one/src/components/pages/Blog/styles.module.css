@@ -1,13 +1,13 @@
-.main-container {
+.blog-container {
     width: 100%;
 }
 
-.main {
+.blog {
     margin-left: 9.7rem;
     margin-right: 9.7rem;
 }
 
-.arrows {
+.blog__arrows {
     margin-top: 6rem;
     display: flex;
     justify-content: center;

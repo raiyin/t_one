@@ -74,7 +74,7 @@ const Main = () => {
                     <LoadingBlock />
                     :
                     !commentsError && <>
-                        <div className={styles["review_title_wrapper"]}>
+                        <div className={styles["main__reviews-title"]}>
                             <Title
                                 text={"Customer Say"}
                                 selectStart={0}
