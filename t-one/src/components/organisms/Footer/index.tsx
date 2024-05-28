@@ -31,15 +31,15 @@ const Footer = () => {
         <footer >
             <div className={styles['footer-container']}>
 
-                <div className={styles['footer_menu']}>
+                <div className={styles['footer__menu']}>
                     <Logo location={Location.Footer} />
                     <NavBar {...navBarProps} />
                 </div>
-                <div className={styles['fotter_line']}>
+                <div className={styles['fotter__line']}>
                     <hr />
                 </div>
-                <div className={styles['lower']}>
-                    <div className={styles['copy']}>
+                <div className={styles['footer__lower']}>
+                    <div className={styles['footer__copy']}>
                         © 2023 EATLY All Rights Reserved.
                     </div>
                     <Socials />

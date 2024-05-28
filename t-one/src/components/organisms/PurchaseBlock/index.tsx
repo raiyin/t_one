@@ -16,8 +16,7 @@ const PurchasesBlock = () => {
                         src="../../../src/assets/images/webps/purchases.webp"
                         alt="purchases dashboard"
                         loading='lazy'
-                        decoding='async'
-                        className={styles['purchases_image']} />
+                        decoding='async' />
                 </div>
             </div>
         </section>

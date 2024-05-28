@@ -10,7 +10,7 @@ const FaqItem = (props: FaqItemProps) => {
 
     return (
         <div
-            className={`${styles['faqItem']} ${expanded && styles.faqItem__expanded}`}
+            className={`${styles['faqItem']} ${expanded && styles['faqItem_expanded']}`}
             onClick={() => setExpanded(() => !expanded)}
         >
             <div className={styles['faqItem__conrol']}>

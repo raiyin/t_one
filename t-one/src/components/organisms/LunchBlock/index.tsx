@@ -47,9 +47,9 @@ const LunchBlock = () => {
                     :
                     (
 
-                        <section className={styles['lunch_block']}>
+                        <section className={styles['lunch-block']}>
 
-                            <section className={styles['lunch_container']}>
+                            <section className={styles['lunch-container']}>
 
                                 <AnchorSection className="dBlock anchor" id="recipes" />
 
@@ -58,7 +58,7 @@ const LunchBlock = () => {
                                         <LoadingBlock />
                                         :
                                         <>
-                                            <div className={styles['lunch_title']}>
+                                            <div className={styles['lunch-block__title']}>
                                                 <Title
                                                     text={'Our Top Lunch'}
                                                     selectStart={8}
@@ -69,10 +69,10 @@ const LunchBlock = () => {
 
                                             </div>
 
-                                            <ul className={styles['lunches_list']}>
+                                            <ul className={styles['lunch-block__lunches']}>
                                                 {
                                                     lunchWidgetProps.map(recipe =>
-                                                        <li key={recipe.id} className={styles['lunches_list_item']}>
+                                                        <li key={recipe.id} className={styles['lunch-block__lunch-item']}>
                                                             <LunchWidget {...recipe} />
                                                         </li>
                                                     )

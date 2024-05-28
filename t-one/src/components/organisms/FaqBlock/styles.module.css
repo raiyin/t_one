@@ -11,13 +11,13 @@
     margin: 0 14.5rem;
 }
 
-.faq_title {
+.faq__title {
     text-align: center;
     width: 41rem;
     margin-left: 1rem;
 }
 
-.icon_wrapper {
+.faq__icon {
     position: relative;
     left: 43rem;
     top: -13rem;
@@ -25,13 +25,13 @@
     height: 4rem;
 }
 
-.faq_items {
+.faq__items {
     width: 100%;
     margin-top: 7rem;
 }
 
 @media screen and (width<768px) {
-    .icon_wrapper {
+    .faq__icon {
         visibility: hidden;
     }
 }

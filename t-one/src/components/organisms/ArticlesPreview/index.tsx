@@ -16,7 +16,7 @@ const ArticlesPreview = (props: { articles: ArticleProps[], leftArrowIsEnable: b
                 hideOverflow={false}
             />
 
-            <div className={styles['articles-preview_previews']}>
+            <div className={styles['articles-preview__previews']}>
 
                 {props.articles.map(article =>
                     <ArticleWidget

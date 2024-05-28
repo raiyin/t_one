@@ -4,7 +4,7 @@ import { TitleType } from '@/types/TitleProps';
 
 const ErrorBlock = (props: { errorText: string; }) => {
     return (
-        <div className={styles['error-wrapper']}>
+        <div className={styles['error']}>
             <Title
                 text={props.errorText}
                 selectStart={0}

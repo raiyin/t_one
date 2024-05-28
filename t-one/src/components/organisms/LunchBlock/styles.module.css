@@ -1,12 +1,12 @@
-.lunch_block {
+.lunch-block {
     width: 100%;
 }
 
-.lunch_title {
+.lunch-block__title {
     text-align: center;
 }
 
-.lunch_container {
+.lunch-container {
     padding-bottom: 23rem;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
     margin-left: 9.7rem;
 }
 
-.lunches_list {
+.lunch-block__lunches {
     width: 100%;
     height: 30rem;
     display: flex;
@@ -26,29 +26,29 @@
     padding-inline-start: 0px;
 }
 
-.lunches_list_item {
+.lunch-block__lunch-item {
     width: 40rem;
     height: 30rem;
 }
 
-.lunches_list_item::marker {
+.lunch-block__lunch-item::marker {
     content: none;
 }
 
 @media screen and (width < 576px) {
-    .lunches_list {
+    .lunch-block__lunches {
         width: 75%;
         flex-direction: column;
         height: unset;
         row-gap: 25px;
     }
 
-    .lunches_list_item {
+    .lunch-block__lunch-item {
         width: 100%;
         height: unset;
     }
 
-    .lunch_container {
+    .lunch-container {
         border-bottom: none;
     }
 }

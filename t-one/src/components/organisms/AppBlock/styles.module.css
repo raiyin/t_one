@@ -1,35 +1,33 @@
-.app_block {
+.app-block {
     width: 100%;
     margin-top: 10rem;
 }
 
-.app_block__container {
+.app-block__container {
     display: flex;
     height: 74rem;
     align-self: center;
     border-bottom: 1px solid var(--colors-interface-border);
-    /* column-gap: 22rem; */
-
     margin-left: 9.7rem;
     margin-right: 9.7rem;
 }
 
-.images {
+.iapp-block__mages {
     flex: 0 1 50%;
 }
 
-.images_phone {
+.app-block__image {
     padding-left: 11.5rem;
     width: 37rem;
     height: 62.5rem;
 }
 
 @media screen and (width<576px) {
-    .app_block__container {
+    .app-block__container {
         height: unset;
     }
 
-    .images_phone {
+    .app-block__image {
         padding-left: 11.5rem;
         width: 50rem;
         height: 80rem;

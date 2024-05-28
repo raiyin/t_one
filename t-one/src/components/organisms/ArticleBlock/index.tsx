@@ -8,7 +8,7 @@ const Article = (props: ArticleProps) => {
 
     return (
         <div className={styles['article']}>
-            <div className={styles['article-title']}>
+            <div className={styles['article__title']}>
                 <Title
                     text={props.title}
                     selectStart={0}
@@ -17,14 +17,14 @@ const Article = (props: ArticleProps) => {
                     hideOverflow={false} />
             </div>
 
-            <div className={styles['article-head']}>
+            <div className={styles['article__head']}>
                 <ArticleHead
                     userId={props.userId}
                     reactions={props.reactions}
                     tags={props.tags} />
             </div>
 
-            <div className={styles['article-text']}>
+            <div className={styles['article__text']}>
                 {props.body}
             </div>
         </div>

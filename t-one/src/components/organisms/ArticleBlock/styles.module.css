@@ -2,15 +2,15 @@
     margin-top: 12.5rem;
 }
 
-.article-title {
+.article__title {
     color: var(--colors-interface-article);
 }
 
-.article-head {
+.article__head {
     margin-top: 3rem;
 }
 
-.article-text {
+.article__text {
     margin-top: 6rem;
     font-family: "Poppins", sans-serif;
     font-size: 2.2rem;
@@ -21,7 +21,7 @@
 }
 
 @media screen and (width<768px) {
-    .article-text {
+    .article__text {
         font-size: 3rem;
     }
 }

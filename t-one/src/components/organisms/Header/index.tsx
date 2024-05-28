@@ -28,13 +28,13 @@ const Header = () => {
     };
 
     return (
-        <header className={styles.header}>
-            <div className={styles.header_conrainer}>
+        <header className={styles['header']}>
+            <div className={styles['header-conrainer']}>
                 <Logo location={Location.Header} />
-                <div className={styles['header_navbar']}>
+                <div className={styles['header__navbar']}>
                     <NavBar {...navBarProps} />
                 </div>
-                <div className={styles['header_bars']}>
+                <div className={styles['header__bars']}>
                     <img src={BasrIcon} alt="" />
                 </div>
             </div>

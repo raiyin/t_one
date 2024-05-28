@@ -8,12 +8,6 @@
     margin-top: 8rem;
 }
 
-/* @media screen and (width < 768px) {
-    .features {
-        height: 28rem;
-    }
-} */
-
 @media screen and (width < 576px) {
     .features {
         flex-direction: column;

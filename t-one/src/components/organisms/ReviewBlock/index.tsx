@@ -18,20 +18,20 @@ const ReviewBlock = (props: ReviewProps) => {
     }, []);
 
     return (
-        <section className={styles['review-container']}>
+        <section className={styles['reviews']}>
             {
                 props.direction === "row" && isWide
                     ? (
-                        <div className={styles["review-container__row"]}>
+                        <div className={styles["reviews_type_row"]}>
                             <Slider items={props.comments} />
                         </div>
                     )
                     : (
-                        <div className={styles["review-container__column"]}>
-                            <ul className={styles["reviews_column"]}>
+                        <div className={styles["reviews_type_column"]}>
+                            <ul className={styles["reviews__column"]}>
                                 {props.comments.map((comment) => (
                                     <li
-                                        className={styles["comment-widget__wrapper_column"]}
+                                        className={styles["reviews__comment-widget_column"]}
                                         key={comment.id}
                                     >
                                         <CommentWidget

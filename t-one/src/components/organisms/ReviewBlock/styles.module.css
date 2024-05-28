@@ -1,8 +1,8 @@
-.review-container {
+.reviews {
     width: 100%;
 }
 
-.review-container__row {
+.reviews_type_row {
     display: flex;
     align-items: center;
     height: 34rem;
@@ -11,23 +11,13 @@
     margin-right: 9.7rem;
 }
 
-.reviews_row {
-    display: flex;
-    margin-left: 18rem;
-    column-gap: 4.6rem;
-}
-
-.comment-widget__wrapper_row {
-    width: 100%;
-}
-
-.review-container__column {
+.reviews_type_column {
     margin-top: 8rem;
     margin-left: 9.7rem;
     margin-right: 9.7rem;
 }
 
-.reviews_column {
+.reviews__column {
     box-sizing: border-box;
     min-width: 30rem;
     display: flex;
@@ -35,7 +25,6 @@
     row-gap: 12rem;
 }
 
-
-.comment-widget__wrapper_column {
+.reviews__comment-widget_column {
     width: 100%;
 }

@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-.header_conrainer {
+.header-conrainer {
     display: flex;
     column-gap: 9.8rem;
     margin: 0 9.7rem;
@@ -13,11 +13,11 @@
     align-items: center;
 }
 
-.header_navbar {
+.header__navbar {
     height: fit-content;
 }
 
-.header_bars {
+.header__bars {
     width: 4.6rem;
     height: 4.6rem;
     justify-self: end;
@@ -25,7 +25,7 @@
 }
 
 @media screen and (width<992px) {
-    .header_bars {
+    .header__bars {
         width: 5.5rem;
         height: 5.5rem;
     }
@@ -33,16 +33,16 @@
 
 @media screen and (width<768px) {
 
-    .header_conrainer {
+    .header-conrainer {
         justify-content: space-between;
         position: sticky;
     }
 
-    .header_navbar {
+    .header__navbar {
         display: none;
     }
 
-    .header_bars {
+    .header__bars {
         width: 5.5rem;
         height: 5.5rem;
         display: block;

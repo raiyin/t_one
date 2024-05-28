@@ -3,12 +3,12 @@ import styles from './styles.module.css';
 
 const AppBlock = () => {
     return (
-        <section className={styles['app_block']}>
-            <div className={styles['app_block__container']}>
+        <section className={styles['app-block']}>
+            <div className={styles['app-block__container']}>
 
-                <div className={styles['images']}>
+                <div className={styles['app-block__images']}>
 
-                    <div className={styles['images_phone']}>
+                    <div className={styles['app-block__image']}>
                         <img
                             src="../../../src/assets/images/webps/mobile_phone.webp"
                             alt="Image of the our app on iPhone"

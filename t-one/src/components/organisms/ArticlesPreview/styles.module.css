@@ -5,12 +5,11 @@
     margin-top: 9.5rem;
 }
 
-.articles-preview_previews {
+.articles-preview__previews {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* max-width: 1236px; */
     margin-top: 7.5rem;
     column-gap: 6.5rem;
     row-gap: 4rem;

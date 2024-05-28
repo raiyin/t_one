@@ -19,7 +19,7 @@ const FaqBlock = () => {
         <section className={styles['faq-container']}>
             <div className={styles['faq']} id="faq">
                 <AnchorSection className="dBlock anchor" id="faq" />
-                <div className={styles['faq_title']}>
+                <div className={styles['faq__title']}>
                     <Title
                         text={`Frequently Asked Questions`}
                         selectStart={17}
@@ -28,12 +28,12 @@ const FaqBlock = () => {
                         hideOverflow={false}
                     />
 
-                    <div className={styles['icon_wrapper']}>
+                    <div className={styles['faq__icon']}>
                         <img src={FaqRaysImage} alt="" />
                     </div>
                 </div>
 
-                <ul className={styles['faq_items']}>
+                <ul className={styles['faq__items']}>
                     {faqData.map(faqItem =>
                         <li key={faqItem.quest}>
                             <FaqItem
