@@ -1,4 +1,4 @@
-.container {
+.hero-image {
     flex: 0 1 50%;
     background: var(--colors-interface-white-bg);
     width: 60rem;
@@ -6,13 +6,13 @@
     position: relative;
 }
 
-.container_relative {
+.hero-image__container {
     width: 60rem;
     height: 56rem;
     position: relative;
 }
 
-.waves_wrapper {
+.hero-image__waves {
     position: absolute;
     margin-left: auto;
     width: 4rem;
@@ -21,13 +21,13 @@
     top: -3rem;
 }
 
-.widget_wrapper {
+.hero-image__widget-wrapper {
     position: absolute;
     left: 29rem;
     z-index: 3;
 }
 
-.hero_image_wrapper {
+.hero_image__image {
     box-sizing: border-box;
     position: absolute;
     left: 8rem;
@@ -50,7 +50,7 @@
     z-index: 2;
 }
 
-.graph_wrapper {
+.hero-image__graph {
     position: absolute;
     width: 20.7rem;
     height: 20.5rem;
@@ -59,7 +59,7 @@
     z-index: 3;
 }
 
-.arrow_wrapper {
+.hero-image__arrow {
     position: absolute;
     top: 10rem;
     left: 49rem;
@@ -68,7 +68,7 @@
     height: 10rem;
 }
 
-.rays_wrapper {
+.hero-image__rays {
     position: absolute;
     top: 46rem;
     left: 18px;
@@ -77,23 +77,23 @@
 }
 
 @media screen and (width<768px) {
-    .waves_wrapper {
+    .hero-image__waves {
         visibility: hidden;
     }
 
-    .arrow_wrapper {
+    .hero-image__arrow {
         top: 12rem;
         left: 50rem;
     }
 }
 
 @media screen and (width<576px) {
-    .container {
+    .hero-image {
         width: 80rem;
         height: 60rem;
     }
 
-    .rays_wrapper {
+    .hero-image__rays {
         left: 10px;
     }
 }

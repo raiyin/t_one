@@ -1,8 +1,8 @@
-.comment-block_body {
+.comment-block__body {
     margin-top: 5rem;
 }
 
-.comment-block_button {
+.comment-block__button {
     margin-top: 5rem;
     width: 37rem;
     min-width: none;

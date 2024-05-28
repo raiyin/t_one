@@ -9,9 +9,9 @@ import { TimeType } from '@/types/TimeProps';
 
 const LunchWidget = (props: LunchWidgetProps) => {
     return (
-        <div className={styles['container']}>
+        <div className={styles['lunch']}>
 
-            <div className={styles['image_wrapper']}>
+            <div className={styles['lunch__image']}>
                 <img
                     src={props.image}
                     alt={`${props.name} image`}
@@ -20,7 +20,7 @@ const LunchWidget = (props: LunchWidgetProps) => {
                 />
             </div>
 
-            <div className={styles['tag_wrapper']}>
+            <div className={styles['lunch__tag']}>
                 {props.tags.map((tag, tag_index) => {
                     if (tag_index < 4) {
                         return (
@@ -30,7 +30,7 @@ const LunchWidget = (props: LunchWidgetProps) => {
                 })}
             </div>
 
-            <div className={styles['text_wrapper']}>
+            <div className={styles['lunch__text']}>
                 <Title
                     text={props.name}
                     selectStart={0}
@@ -40,7 +40,7 @@ const LunchWidget = (props: LunchWidgetProps) => {
                 />
             </div>
 
-            <div className={styles['info_wrapper']}>
+            <div className={styles['lunch__info']}>
                 <Time
                     time={`${props.cookTimeMinutes + props.prepTimeMinutes}min`}
                     timeType={TimeType.medium}

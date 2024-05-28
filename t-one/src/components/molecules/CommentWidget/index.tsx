@@ -6,10 +6,10 @@ const CommentWidget = (props: CommentWidgetProps) => {
     return (
         <div className={styles['widget']}>
 
-            <div className={`${styles['widget-body']}`}>
+            <div className={`${styles['widget__body']}`}>
 
-                <div className={`${styles['widget-user']}`}>
-                    <div className={`${styles['widget-user__text']}`} >
+                <div className={`${styles['widget__user']}`}>
+                    <div className={`${styles['widget__user-text']}`} >
                         {props.user_handle}
                     </div>
                     <figure>
@@ -17,7 +17,7 @@ const CommentWidget = (props: CommentWidgetProps) => {
                     </figure>
                 </div>
 
-                <div className={`${styles['widget-quote']}`}>
+                <div className={`${styles['widget__quote']}`}>
                     {props.comment}
                 </div>
 

@@ -26,7 +26,7 @@ const AddComment = (props: AddCommentProps) => {
     return (
         <div className={styles['comment-block']}>
 
-            <div className={styles['comment-block_title']}>
+            <div className={styles['comment-block__title']}>
                 <Title
                     text={'Add comment'}
                     titleType={TitleType.H4}
@@ -36,7 +36,7 @@ const AddComment = (props: AddCommentProps) => {
                 />
             </div>
 
-            <div className={styles['comment-block_body']}>
+            <div className={styles['comment-block__body']}>
                 <TextInput
                     placeholder={props.placeholder}
                     content={comment}
@@ -45,7 +45,7 @@ const AddComment = (props: AddCommentProps) => {
             </div>
 
 
-            <div className={styles['comment-block_button']}>
+            <div className={styles['comment-block__button']}>
                 <Button
                     text={'Send'}
                     type={ButtonType.Primary}

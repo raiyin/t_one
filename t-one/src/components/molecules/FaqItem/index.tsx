@@ -13,9 +13,9 @@ const FaqItem = (props: FaqItemProps) => {
             className={`${styles['faqItem']} ${expanded && styles.faqItem__expanded}`}
             onClick={() => setExpanded(() => !expanded)}
         >
-            <div className={styles['faqItem-conrol']}>
-                <span className={styles['faqItem_header']}>{props.quest}</span>
-                <div className={styles['faqItem_image']}>
+            <div className={styles['faqItem__conrol']}>
+                <span className={styles['faqItem__header']}>{props.quest}</span>
+                <div className={styles['faqItem__image']}>
                     {
                         expanded
                             ?
@@ -29,7 +29,7 @@ const FaqItem = (props: FaqItemProps) => {
                     }
                 </div>
             </div>
-            <div className={`${styles['faqItem-answer']} ${expanded && styles['faqItem-answer__expanded']}`}>
+            <div className={`${styles['faqItem__answer']} ${expanded && styles['faqItem__answer_expanded']}`}>
                 {props.answer}
             </div>
         </div>

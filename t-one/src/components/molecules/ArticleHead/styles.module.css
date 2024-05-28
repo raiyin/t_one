@@ -6,13 +6,13 @@
     width: 100%;
 }
 
-.article-head_info {
+.article-head__info {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.article-head_subinfo {
+.article-head__subinfo {
     height: 5rem;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
 }
 
 @media screen and (width<768px) {
-    .article-head_subinfo {
+    .article-head__subinfo {
         height: 9rem;
     }
 }

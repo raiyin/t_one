@@ -4,7 +4,7 @@
     min-width: 30rem;
 }
 
-.widget-body {
+.widget__body {
     width: 100%;
     height: 100%;
     padding: 4rem 4rem 3.5rem 4rem;
@@ -19,14 +19,14 @@
     box-shadow: rgba(50, 49, 66, 0.6) 0px 0px 90px;
 }
 
-.widget-user {
+.widget__user {
     width: 100%;
     height: 5rem;
     display: flex;
     justify-content: space-between;
 }
 
-.widget-user__text {
+.widget__user-text {
     color: var(--colors-interface-black);
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@
     line-height: 1.5;
 }
 
-.widget-quote {
+.widget__quote {
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem;
     font-style: italic;
@@ -54,11 +54,11 @@
 }
 
 @media screen and (width<768px) {
-    .widget-user__text {
+    .widget__user-text {
         font-size: 2.8rem;
     }
 
-    .widget-quote {
+    .widget__quote {
         font-size: 2.4rem;
     }
 }

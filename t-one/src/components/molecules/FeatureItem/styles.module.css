@@ -1,4 +1,4 @@
-.feature-item__wrapper {
+.feature-item-wrapper {
     display: flex;
 }
 
@@ -63,7 +63,7 @@
 }
 
 @media screen and (width > 576px) {
-    .feature-item__wrapper:not(:last-child) {
+    .feature-item-wrapper:not(:last-child) {
         border-right: 1px solid rgba(197, 197, 197, 0.15);
     }
 }

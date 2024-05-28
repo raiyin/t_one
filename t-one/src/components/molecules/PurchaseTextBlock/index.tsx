@@ -5,7 +5,7 @@ import { TitleType } from '@/types/TitleProps';
 
 const PurchaseTextBlock = () => {
     return (
-        <div className={styles['purchase_text-block']}>
+        <div className={styles['purchase-text']}>
             <Title
                 text={'Control\u00A0Purchases Via\u00A0Dashboard'}
                 selectStart={8}
@@ -13,7 +13,7 @@ const PurchaseTextBlock = () => {
                 titleType={TitleType.H2}
                 hideOverflow={false}
             />
-            <ul className={styles['purchase_text-items']}>
+            <ul className={styles['purchase-text__items']}>
                 <li>
                     <FoodWidget
                         title={'Chicken Hell'}

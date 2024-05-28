@@ -5,18 +5,18 @@ import { TimeType } from "@/types/TimeProps";
 
 const FoodWidget = (props: FoodWidgetProps) => {
     return (
-        <div className={`${styles.food_widget_container} ${props.selected && styles.selected}`}>
-            <figure className={styles.image}>
+        <div className={`${styles['food-widget']} ${props.selected && styles['food-widget_selected']}`}>
+            <figure className={styles['food-widget__image']}>
                 <img
                     src={props.img_url}
                     alt={props.img_alt}
                 />
             </figure>
-            <div className={styles["info_block"]}>
-                <div className={styles["info_block__title"]}>{props.title}</div>
-                <div className={styles["info_block__desc"]}>{props.status}</div>
+            <div className={styles["food-widget__info"]}>
+                <div className={styles["food-widget__title"]}>{props.title}</div>
+                <div className={styles["food-widget__desc"]}>{props.status}</div>
             </div>
-            <div className={styles.time}>
+            <div className={styles['food-widget__time']}>
                 <Time
                     time={props.time}
                     timeType={TimeType.small}

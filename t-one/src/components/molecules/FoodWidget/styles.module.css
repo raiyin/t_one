@@ -1,4 +1,4 @@
-.food_widget_container {
+.food-widget {
     width: 33rem;
     height: 9rem;
     border-radius: 1.6rem;
@@ -9,11 +9,11 @@
     box-sizing: border-box;
 }
 
-.selected {
+.food-widget_selected {
     box-shadow: -1rem 1.2rem 2rem 0 #00000026;
 }
 
-.image {
+.food-widget__image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,7 @@
     height: 7.5rem;
 }
 
-.info_block {
+.food-widget__info {
     display: flex;
     flex-direction: column;
     margin-left: 1.6rem;
@@ -32,7 +32,7 @@
     white-space: nowrap;
 }
 
-.info_block__title {
+.food-widget__title {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -43,7 +43,7 @@
     color: var(--colors-interface-food);
 }
 
-.info_block__desc {
+.food-widget__desc {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -56,31 +56,31 @@
     color: var(--colors-interface-food);
 }
 
-.time {
+.food-widget__time {
     align-self: flex-end;
     margin-left: auto;
 }
 
 @media screen and (width<768px) {
-    .food_widget_container {
+    .food-widget {
         width: 40rem;
         height: 12rem;
     }
 
-    .image {
+    .food-widget__image {
         width: 10rem;
         height: 10rem;
     }
 
-    .info_block {
+    .food-widget__info {
         height: 6.5rem;
     }
 
-    .info_block__title {
+    .food-widget__title {
         font-size: 2.1rem;
     }
 
-    .info_block__desc {
+    .food-widget__desc {
         font-size: clamp(5px, 1.5rem, 20px);
     }
 }

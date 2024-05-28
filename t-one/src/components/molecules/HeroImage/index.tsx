@@ -6,17 +6,17 @@ import FoodWidget from "@/components/molecules/FoodWidget";
 
 const HeroImage = () => {
     return (
-        <div className={styles.container}>
-            <div className={styles.container_relative}>
+        <div className={styles['hero-image']}>
+            <div className={styles['hero-image__container']}>
 
-                <div className={styles["waves_wrapper"]}>
+                <div className={styles["hero-image__waves"]}>
                     <img
                         src={Waves_Image}
                         alt=""
                     />
                 </div>
 
-                <div className={styles["widget_wrapper"]}>
+                <div className={styles["hero-image__widget-wrapper"]}>
                     <FoodWidget
                         title={'Chicken Hell'}
                         status={'On The Way'}
@@ -26,7 +26,7 @@ const HeroImage = () => {
                         selected />
                 </div>
 
-                <figure className={styles["hero_image_wrapper"]}>
+                <figure className={styles["hero_image__image"]}>
                     <img
                         src="../../../src/assets/images/webps/hero_food_image.webp"
                         srcSet="
@@ -44,7 +44,7 @@ const HeroImage = () => {
 
                 <div className={styles["hero_image__mask"]}></div>
 
-                <div className={styles["arrow_wrapper"]}>
+                <div className={styles["hero-image__arrow"]}>
                     <img
                         src={Arrow_Image}
                         alt=""
@@ -52,14 +52,14 @@ const HeroImage = () => {
                 </div>
 
 
-                <div className={styles["graph_wrapper"]}>
+                <div className={styles["hero-image__graph"]}>
                     <img
                         src="../../../src/assets/images/webps/hero_graph.webp"
                         alt="Example of our app"
                     />
                 </div>
 
-                <div className={styles["rays_wrapper"]}>
+                <div className={styles["hero-image__rays"]}>
                     <img
                         src={Rays_Image}
                         alt=""

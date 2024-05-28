@@ -34,28 +34,28 @@ const WrittenByBlock = (props: WrittenByProps) => {
     }, [props.userId]);
 
     return (
-        <div className={`${styles['written-by']} ${styles['written-by__' + props.type]}`}>
+        <div className={`${styles['written-by']} ${styles['written-by_' + props.type]}`}>
 
             {
                 error
                     ?
                     <>
-                        <figure className={`${styles['written-by_ava__' + props.type]} ${styles['written-by_ava__error']}`}>
+                        <figure className={`${styles['written-by__ava_' + props.type]} ${styles['written-by__ava_error']}`}>
                             <img src="../../../src/assets/images/pngs/author_error.png" alt="author not found avatar" />
                             <span className={styles['tooltiptext']}>Error loading the author</span>
                         </figure>
                     </>
                     :
                     <>
-                        <figure className={styles['written-by_ava__' + props.type]}>
+                        <figure className={styles['written-by__ava_' + props.type]}>
                             <img src={user.image} alt="author avatar" />
                         </figure>
 
-                        <div className={styles['written-by_author']}>
-                            <div className={`${styles['written-by_label']} ${styles['written-by_label__' + props.type]}`}>
+                        <div className={styles['written-by__author']}>
+                            <div className={`${styles['written-by__label']} ${styles['written-by__label_' + props.type]}`}>
                                 Written By
                             </div>
-                            <div className={`${styles['written-by_name']} ${styles['written-by_name__' + props.type]}`}>
+                            <div className={`${styles['written-by__name']} ${styles['written-by__name_' + props.type]}`}>
                                 {`${user.firstName} ${user.lastName}`}
                             </div>
                         </div>

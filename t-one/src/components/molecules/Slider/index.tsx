@@ -7,12 +7,12 @@ const Slider = (props: { items: Comment[]; }) => {
     const [offset, setOffset] = useState(1);
 
     return (
-        <div className={styles["slideshow"]}>
+        <div className={styles["slider"]}>
             <div
-                className={`${styles["slides"]} ${styles["slides_" + offset]}`}
+                className={`${styles["slider__slides"]} ${styles["slider__slide_" + offset]}`}
             >
                 {props.items.map((comment) => (
-                    <div className={styles["slide"]}
+                    <div className={styles["slider__slide"]}
                         key={comment.id}>
                         <CommentWidget
                             user_handle={comment.user.username}
@@ -22,11 +22,11 @@ const Slider = (props: { items: Comment[]; }) => {
                 ))}
             </div>
 
-            <div className={styles["dots"]}>
+            <div className={styles["slider__dots"]}>
                 {props.items.map((comment, i) => (
                     <span
                         key={comment.id}
-                        className={`${styles["dot"]} ${offset === i + 1 && styles["selected"]}`}
+                        className={`${styles["slider__dot"]} ${offset === i + 1 && styles["slider__dot_selected"]}`}
                         onClick={() => setOffset(i + 1)}
                     ></span>
                 ))}

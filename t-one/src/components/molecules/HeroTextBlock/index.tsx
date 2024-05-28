@@ -9,9 +9,9 @@ import { TitleType } from "@/types/TitleProps";
 
 const HeroTextBlock = () => {
     return (
-        <div className={styles['hero_container']}>
+        <div className={styles['hero-text']}>
 
-            <div className={styles['before_wrapper']}>
+            <div className={styles['hero-text__before']}>
                 <img src={OverImage} alt="" />
             </div>
 
@@ -23,7 +23,7 @@ const HeroTextBlock = () => {
                 hideOverflow={false}
             />
 
-            <div className={styles["herotext-container"]}>
+            <div className={styles["hero-text__container"]}>
                 <HeroText
                     text_main={
                         'EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early.'
@@ -32,7 +32,7 @@ const HeroTextBlock = () => {
                 />
             </div>
 
-            <div className={styles["cta_buttons"]}>
+            <div className={styles["hero-text__buttons"]}>
                 <Button
                     text={"Get Started"}
                     type={ButtonType.Primary}

@@ -9,7 +9,7 @@ import { TitleType } from '@/types/TitleProps';
 
 const AppTextBlock = () => {
     return (
-        <div className={styles['app_text_block']}>
+        <div className={styles['text-block']}>
 
             <Title
                 text={'Premium\u00A0Quality For\u00A0Your\u00A0Health'}
@@ -19,15 +19,15 @@ const AppTextBlock = () => {
                 hideOverflow={false}
             />
 
-            <div className={styles['list_wrapper']}>
+            <div className={styles['text-block__list']}>
                 <List texts={[
                     'Premium quality food is made with ingredients that are packed with essential vitamins, minerals.',
                     'These foods promote overall wellness by support healthy digestion and boosting immunity'
                 ]} />
             </div>
 
-            <div className={styles['button-arrow_wrapper']}>
-                <div className={styles['button-wrapper']}>
+            <div className={styles['text-block__button-wrapper']}>
+                <div className={styles['text-block__button']}>
                     <Button
                         text={'Download'}
                         type={ButtonType.Primary}
@@ -36,7 +36,7 @@ const AppTextBlock = () => {
                         onClick={() => { }}
                     />
                 </div>
-                <div className={styles['arrow-wrapper']}>
+                <div className={styles['text-block__arrow']}>
                     <img
                         src={Arrow_Image}
                         alt=""

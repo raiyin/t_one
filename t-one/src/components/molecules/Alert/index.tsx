@@ -5,6 +5,9 @@ import InfoIcon from '@assets/images/svgs/information.svg';
 import WarningIcon from '@assets/images/svgs/warning.svg';
 import CloseIcon from '@assets/images/svgs/close.svg';
 import ErrorIcon from '@assets/images/svgs/error.svg';
+import Title from '@/components/atoms/Title';
+import { TitleType } from '@/types/TitleProps';
+import { Capitalize } from '@/utils/strings';
 
 function ChooseIcon(type: AlertType) {
     if (type === AlertType.success) {
@@ -25,16 +28,22 @@ const Alert = (props: AlertProps) => {
 
     if (props.show)
         return (
-            <div className={`${styles['alert']} ${styles['alert__' + AlertType[props.type]]} ${props.show && styles['alert__visible']} `}>
-                <div className={styles['card']}>
-                    <div className={styles['icon']}>
+            <div className={`${styles['alert']} ${styles['alert_' + AlertType[props.type]]} ${props.show && styles['alert_visible']} `}>
+                <div className={styles['alert__card']}>
+                    <div className={styles['alert__icon']}>
                         <img src={ChooseIcon(props.type)} />
                     </div>
-                    <div className={styles['subject']}>
-                        <h3>{AlertType[props.type]}</h3>
+                    <div className={styles['alert__subject']}>
+                        <Title
+                            text={Capitalize(AlertType[props.type])}
+                            titleType={TitleType.H4}
+                            hideOverflow={false}
+                            selectStart={0}
+                            selectEnd={0}
+                        />
                         <p>{props.text}</p>
                     </div>
-                    <div className={styles['icon-times']} onClick={() => props.setShow(false)}>
+                    <div className={styles['alert__icon-times']} onClick={() => props.setShow(false)}>
                         <img src={CloseIcon} />
                     </div>
                 </div>

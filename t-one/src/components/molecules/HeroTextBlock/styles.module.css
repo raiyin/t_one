@@ -1,4 +1,4 @@
-.hero_container {
+.hero-text {
     display: flex;
     flex: 0 1 50%;
     flex-direction: column;
@@ -7,12 +7,12 @@
     width: 100%;
 }
 
-.herotext-container {
+.hero-text__container {
     margin-top: 1.4rem;
     width: 50rem;
 }
 
-.cta_buttons {
+.hero-text__buttons {
     display: flex;
     column-gap: 2rem;
     margin-top: 5.4rem;
@@ -20,29 +20,29 @@
     height: 6rem;
 }
 
-.before_wrapper {
+.hero-text__before {
     width: 24rem;
     height: 2rem;
 }
 
 @media screen and (width<768px) {
-    .before_wrapper {
+    .hero-text__before {
         width: 36rem;
         height: 3rem;
     }
 
-    .cta_buttons {
+    .hero-text__buttons {
         width: 40rem;
         height: 8rem;
     }
 }
 
 @media screen and (width<576px) {
-    .herotext-container {
+    .hero-text__container {
         width: 75%;
     }
 
-    .cta_buttons {
+    .hero-text__buttons {
         width: 50rem;
         height: 12rem;
     }

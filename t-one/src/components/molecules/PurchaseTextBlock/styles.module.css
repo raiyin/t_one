@@ -1,9 +1,9 @@
-.purchase_text-block {
+.purchase-text {
     width: 57rem;
     height: 46rem;
 }
 
-.purchase_text-items {
+.purchase-text__items {
     margin-top: 4.6rem;
     display: flex;
     flex-direction: column;
