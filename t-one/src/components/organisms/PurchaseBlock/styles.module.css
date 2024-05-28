@@ -1,0 +1,31 @@
+.purchases-container {
+    width: 100%;
+}
+
+.purchases {
+    padding-bottom: 13.6rem;
+    display: flex;
+    margin-top: 13rem;
+    justify-content: space-between;
+    border-bottom: .1rem solid var(--colors-interface-border);
+    align-self: center;
+    margin-left: 9.7rem;
+    margin-right: 9.7rem;
+}
+
+.purchases__text {
+    flex: 0 1 50%;
+}
+
+.purchases__image {
+    flex: 0 1 50%;
+    width: 53.5rem;
+    height: 46rem;
+    /* padding-left: 1rem; */
+}
+
+@media screen and (width<768px) {
+    .purchases__image {
+        height: 55rem;
+    }
+}

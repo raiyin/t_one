@@ -1,0 +1,24 @@
+.text-input {
+    width: 100%;
+    height: 34.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    border-radius: 1.8rem;
+    border: .2rem solid var(--colors-interface-violet);
+    padding: .23rem .27rem;
+    box-sizing: border-box;
+    resize: none;
+    color: var(--colors-interface-gray-medium);
+    padding: 2.3rem 2.7rem;
+}
+
+.text-input::placeholder {
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: left;
+    color: var(--colors-interface-gray-medium);
+}

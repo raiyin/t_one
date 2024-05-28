@@ -1,0 +1,14 @@
+.blog-container {
+    width: 100%;
+}
+
+.blog {
+    margin-left: 9.7rem;
+    margin-right: 9.7rem;
+}
+
+.blog__arrows {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+}

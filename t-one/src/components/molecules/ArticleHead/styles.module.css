@@ -1,0 +1,27 @@
+.article-head {
+    display: flex;
+    flex-direction: column;
+    min-width: 42rem;
+    max-width: 124rem;
+    width: 100%;
+}
+
+.article-head__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-head__subinfo {
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+@media screen and (width<768px) {
+    .article-head__subinfo {
+        height: 9rem;
+    }
+}

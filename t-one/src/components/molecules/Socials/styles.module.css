@@ -1,0 +1,6 @@
+.socials {
+    width: 24rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+}

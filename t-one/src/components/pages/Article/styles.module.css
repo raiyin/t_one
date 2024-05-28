@@ -1,0 +1,50 @@
+.article-container {
+    width: 100%;
+    flex: 1 0 auto;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9.7rem;
+    margin-right: 9.7rem;
+}
+
+.article__back-button {
+    margin-top: 9rem;
+    display: flex;
+    align-self: self-start;
+    width: 19rem;
+}
+
+.article__comments {
+    margin-top: 10rem;
+    max-width: 125rem;
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    box-sizing: border-box;
+}
+
+.article__comments-items {
+    margin-top: 10rem;
+}
+
+.article__comments-addition {
+    width: 100%;
+    margin-top: 10rem;
+    max-width: 125rem;
+}
+
+.article__alert {
+    position: fixed;
+    bottom: 0rem;
+    left: 0rem;
+}
+
+@media screen and (width<768px) {
+    .article__back-button {
+        width: 30rem;
+    }
+
+}

@@ -1,0 +1,54 @@
+.lunch-block {
+    width: 100%;
+}
+
+.lunch-block__title {
+    text-align: center;
+}
+
+.lunch-container {
+    padding-bottom: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    border-bottom: 0.1rem solid var(--colors-interface-border);
+    margin-right: 9.7rem;
+    margin-left: 9.7rem;
+}
+
+.lunch-block__lunches {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    column-gap: 2.5rem;
+    margin-top: 9rem;
+    padding-inline-start: 0px;
+}
+
+.lunch-block__lunch-item {
+    width: 40rem;
+    height: 30rem;
+}
+
+.lunch-block__lunch-item::marker {
+    content: none;
+}
+
+@media screen and (width < 576px) {
+    .lunch-block__lunches {
+        width: 75%;
+        flex-direction: column;
+        height: unset;
+        row-gap: 25px;
+    }
+
+    .lunch-block__lunch-item {
+        width: 100%;
+        height: unset;
+    }
+
+    .lunch-container {
+        border-bottom: none;
+    }
+}

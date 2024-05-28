@@ -1,0 +1,10 @@
+.interest {
+    height: 2.4rem;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.6pxpx;
+    text-align: left;
+    color: var(--colors-interface-interest);
+}

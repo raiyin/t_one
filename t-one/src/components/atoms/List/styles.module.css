@@ -1,0 +1,35 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    list-style: inside;
+}
+
+.list_item::marker {
+    content: '•';
+}
+
+.list_item {
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.005em;
+    text-align: left;
+    color: var(--colors-interface-gray);
+    padding-inline-start: 1rem;
+    list-style-position: outside;
+    max-width: 51rem;
+}
+
+@media screen and (width<768px) {
+    .list_item {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (width<576px) {
+    .list_item {
+        font-size: 3.4rem;
+    }
+}

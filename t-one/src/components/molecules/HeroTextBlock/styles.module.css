@@ -1,0 +1,49 @@
+.hero-text {
+    display: flex;
+    flex: 0 1 50%;
+    flex-direction: column;
+    padding-top: 11rem;
+    letter-spacing: -0.2rem;
+    width: 100%;
+}
+
+.hero-text__container {
+    margin-top: 1.4rem;
+    width: 50rem;
+}
+
+.hero-text__buttons {
+    display: flex;
+    column-gap: 2rem;
+    margin-top: 5.4rem;
+    width: 29rem;
+    height: 6rem;
+}
+
+.hero-text__before {
+    width: 24rem;
+    height: 2rem;
+}
+
+@media screen and (width<768px) {
+    .hero-text__before {
+        width: 36rem;
+        height: 3rem;
+    }
+
+    .hero-text__buttons {
+        width: 40rem;
+        height: 8rem;
+    }
+}
+
+@media screen and (width<576px) {
+    .hero-text__container {
+        width: 75%;
+    }
+
+    .hero-text__buttons {
+        width: 50rem;
+        height: 12rem;
+    }
+}

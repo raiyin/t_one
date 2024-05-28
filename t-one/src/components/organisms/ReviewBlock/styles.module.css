@@ -1,0 +1,30 @@
+.reviews {
+    width: 100%;
+}
+
+.reviews_type_row {
+    display: flex;
+    align-items: center;
+    height: 34rem;
+    overflow-x: clip;
+    margin-left: 9.7rem;
+    margin-right: 9.7rem;
+}
+
+.reviews_type_column {
+    margin-top: 8rem;
+    margin-left: 9.7rem;
+    margin-right: 9.7rem;
+}
+
+.reviews__column {
+    box-sizing: border-box;
+    min-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12rem;
+}
+
+.reviews__comment-widget_column {
+    width: 100%;
+}

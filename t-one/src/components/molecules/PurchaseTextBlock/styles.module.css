@@ -1,0 +1,12 @@
+.purchase-text {
+    width: 57rem;
+    height: 46rem;
+}
+
+.purchase-text__items {
+    margin-top: 4.6rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3rem;
+    list-style: none;
+}

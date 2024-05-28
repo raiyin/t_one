@@ -1,0 +1,16 @@
+.article-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9.5rem;
+}
+
+.articles-preview__previews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7.5rem;
+    column-gap: 6.5rem;
+    row-gap: 4rem;
+}

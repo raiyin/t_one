@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_header {
+    column-gap: 5.2rem;
+}
+
+.navbar_footer {
+    column-gap: 7.2rem;
+}

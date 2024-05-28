@@ -1,0 +1,56 @@
+.title_overflow{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.title_selected {
+    display: inline;
+    color: var(--colors-interface-violet);
+}
+
+.H1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 7.6rem;
+    font-size: clamp(16px,7.6rem,68px);
+}
+
+.H2 {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    font-size: clamp(14px,5rem,64px);
+    word-wrap:  break-word;
+}
+
+.H3 {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 4.5rem;
+    font-size: clamp(12px,4.5rem,60px);
+    line-height: 1;
+}
+
+.H4 {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    font-size: clamp(10px,4rem,56px);
+}
+
+.H5 {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: clamp(8px,2.6rem,52px);
+}

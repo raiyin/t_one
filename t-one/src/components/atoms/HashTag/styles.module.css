@@ -1,0 +1,26 @@
+.hashtag {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: right;
+    color: var(--colors-interface-gray-hashtag);
+}
+
+.hashtag_small {
+    font-size: 1.2rem;
+}
+
+.hashtag_medium {
+    font-size: 1.6rem;
+}
+
+@media screen and (width<768px) {
+    .hashtag_small {
+        font-size: clamp(6px, 2rem, 10px);
+    }
+
+    .hashtag_medium {
+        font-size: 2.6rem;
+    }
+}

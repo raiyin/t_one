@@ -1,0 +1,28 @@
+time {
+    color: var(--colors-interface-alt);
+    display:  inline-block;
+    vertical-align: top;
+}
+
+.time_small{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: right;
+}
+
+.time_medium{
+    font-family: "Manrope", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+ @media screen and (width<768px){
+    .time_small{
+        font-size: clamp(5px,1rem,30px);
+    }
+
+    .time_medium{
+        font-size: clamp(12px,1.3rem,35px);
+    }
+ }
